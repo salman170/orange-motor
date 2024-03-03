@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { BsShieldCheck } from "react-icons/bs";
 import LeaderSlider from "../components/LeaderSlider";
+import { TbDevicesCheck } from "react-icons/tb";
 
 const Home = () => {
   useEffect(() => {
@@ -19,21 +20,37 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <Header />
       <Slider />
 
       <div className="grid gap-8 px-5 mx-auto my-10 md:grid-cols-3 max-w-7xl">
         <div className="col-span-1 space-y-2">
           <img
-            src={require("../assets/legacy.jpg")}
+            src={require("../assets/homepage/coreValues.jpg")}
             className="object-cover w-full rounded h-80"
             alt=""
           />
-          <h3 className="text-2xl font-semibold">Our Legacy</h3>
+          <h3 className="pt-4 text-2xl font-semibold">Our Vaues</h3>
           <p className="text-black/80">
-            With over XX years in the indian auto industry, we have served
-            generations of satisfied indian customers.
+            Through accountability, integrity, agility, trust, and empathy,
+            manage your finances effectively. Follow a budgeting schedule,
+            assess needs, create essential funds, and ensure financial
+            stability.
+          </p>
+        </div>
+        <div className="col-span-1 space-y-2">
+          <img
+            src={require("../assets/homepage/analyst.jpg")}
+            className="object-cover w-full rounded h-80"
+            alt=""
+          />
+          <h3 className="pt-4 text-2xl font-semibold">Our Vision</h3>
+          <p className="text-black/80">
+            We prioritize enriching experiences, valuing staff development and
+            balance. Upholding customer enthusiasm, employee satisfaction,
+            financial performance, market effectiveness, and continuous
+            improvement drives our success.
           </p>
         </div>
         <div className="col-span-1 space-y-2">
@@ -42,23 +59,12 @@ const Home = () => {
             className="object-cover w-full rounded h-80"
             alt=""
           />
-          <h3 className="text-2xl font-semibold">Our Brand Network</h3>
+          <h3 className="pt-4 text-2xl font-semibold">Our Mission</h3>
           <p className="text-black/80">
-            With a presence across states with 6 brands, we enjoy a wide spread
-            geographical network in the industry.
-          </p>
-        </div>
-        <div className="col-span-1 space-y-2">
-          <img
-            src={require("../assets/people.jpg")}
-            className="object-cover w-full rounded h-80"
-            alt=""
-          />
-          <h3 className="text-2xl font-semibold">Our People</h3>
-          <p className="text-black/80">
-            With XX+ senior leaders each having over XX years of experience
-            across our senior leadership, our organization is built on the
-            foundation of our XXX+ strong human capital.
+            We strive for industry leadership, offering quality automotive
+            products and services, meeting changing customer needs. Fostering
+            employee teamwork, integrity, and excellence, we set and improve
+            standards for long-term market success.
           </p>
         </div>
       </div>
@@ -195,7 +201,9 @@ const Home = () => {
           <div className="absolute inset-0 flex flex-col items-center justify-center h-full py-10 mx-auto vertical-line">
             <div className="text-xl font-light text-gray-300">YEAR</div>
             <div className="h-full  bg-secondary bg-opacity-20 w-0.5"></div>
-            <div className="pt-4 font-light text-gray-300">Journey Continue</div>
+            <div className="pt-4 font-light text-gray-300">
+              Journey Continue
+            </div>
           </div>
           <div className="relative h-full p-10 overflow-hidden wrap">
             {/* Right timeline */}
@@ -617,9 +625,7 @@ const Home = () => {
           Our Outlets
         </h2>
         <div className="bg-secondary w-full h-[1px]"></div>
-        <div className="grid grid-cols-2 gap-5 my-10 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-          <div className="w-full col-span-1 bg-gray-100 h-60"></div>
-          <div className="w-full col-span-1 bg-gray-100 h-60"></div>
+        <div className="grid grid-cols-2 gap-5 my-10 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
           <div className="w-full col-span-1 bg-gray-100 h-60"></div>
           <div className="w-full col-span-1 bg-gray-100 h-60"></div>
           <div className="w-full col-span-1 bg-gray-100 h-60"></div>

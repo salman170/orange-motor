@@ -46,14 +46,14 @@ function Slider() {
         <SwiperSlide>
           <img
             src="https://scontent-ord5-1.xx.fbcdn.net/v/t1.6435-9/123683543_216776313206811_4698083266817034754_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c2f564&_nc_ohc=DKQsmxPBizIAX9iQwWs&_nc_ht=scontent-ord5-1.xx&oh=00_AfCKj7ZTeC1oorAKWb0YhAtQ5Jve9j1TfAIhxdinX6QSfA&oe=6601932F"
-            className="h-[760px] overflow-hidden object-cover w-full"
+            className="object-cover w-full h-[88vh] overflow-hidden "
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src="https://www.libertyinsurance.in/images/car-brands/header-tata.jpg"
-            className="h-[760px] overflow-hidden object-cover w-full"
+            className="object-cover w-full h-[88vh] overflow-hidden"
             alt=""
           />
         </SwiperSlide>
