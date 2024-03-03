@@ -89,7 +89,7 @@ export function Header() {
       /> */}
 
       <header className="relative bg-white border-gray-200 shadow-sm">
-        <nav aria-label="Top" className="px-4 mx-20 sm:px-6 lg:px-8">
+        <nav aria-label="Top" className="px-4 md:mx-20 sm:px-6 lg:px-8">
           <div className="flex items-center h-24">
             {/* Logo */}
             <div className="flex ml-4 lg:ml-0">

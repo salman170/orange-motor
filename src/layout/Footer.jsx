@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       {" "}
       <div className="py-20 text-white bg-secondary">
-        <div className="container grid grid-cols-5 px-5 mx-auto">
+        <div className="container grid px-5 mx-auto md:grid-cols-5">
           <div className="col-span-4">
             <p className="mb-5 text-5xl font-semibold">
               Quality means doing it right <br />
@@ -22,7 +22,7 @@ const Footer = () => {
               <br /> types of information from you.
             </p>
             <div className="my-10">
-              <Link to="/contact" className="bg-black  px-7 py-2.5">
+              <Link to="/" className="bg-black  px-7 py-2.5">
                 Contact For Queries
               </Link>
             </div>
@@ -51,8 +51,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="px-5 mx-auto max-w-7xl">
-          <div className="flex flex-wrap items-center justify-between mt-24">
+        <div className="container w-full px-5 mx-auto">
+          <div className="flex flex-col items-center justify-between mt-24 md:flex-row">
             <Link to="/">
               <img
                 src={require("../assets/white_logo.png")}
@@ -61,13 +61,19 @@ const Footer = () => {
               />
             </Link>
 
-            <div className="space-x-10">
+            <div className="flex flex-col items-center w-full mt-4 md:space-x-10 md:flex-row md:justify-end">
               <Link to="/">Dealership</Link>
               <Link to="/">Support</Link>
               <Link to="/">Experience </Link>
               <Link to="/">Shopping Tools</Link>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bg-black">
+        <div className="container flex flex-col justify-between gap-2 px-1 py-3 mx-auto text-xs text-white md:flex-row">
+          <div>© Copyright ORANGE AUTO PVT LTD. All Rights Reserved</div>
+          {/* <div>Designed & Developed by BroaddCast Business Solutions LLP</div> */}
         </div>
       </div>
     </div>

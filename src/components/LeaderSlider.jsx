@@ -74,7 +74,7 @@ const LeaderSlider = () => {
           </div>
         </div>
         <SwiperSlide>
-        <div className="grid p-10 bg-gray-100 md:grid-cols-3 group ">
+          <div className="grid p-5 bg-gray-100 md:p-10 md:grid-cols-3 group">
             <div className="relative flex-col justify-end hidden md:flex">
               <img
                 src={require("../assets/homepage/Ramakoteswara.png")}
@@ -105,7 +105,16 @@ const LeaderSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="grid p-10 bg-gray-100 md:grid-cols-3 group ">
+          <div className="grid p-5 bg-gray-100 md:p-10 md:grid-cols-3 group">
+            <div className="relative flex-col justify-end hidden md:flex">
+              <img
+                src={require("../assets/homepage/Ramakoteswara.png")}
+                alt="MR. Y. RAMAKOTESWARA RAO"
+                srcSet=""
+                className="absolute bottom-0 left-0 object-cover w-full h-full p-6 rounded-3xl "
+              />
+              <div className="w-full h-[200px] bg-secondary"></div>
+            </div>{" "}
             <div className="col-span-2 p-4 my-auto space-y-3 text-left lg:px-6 lg:py-24">
               <div className="mb-3 text-2xl font-semibold uppercase lg:text-3xl">
                 MRS. Y. RAMA - DIRECTOR
@@ -124,20 +133,11 @@ const LeaderSlider = () => {
                 company's growth and success.
               </div>
             </div>
-            <div className="relative flex-col justify-end hidden md:flex">
-              <img
-                src={require("../assets/homepage/Ramakoteswara.png")}
-                alt="MR. Y. RAMAKOTESWARA RAO"
-                srcSet=""
-                className="absolute bottom-0 left-0 object-cover w-full h-full p-6 rounded-3xl "
-              />
-              <div className="w-full h-[200px] bg-secondary"></div>
-            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="grid p-10 bg-gray-100 md:grid-cols-3 group ">
-          <div className="relative flex-col justify-end hidden md:flex">
+          <div className="grid p-5 bg-gray-100 md:p-10 md:grid-cols-3 group">
+            <div className="relative flex-col justify-end hidden md:flex">
               <img
                 src={require("../assets/homepage/Ramakoteswara.png")}
                 alt="MR. Y. RAMAKOTESWARA RAO"
@@ -149,12 +149,12 @@ const LeaderSlider = () => {
 
             <div className="col-span-2 p-4 my-auto space-y-3 text-left lg:px-6 lg:py-24">
               <div className="mb-3 text-2xl font-semibold uppercase lg:text-3xl">
-              MR. RAHUL YALAMANCHILI
+                MR. RAHUL YALAMANCHILI
               </div>
               <div className="h-0.5 bg-secondary mt-6 mb-2 w-[50%] duration-300"></div>
               <div className="text-xl ">
-              MBA (MFAB)  <br />
-              ISB (Indian School of Business Director)
+                MBA (MFAB) <br />
+                ISB (Indian School of Business Director)
               </div>
               <div className="">
                 Mr. Y. Rama Koteswara Rao, an accomplished leader in the
