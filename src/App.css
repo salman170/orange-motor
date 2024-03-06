@@ -23,7 +23,7 @@
   width: 14px !important;
 }
 
-
+/* 
 *::-webkit-scrollbar {
   background-color: transparent ;
   width: 10px;
@@ -41,4 +41,4 @@
   border: 1px solid transparent;
   background-color: rgba(241, 125, 40);
   background-clip: content-box;
-}
+} */

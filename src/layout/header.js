@@ -2,11 +2,11 @@ import { Fragment, useEffect, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
+import ModalSidePanel from "./ModalSidePanel";
 
 const navigation = {
   pages: [
     { name: "Locations", href: "/" },
-    { name: "About Us", href: "/" },
     { name: "Contact Us", href: "/" },
   ],
   brands: [
@@ -25,43 +25,43 @@ const navigation = {
   ],
 };
 
-const cars = [
-  {
-    name: "Tiago",
-    img: require("../assets/tiago.png"),
-    link: "/tiago",
-  },
-  {
-    name: "Altroz",
-    img: require("../assets/altroz.png"),
-    link: "/altroz",
-  },
-  {
-    name: "Tigor",
-    img: require("../assets/tigor.png"),
-    link: "/tigor",
-  },
-  {
-    name: "Punch",
-    img: require("../assets/punch.png"),
-    link: "/punch",
-  },
-  {
-    name: "Nexon",
-    img: require("../assets/nexon.png"),
-    link: "/nexon",
-  },
-  {
-    name: "Harrier",
-    img: require("../assets/harrier.png"),
-    link: "/harrier",
-  },
-  {
-    name: "Safari",
-    img: require("../assets/safari.png"),
-    link: "/safari",
-  },
-];
+// const cars = [
+//   {
+//     name: "Tiago",
+//     img: require("../assets/tiago.png"),
+//     link: "/tiago",
+//   },
+//   {
+//     name: "Altroz",
+//     img: require("../assets/altroz.png"),
+//     link: "/altroz",
+//   },
+//   {
+//     name: "Tigor",
+//     img: require("../assets/tigor.png"),
+//     link: "/tigor",
+//   },
+//   {
+//     name: "Punch",
+//     img: require("../assets/punch.png"),
+//     link: "/punch",
+//   },
+//   {
+//     name: "Nexon",
+//     img: require("../assets/nexon.png"),
+//     link: "/nexon",
+//   },
+//   {
+//     name: "Harrier",
+//     img: require("../assets/harrier.png"),
+//     link: "/harrier",
+//   },
+//   {
+//     name: "Safari",
+//     img: require("../assets/safari.png"),
+//     link: "/safari",
+//   },
+// ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -77,6 +77,7 @@ export function Header() {
   }, [location.pathname]);
 
   return (
+    <>
     <div className="sticky top-0 z-40 w-full bg-white shadow-lg">
       {/* Mobile menu */}
       {/* <MobileHeader
@@ -106,14 +107,20 @@ export function Header() {
             {/* Flyout menus */}
             <Popover.Group className="hidden lg:ml-auto lg:block lg:self-stretch">
               <div className="flex h-full space-x-8">
-                {/* <Link
+                <Link
                   to="/"
                   className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                 >
                   Home
-                </Link> */}
+                </Link>
+                <Link
+                  to="/"
+                  className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                >
+                  About Us
+                </Link>
 
-                <Popover className="flex">
+                {/* <Popover className="flex">
                   {({ open }) => (
                     <>
                       <div className="relative flex">
@@ -171,7 +178,7 @@ export function Header() {
                       </Transition>
                     </>
                   )}
-                </Popover>
+                </Popover> */}
 
                 <Popover className="flex">
                   {({ open }) => (
@@ -247,6 +254,8 @@ export function Header() {
           </div>
         </nav>
       </header>
+      <ModalSidePanel open={open} setOpen={setOpen} />
     </div>
+    </>
   );
 }

@@ -11,7 +11,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { BsShieldCheck } from "react-icons/bs";
 import LeaderSlider from "../components/LeaderSlider";
-import { TbDevicesCheck } from "react-icons/tb";
 
 const Home = () => {
   useEffect(() => {
@@ -25,10 +24,10 @@ const Home = () => {
       <Slider />
 
       <div className="grid gap-8 px-5 mx-auto my-10 md:grid-cols-3 max-w-7xl">
-        <div className="col-span-1 space-y-2">
+        <div className="col-span-1 space-y-2 ">
           <img
             src={require("../assets/homepage/coreValues.jpg")}
-            className="object-cover w-full rounded h-80"
+            className="object-cover w-full rounded select-none h-80"
             alt=""
           />
           <h3 className="pt-4 text-2xl font-semibold">Our Vaues</h3>
@@ -105,7 +104,6 @@ const Home = () => {
 
       <div className="px-5 mx-auto max-w-7xl">
         <h2 className="my-10 text-4xl font-semibold text-center">Our Brands</h2>
-
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
           <div
             data-aos="zoom-in"
@@ -196,7 +194,7 @@ const Home = () => {
           </h2>
           <div className="bg-secondary w-full h-[1px]"></div>
         </div>
-        <div className="container relative w-full h-full mx-auto">
+        <div className="container relative hidden w-full h-full mx-auto md:block">
           {/* Vertical line */}
           <div className="absolute inset-0 flex flex-col items-center justify-center h-full py-10 mx-auto vertical-line">
             <div className="text-xl font-light text-gray-300">YEAR</div>
@@ -424,6 +422,204 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="container relative w-full h-full mx-auto md:hidden">
+          {/* Vertical line */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center h-full py-10 mx-auto vertical-line">
+            <div className="text-xl font-light text-gray-300">YEAR</div>
+            <div className="h-full  bg-secondary bg-opacity-20 w-0.5"></div>
+            <div className="pt-4 font-light text-gray-300">
+              Journey Continue
+            </div>
+          </div>
+          <div className="relative h-full px-2 py-10 overflow-hidden md:p-10 wrap">
+            {/* Right timeline */}
+            <div
+              data-aos="fade-left"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              className="flex items-center w-full gap-4 mb-8 md:justify-between right-timeline md:gap-0"
+            >
+              <div className="order-1 w-0 md:w-5/12"></div>
+              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-secondary">
+                <h1 className="mx-auto text-2xl font-semibold lg:text-4xl ">
+                  2004
+                </h1>
+              </div>
+              <div className="order-1 px-6 py-8 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-secondary">
+                <img
+                  src={require("../assets/white_logo.png")}
+                  alt=""
+                  srcset=""
+                  className="mx-auto mb-4 md:h-12"
+                />
+                <h3 className="font-semibold uppercase md:text-xl">
+                  Journey Started
+                </h3>
+              </div>
+            </div>
+
+            {/* Left timeline */}
+            <div
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="flex flex-row-reverse items-center justify-between w-full gap-4 mb-8 left-timeline md:gap-0"
+            >
+              <div className="order-1 w-0 md:w-5/12"></div>
+              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#ffd15b]">
+                <h1 className="mx-auto text-2xl font-semibold lg:text-4xl ">
+                  2005
+                </h1>
+              </div>
+              <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-gradient-to-bl from-[#ffd15b] to-[#d4a94c8c]">
+                <img
+                  src={require("../assets/homepage/chevrolet logo.png")}
+                  alt=""
+                  srcset=""
+                  className="h-16 mx-auto mb-4 md:h-24"
+                />
+                <h3 className="font-semibold uppercase md:text-xl">
+                  Cheverolet Dealership
+                </h3>
+              
+              </div>
+            </div>
+
+            {/* Right timeline */}
+            <div
+              data-aos="fade-left"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              className="flex items-center w-full gap-4 mb-8 md:justify-between right-timeline md:gap-0"
+            >
+              <div className="order-1 w-0 md:w-5/12"></div>
+              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#f8a03b] ">
+                <h1 className="mx-auto text-2xl font-semibold lg:text-4xl ">
+                  2009
+                </h1>
+              </div>
+              <div className="order-1 px-6 py-4 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-[#f8a03b] ">
+                <img
+                  src={require("../assets/homepage/Honda Logo.png")}
+                  alt=""
+                  srcset=""
+                  className="mx-auto mb-4 md:h-12"
+                />
+                <h3 className="font-semibold uppercase md:text-xl">
+                  Honda Dealership
+                </h3>
+              </div>
+            </div>
+
+            {/* Left timeline */}
+
+            <div
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="flex flex-row-reverse items-center justify-between w-full gap-4 mb-8 left-timeline md:gap-0"
+            >
+              <div className="order-1 w-0 md:w-5/12"></div>
+              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#8fb9e778]">
+                <h1 className="mx-auto text-2xl font-semibold lg:text-4xl ">
+                  2017
+                </h1>
+              </div>
+              <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#8fb9e778]">
+                <img
+                  src={require("../assets/homepage/Tata Logo.png")}
+                  alt=""
+                  srcset=""
+                  className="h-24 mx-auto md:h-24"
+                />
+                <h3 className="pb-4 -mt-4 font-semibold uppercase md:text-xl">
+                  Tata Motors Dealership
+                </h3>
+                
+              </div>
+            </div>
+
+            {/* Right timeline */}
+            <div
+              data-aos="fade-left"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              className="flex items-center w-full gap-4 mb-8 md:justify-between right-timeline md:gap-0"
+            >
+              <div className="order-1 w-0 md:w-5/12"></div>
+              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#f27146]">
+                <h1 className="mx-auto text-2xl font-semibold lg:text-4xl ">
+                  2017
+                </h1>
+              </div>
+              <div className="order-1 px-6 py-4 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-[#f27146]">
+                <img
+                  src={require("../assets/homepage/Kawasaki Logo.png")}
+                  alt=""
+                  srcset=""
+                  className="h-24 mx-auto"
+                />
+                <h3 className="mb-3 font-semibold uppercase md:text-xl ">
+                  Kawasaki Dealership
+                </h3>
+              </div>
+            </div>
+
+            {/* Left timeline */}
+         
+            <div
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="flex flex-row-reverse items-center justify-between w-full gap-4 mb-8 left-timeline md:gap-0"
+            >
+              <div className="order-1 w-0 md:w-5/12"></div>
+              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#555454]">
+                <h1 className="mx-auto text-2xl font-semibold lg:text-4xl ">
+                  2017
+                </h1>
+              </div>
+              <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#d0cccd] w-full">
+                <img
+                  src={require("../assets/homepage/jeep Logo.png")}
+                  alt=""
+                  srcset=""
+                  className="h-20 mx-auto mb-4 md:h-24"
+                />
+                <h3 className="font-semibold uppercase md:text-xl">
+                 Jeep Dealership
+                </h3>
+              
+              </div>
+            </div>
+
+            {/* Right timeline */}
+            <div
+              data-aos="fade-left"
+              data-aos-delay="0"
+              data-aos-duration="1000"
+              className="flex items-center w-full gap-4 mb-8 md:justify-between right-timeline md:gap-0"
+            >
+              <div className="order-1 w-0 md:w-5/12"></div>
+              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#a781d1]">
+                <h1 className="mx-auto text-2xl font-semibold lg:text-4xl ">
+                  2017
+                </h1>
+              </div>
+              <div className="order-1 px-6 py-4 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-[#a781d1]">
+                <img
+                  src={require("../assets/homepage/Harley Logo.png")}
+                  alt=""
+                  srcset=""
+                  className="h-24 mx-auto"
+                />
+                <h3 className="mb-3 font-semibold uppercase md:text-xl ">
+                  Harley Davidson Dealership
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Our Services */}
@@ -440,7 +636,7 @@ const Home = () => {
               </div>
               <div className="col-span-2 ">
                 <h4 className="pb-2 text-2xl font-semibold">Sale</h4>
-                <p>
+                <p className="text-sm sm:text-base">
                   Orange Auto Group stands out in automotive sales, offering
                   unparalleled customer service and a diverse range of quality
                   vehicles.
@@ -455,7 +651,7 @@ const Home = () => {
               </div>
               <div className="col-span-2 ">
                 <h4 className="pb-2 text-2xl font-semibold">Service</h4>
-                <p>
+                <p className="text-sm sm:text-base">
                   Orange Auto Group excels in car service, providing top-notch
                   maintenance and repair with a commitment to customer
                   satisfaction.
@@ -475,7 +671,7 @@ const Home = () => {
               </div>
               <div className="col-span-2 ">
                 <h4 className="pb-2 text-2xl font-semibold">Used Car</h4>
-                <p>
+                <p className="text-sm sm:text-base">
                   Orange Auto Group specializes in certified pre-owned cars,
                   ensuring quality, reliability, and peace of mind for every
                   customer.
@@ -490,7 +686,7 @@ const Home = () => {
               </div>
               <div className="col-span-2 ">
                 <h4 className="pb-2 text-2xl font-semibold">Insurance</h4>
-                <p>
+                <p className="text-sm sm:text-base">
                   Orange Auto Group simplifies car insurance renewals, offering
                   hassle-free, trustworthy options to keep you securely on the
                   road.
@@ -510,7 +706,7 @@ const Home = () => {
               </div>
               <div className="col-span-2 ">
                 <h4 className="pb-2 text-2xl font-semibold">Accessories</h4>
-                <p>
+                <p className="text-sm sm:text-base">
                   Orange Auto Group offers a wide range of genuine car
                   accessories, enhancing your vehicle's functionality and style.
                 </p>
