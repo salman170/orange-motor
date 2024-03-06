@@ -432,7 +432,7 @@ const Home = () => {
             </div>
           </div>
           <div className="relative h-full px-2 py-10 overflow-hidden md:p-10 wrap">
-            {/* Right timeline */}
+            {/* Right timeline Journey Started */}
             <div
               data-aos="fade-left"
               data-aos-delay="0"
@@ -445,12 +445,12 @@ const Home = () => {
                   2004
                 </h1>
               </div>
-              <div className="order-1 px-6 py-8 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-secondary">
+              <div className="order-1 w-full px-6 py-8 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-secondary">
                 <img
                   src={require("../assets/white_logo.png")}
                   alt=""
                   srcset=""
-                  className="mx-auto mb-4 md:h-12"
+                  className="h-12 mx-auto mb-4"
                 />
                 <h3 className="font-semibold uppercase md:text-xl">
                   Journey Started
@@ -458,7 +458,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Left timeline */}
+            {/* Left timeline Cheverolet Dealership */}
             <div
               data-aos="fade-right"
               data-aos-delay="50"
@@ -471,7 +471,7 @@ const Home = () => {
                   2005
                 </h1>
               </div>
-              <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-gradient-to-bl from-[#ffd15b] to-[#d4a94c8c]">
+              <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-gradient-to-bl from-[#ffd15b] to-[#d4a94c8c] w-full">
                 <img
                   src={require("../assets/homepage/chevrolet logo.png")}
                   alt=""
@@ -485,7 +485,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Right timeline */}
+            {/* Right timeline  Honda Dealership */}
             <div
               data-aos="fade-left"
               data-aos-delay="0"
@@ -498,12 +498,12 @@ const Home = () => {
                   2009
                 </h1>
               </div>
-              <div className="order-1 px-6 py-4 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-[#f8a03b] ">
+              <div className="order-1 px-6 py-4 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-[#f8a03b] w-full ">
                 <img
                   src={require("../assets/homepage/Honda Logo.png")}
                   alt=""
                   srcset=""
-                  className="mx-auto mb-4 md:h-12"
+                  className="h-24 mx-auto mb-4 md:h-12"
                 />
                 <h3 className="font-semibold uppercase md:text-xl">
                   Honda Dealership
@@ -511,7 +511,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* Left timeline */}
+            {/* Left timeline  Tata Motors Dealership*/}
 
             <div
               data-aos="fade-right"
@@ -525,7 +525,7 @@ const Home = () => {
                   2017
                 </h1>
               </div>
-              <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#8fb9e778]">
+              <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#8fb9e778] w-full">
                 <img
                   src={require("../assets/homepage/Tata Logo.png")}
                   alt=""
@@ -552,12 +552,12 @@ const Home = () => {
                   2017
                 </h1>
               </div>
-              <div className="order-1 px-6 py-4 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-[#f27146]">
+              <div className="order-1 px-6 py-4 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-[#f27146] w-full">
                 <img
                   src={require("../assets/homepage/Kawasaki Logo.png")}
                   alt=""
                   srcset=""
-                  className="h-24 mx-auto"
+                  className="h-16 mx-auto md:h-24 "
                 />
                 <h3 className="mb-3 font-semibold uppercase md:text-xl ">
                   Kawasaki Dealership
@@ -606,12 +606,12 @@ const Home = () => {
                   2017
                 </h1>
               </div>
-              <div className="order-1 px-6 py-4 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-[#a781d1]">
+              <div className="order-1 px-6 py-4 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-[#a781d1] w-full">
                 <img
                   src={require("../assets/homepage/Harley Logo.png")}
                   alt=""
                   srcset=""
-                  className="h-24 mx-auto"
+                  className="h-16 mx-auto md:h-24"
                 />
                 <h3 className="mb-3 font-semibold uppercase md:text-xl ">
                   Harley Davidson Dealership
