@@ -5,45 +5,47 @@ import { Link } from "react-router-dom";
 
 const Card = ({ id, title, engine, fuel, transmission, price, banner }) => {
   return (
-    <div className="rounded-lg overflow-hidden border group border-gray-200/70 ">
-      <div className="bg-slate-100/80 overflow-hidden">
-        <img
-          src={banner}
-          className="w-full object-cover duration-150 group-hover:scale-110 h-[180px]"
-          loading="lazy"
-          alt=""
-        />
+    <div className="overflow-hidden border rounded-lg group border-gray-200/70 ">
+      <div className="overflow-hidden bg-slate-100/80">
+        <Link to={`/vehicles/${id}`}>
+          <img
+            src={banner}
+            className="object-cover w-full duration-150 group-hover:scale-110 "
+            loading="lazy"
+            alt=""
+          />{" "}
+        </Link>
       </div>
       <div className="mx-7">
         {/* title */}
         <div className="py-3 space-y-1">
-          <h5 className="font-medium text-black/80 text-xl">{title}</h5>
+          <h5 className="text-xl font-medium text-black/80">{title}</h5>
         </div>
-        <div className="h-px w-full bg-gray-200/80"></div>
+        <div className="w-full h-px bg-gray-200/80"></div>
 
         {/* tiles */}
-        <div className="flex items-center justify-between py-3 text-gray-800/80 text-sm capitalize">
-          <div className="flex items-center justify-center flex-col">
-            <PiEngineLight className="h-6 w-6" />
+        <div className="flex items-center justify-between py-3 text-sm capitalize text-gray-800/80">
+          <div className="flex flex-col items-center justify-center">
+            <PiEngineLight className="w-6 h-6" />
             <p>{engine}</p>
           </div>
-          <div className="flex items-center justify-center flex-col">
-            <PiGasPumpLight className="h-6 w-6" />
+          <div className="flex flex-col items-center justify-center">
+            <PiGasPumpLight className="w-6 h-6" />
             <p>{fuel}</p>
           </div>
-          <div className="flex items-center justify-center flex-col">
-            <img src={TransmissionSvg} className="h-5 w-4 mb-1" alt="" />
+          <div className="flex flex-col items-center justify-center">
+            <img src={TransmissionSvg} className="w-4 h-5 mb-1" alt="" />
             <p>{transmission}</p>
           </div>
         </div>
 
-        <div className="h-px w-full bg-gray-200/80"></div>
+        <div className="w-full h-px bg-gray-200/80"></div>
         <div className="flex items-center justify-between py-3">
           {/* price */}
           <h4 className="font-semibold">{CurrencyFormatter.format(price)}</h4>
 
           <div>
-            <Link to={`/vehicles/${id}`} className="text-blue-500/90 text-sm">
+            <Link to={`/vehicles/${id}`} className="text-sm text-blue-500/90">
               View Details
             </Link>
           </div>

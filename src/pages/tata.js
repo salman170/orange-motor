@@ -10,14 +10,14 @@ const Tata = () => {
       <Header />
       <img
         src={require("../assets/tata_banner.jpg")}
-        className="max-w-full object-cover"
+        className="object-cover max-w-full"
         alt=""
       />
       <Breadcrumb />
-      <div className="grid grid-cols-3 gap-10 max-w-7xl mx-auto my-10">
+      <div className="grid grid-cols-3 gap-10 mx-auto my-10 max-w-7xl">
         <div className="col-span-2">
-          <p className="font-semibold text-2xl">Tata Motors</p>
-          <p className=" text-black/80 mt-5">
+          <p className="text-2xl font-semibold">Tata Motors</p>
+          <p className="mt-5 text-black/80">
             As one of India’s foremost home-grown automotive brands, we are
             delighted to have reached this significant milestone for our
             passenger vehicles segment. We are honoured to have the legendary
@@ -31,7 +31,7 @@ const Tata = () => {
             design, safety and performance.
           </p>
 
-          <p className="font-semibold text-2xl mt-10 mb-2">Orange Auto Group</p>
+          <p className="mt-10 mb-2 text-2xl font-semibold">Orange Auto Group</p>
           <p className="text-black/80">
             Welcome to Orange Group, where passion for automobiles meets
             unparalleled service and customer satisfaction. Established in 2004,
@@ -51,7 +51,7 @@ const Tata = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-5 max-w-7xl mx-auto">
+      <div className="grid gap-5 mx-auto lg:grid-cols-3 max-w-7xl md:grid-cols-2 xl:grid-cols-4">
         {models.map((item) => (
           <Card
             key={item.id}
