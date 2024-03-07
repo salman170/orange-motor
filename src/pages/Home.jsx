@@ -12,13 +12,12 @@ import LeaderSlider from "../components/LeaderSlider";
 
 const Home = () => {
   useEffect(() => {
-    AOS.init();
-    // AOS.init({ once: true });
+    // AOS.init();
+    AOS.init({ once: true });
   }, []);
 
   return (
     <div className="">
-    
       <Slider />
 
       <div className="grid gap-8 px-5 mx-auto my-10 md:grid-cols-3 max-w-7xl">
@@ -479,7 +478,6 @@ const Home = () => {
                 <h3 className="font-semibold uppercase md:text-xl">
                   Cheverolet Dealership
                 </h3>
-              
               </div>
             </div>
 
@@ -533,7 +531,6 @@ const Home = () => {
                 <h3 className="pb-4 -mt-4 font-semibold uppercase md:text-xl">
                   Tata Motors Dealership
                 </h3>
-                
               </div>
             </div>
 
@@ -564,7 +561,7 @@ const Home = () => {
             </div>
 
             {/* Left timeline */}
-         
+
             <div
               data-aos="fade-right"
               data-aos-delay="50"
@@ -585,9 +582,8 @@ const Home = () => {
                   className="h-20 mx-auto mb-4 md:h-24"
                 />
                 <h3 className="font-semibold uppercase md:text-xl">
-                 Jeep Dealership
+                  Jeep Dealership
                 </h3>
-              
               </div>
             </div>
 
@@ -819,19 +815,74 @@ const Home = () => {
           Our Outlets
         </h2>
         <div className="bg-secondary w-full h-[1px]"></div>
-        <div className="grid grid-cols-2 gap-5 my-10 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
-          <div className="w-full col-span-1 bg-gray-100 h-60"></div>
-          <div className="w-full col-span-1 bg-gray-100 h-60"></div>
-          <div className="w-full col-span-1 bg-gray-100 h-60"></div>
-          <div className="w-full col-span-1 bg-gray-100 h-60"></div>
-          <div className="w-full col-span-1 bg-gray-100 h-60"></div>
-          <div className="w-full col-span-1 bg-gray-100 h-60"></div>
-          <div className="w-full col-span-1 bg-gray-100 h-60"></div>
-          <div className="w-full col-span-1 bg-gray-100 h-60"></div>
+        <div className="grid gap-5 my-10 md:grid-cols-2 lg:grid-cols-3 ">
+          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-72">
+            {" "}
+            <iframe
+              width="100%"
+              height="100%"
+              className="absolute inset-0 border-2 "
+              title="map"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0923591597375!2d78.43287946110777!3d17.455293000775555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90e3e3ef1e1b%3A0x1654f5dc889de472!2sShankaramma%20Towers%2C%20Sanjeeva%20Reddy%20Nagar%20Rd%2C%20D.%20Shankar%20Lal%20nagar%2C%20Vikaspuri%2C%20Erragadda%2C%20Hyderabad%2C%20Telangana%20500018!5e0!3m2!1sen!2sin!4v1709816055141!5m2!1sen!2sin"
+              // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
+            ></iframe>
+          </div>
+          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-72">
+            {" "}
+            <iframe
+              width="100%"
+              height="100%"
+              className="absolute inset-0 border-2 "
+              title="map"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6609846165647!2d78.42658057494407!3d17.38003870301724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97b6285a7045%3A0x14ae9f27d3d2102!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%20Auto%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1709827097615!5m2!1sen!2sin"
+              // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
+            ></iframe>
+          </div>
+          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-72">
+            {" "}
+            <iframe
+              width="100%"
+              height="100%"
+              className="absolute inset-0 border-2 "
+              title="map"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.025075126752!2d78.49571888885498!3d17.458513900000025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9175d94044f5%3A0x41f76244cf2c6a!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%20Auto%2C%20Kharkana!5e0!3m2!1sen!2sin!4v1709827244896!5m2!1sen!2sin"
+              // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
+            ></iframe>
+          </div>
+          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-72">
+            {" "}
+            <iframe
+              width="100%"
+              height="100%"
+              className="absolute inset-0 border-2 "
+              title="map"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.0864729662253!2d78.48153188885499!3d17.646063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb87cdfb49c615%3A0xc60aa4cad87aa6cd!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%20Auto!5e0!3m2!1sen!2sin!4v1709827306418!5m2!1sen!2sin"
+              // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
+            ></iframe>
+          </div>
+          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-72">
+            {" "}
+            <iframe
+              width="100%"
+              height="100%"
+              className="absolute inset-0 border-2 "
+              title="map"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3793.8923666342307!2d78.26202007495714!3d18.030198083969765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc15cb5a7cf099%3A0x50a675f2f49fb200!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%2C%20Medak!5e0!3m2!1sen!2sin!4v1709827511499!5m2!1sen!2sin"
+              // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
+            ></iframe>
+          </div>
         </div>
       </div>
-
-     
     </div>
   );
 };
