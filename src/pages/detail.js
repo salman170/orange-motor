@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import Slider from "../components/Slider";
+
 import { models } from "../json";
 import CurrencyFormatter from "../components/currency-formatter";
 import BookForm from "../components/book-form";
+import CarSlider2 from "../components/CarSlider2";
 
 const Detail = () => {
   const { id } = useParams();
@@ -25,7 +26,7 @@ const Detail = () => {
   return (
     <div className="bg-gray-50">
      
-      <div className="max-w-screen-xl px-5 mx-auto my-10">
+      <div className="max-w-screen-xl px-5 py-10 mx-auto">
         <p className="my-8 font-medium text-gray-600/90">
           <Link to={"/"}>Home</Link> /&nbsp;
           <span className="capitalize ">{car?.category}</span>&nbsp;/&nbsp;
@@ -33,14 +34,15 @@ const Detail = () => {
         </p>
 
         <div className="mb-5 space-y-1">
-          <h2 className="font-semibold xl:text-4xl ">{car?.name}</h2>
+          <h2 className="text-2xl font-semibold xl:text-4xl ">{car?.name}</h2>
           <p>{car?.tag}</p>
         </div>
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
           <div className="col-span-2 space-y-10 lg:col-span-2">
             {/* Slider */}
-            <div className="rounded-lg overflow-hidden h-[200px] md:h-[500px]">
-              <Slider sliders={car?.banners} />
+            <div className="overflow-hidden rounded-lg ">
+              <CarSlider2 sliders={car?.banners} />
+              
             </div>
 
             <div className="space-y-4">

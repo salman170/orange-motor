@@ -128,12 +128,14 @@ const Home = () => {
             data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
             className="p-2 rounded bg-slate-100"
           >
+            <Link to="/tata">
             <img
-              src={require("../assets/homepage/Kawasaki Logo.png")}
+              src={require("../assets/homepage/jeep Logo.png")}
               className="w-full h-28"
               alt=""
             />
-            <p className="font-semibold text-center text-black/80">Kawasaki</p>
+            <p className="font-semibold text-center text-black/80">Jeep</p>
+            </Link>
           </div>
           <div
             data-aos="zoom-in"
@@ -156,12 +158,14 @@ const Home = () => {
             data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
             className="p-2 rounded bg-slate-100"
           >
-            <img
-              src={require("../assets/homepage/jeep Logo.png")}
-              className="w-full h-28"
-              alt=""
-            />
-            <p className="font-semibold text-center text-black/80">Jeep</p>
+              <img
+                src={require("../assets/homepage/Kawasaki Logo.png")}
+                className="w-full h-28"
+                alt=""
+              />
+              <p className="font-semibold text-center text-black/80">
+                Kawasaki
+              </p>{" "}
           </div>
           <div
             data-aos="zoom-in"
@@ -816,7 +820,7 @@ const Home = () => {
         </h2>
         <div className="bg-secondary w-full h-[1px]"></div>
         <div className="grid gap-5 my-10 md:grid-cols-2 lg:grid-cols-3 ">
-          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-72">
+          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
             {" "}
             <iframe
               width="100%"
@@ -829,7 +833,7 @@ const Home = () => {
               // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
             ></iframe>
           </div>
-          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-72">
+          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
             {" "}
             <iframe
               width="100%"
@@ -842,7 +846,7 @@ const Home = () => {
               // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
             ></iframe>
           </div>
-          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-72">
+          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
             {" "}
             <iframe
               width="100%"
@@ -855,7 +859,7 @@ const Home = () => {
               // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
             ></iframe>
           </div>
-          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-72">
+          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
             {" "}
             <iframe
               width="100%"
@@ -868,7 +872,7 @@ const Home = () => {
               // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
             ></iframe>
           </div>
-          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-72">
+          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
             {" "}
             <iframe
               width="100%"

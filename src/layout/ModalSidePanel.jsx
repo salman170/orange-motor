@@ -31,7 +31,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
   const tabs = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about-us" },
-    { name: "Brands ", path: "/treatments" },
+    { name: "Brands ", path: "/tata" },
     { name: "Locations", path: "/locations" },
     { name: "Contact Us", path: "/contact-us" },
   ];
