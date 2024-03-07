@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Breadcrumb = () => {
+const Breadcrumb = ({ pageName }) => {
   return (
-    <div className="bg-gray-100 py-10">
-      <div className="max-w-7xl mx-auto">
+    <div className="py-10 bg-gray-100">
+      <div className="mx-auto max-w-7xl">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-5">
             <p className="font-semibold">Orange Motors </p>
@@ -12,9 +13,9 @@ const Breadcrumb = () => {
           </div>
 
           <div className="flex items-center space-x-5">
-            <p>Home </p>
+            <Link to="/">Home </Link>
             <div className="h-[15px] w-[2px] bg-black"></div>
-            <p>Tata Motors</p>
+            <p>{pageName}</p>
           </div>
         </div>
       </div>

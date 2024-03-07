@@ -6,8 +6,8 @@ import ModalSidePanel from "./ModalSidePanel";
 
 const navigation = {
   pages: [
-    { name: "Locations", href: "/" },
-    { name: "Contact Us", href: "/" },
+    { name: "Locations", href: "/locations" },
+    { name: "Contact Us", href: "/contact-us" },
   ],
   brands: [
     {
@@ -15,11 +15,19 @@ const navigation = {
       href: "/tata",
     },
     {
+      name: "Jeep",
+      href: "/",
+    },
+    {
       name: "Honda",
       href: "/",
     },
     {
       name: "Kawasaki",
+      href: "/",
+    },
+    {
+      name: "Harely Davidson",
       href: "/",
     },
   ],
@@ -97,7 +105,7 @@ export function Header() {
               <Link to="/">
                 <img
                   className="w-auto h-10"
-                  src={require("../assets/logo.png")}
+                  src={require("../assets/others/logo.png")}
                   loading="lazy"
                   alt=""
                 />
@@ -114,7 +122,7 @@ export function Header() {
                   Home
                 </Link>
                 <Link
-                  to="/"
+                  to="/about-us"
                   className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                 >
                   About Us
@@ -205,7 +213,7 @@ export function Header() {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                       >
-                        <Popover.Panel className="absolute top-full -ml-6 text-sm shadow rounded overflow-hidden w-full max-w-[130px]">
+                        <Popover.Panel className="absolute top-full -ml-6 text-sm shadow rounded overflow-hidden w-full max-w-[145px]">
                           <div
                             className="absolute inset-0 bg-white top-1/2"
                             aria-hidden="true"
@@ -245,7 +253,7 @@ export function Header() {
                 >
                   <span className="sr-only">Open menu</span>
                   <HiOutlineBars3BottomRight
-                    className="w-6 h-6"
+                    className="w-10 h-10 text-secondary"
                     aria-hidden="true"
                   />
                 </button>

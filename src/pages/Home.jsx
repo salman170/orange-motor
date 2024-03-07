@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import Slider from "../components/Slider";
-import { Header } from "../layout/header";
 import CountUp from "react-countup";
-import Footer from "../layout/Footer";
 import { PiCarDuotone } from "react-icons/pi";
 import { GiMechanicGarage } from "react-icons/gi";
 
@@ -20,7 +18,7 @@ const Home = () => {
 
   return (
     <div className="">
-      <Header />
+    
       <Slider />
 
       <div className="grid gap-8 px-5 mx-auto my-10 md:grid-cols-3 max-w-7xl">
@@ -54,7 +52,7 @@ const Home = () => {
         </div>
         <div className="col-span-1 space-y-2">
           <img
-            src={require("../assets/network.jpg")}
+            src={require("../assets/others/network.jpg")}
             className="object-cover w-full rounded h-80"
             alt=""
           />
@@ -217,7 +215,7 @@ const Home = () => {
               </div>
               <div className="order-1 w-5/12 px-6 py-10 text-center text-white rounded-lg shadow-xl bg-secondary">
                 <img
-                  src={require("../assets/white_logo.png")}
+                  src={require("../assets/others/white_logo.png")}
                   alt=""
                   srcset=""
                   className="h-12 mx-auto mb-4"
@@ -447,7 +445,7 @@ const Home = () => {
               </div>
               <div className="order-1 w-full px-6 py-8 text-center text-white rounded-lg shadow-xl md:py-10 md:w-5/12 bg-secondary">
                 <img
-                  src={require("../assets/white_logo.png")}
+                  src={require("../assets/others/white_logo.png")}
                   alt=""
                   srcset=""
                   className="h-12 mx-auto mb-4"
@@ -833,8 +831,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* footer */}
-      <Footer />
+     
     </div>
   );
 };

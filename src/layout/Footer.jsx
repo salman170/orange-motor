@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="flex flex-col items-center justify-between mt-24 md:flex-row">
             <Link to="/">
               <img
-                src={require("../assets/white_logo.png")}
+                src={require("../assets/others/white_logo.png")}
                 className="h-16"
                 alt=""
               />

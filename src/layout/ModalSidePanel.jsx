@@ -1,6 +1,6 @@
 import { IoClose, IoLogoInstagram } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { FaFacebookSquare,  FaWhatsapp } from "react-icons/fa";
+import { FaFacebookSquare, FaWhatsapp } from "react-icons/fa";
 import { IoIosCall, IoLogoYoutube, IoMdMail } from "react-icons/io";
 import { useEffect } from "react";
 import { FaLocationDot } from "react-icons/fa6";
@@ -10,15 +10,15 @@ const ModalSidePanel = ({ open, setOpen }) => {
     const body = document.body;
     if (open) {
       // Disable scrolling
-      body.style.overflow = 'hidden';
+      body.style.overflow = "hidden";
     } else {
       // Enable scrolling
-      body.style.overflow = 'visible';
+      body.style.overflow = "visible";
     }
 
     // Clean up the effect
     return () => {
-      body.style.overflow = 'visible';
+      body.style.overflow = "visible";
     };
   }, [open]);
 
@@ -30,11 +30,10 @@ const ModalSidePanel = ({ open, setOpen }) => {
 
   const tabs = [
     { name: "Home", path: "/" },
-    { name: "Wellness", path: "/diseases-treated" },
-    { name: "Treatments ", path: "/treatments" },
-    { name: "About Us", path: "/about" },
-    { name: "Gallery", path: "/gallery" },
-    { name: "Contact Us", path: "/contact" },
+    { name: "About Us", path: "/about-us" },
+    { name: "Brands ", path: "/treatments" },
+    { name: "Locations", path: "/locations" },
+    { name: "Contact Us", path: "/contact-us" },
   ];
 
   return (
@@ -51,20 +50,21 @@ const ModalSidePanel = ({ open, setOpen }) => {
         <div className="flex flex-col justify-between h-full gap-6 px-6 pt-20 pb-10">
           <div className="flex flex-col gap-2">
             {tabs.map((tab, index) => (
-               <Link
-               key={index}
-               to={tab.path}
-               onClick={() => setOpen(false)}
-               className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
-             >
-               {tab.name}
-             </Link>
+              <Link
+                key={index}
+                to={tab.path}
+                onClick={() => setOpen(false)}
+                className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
+              >
+                {tab.name}
+              </Link>
             ))}
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-4 px-4 py-1 text-sm text-white bg-secondary">
-              <div className="flex items-center gap-2 ">
-                <IoIosCall className="" /> 81878 81878
+              <div className="flex items-center gap-2">
+                <IoIosCall className="" />
+                <a href="tel:9985412345">99854 12345</a>
               </div>
               <div className="flex items-center gap-2 ">
                 <FaLocationDot /> Hyderabad
