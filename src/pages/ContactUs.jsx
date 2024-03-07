@@ -14,7 +14,7 @@ const ContactUs = () => {
       <div className="container py-10 mx-auto">
         <div className="px-4 py-6 bg-gray-100 rounded-lg shadow-md md:py-20">
           <h1 className="mb-4 text-4xl font-semibold">Contact Us</h1>
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col gap-4 md:flex-row">
             <div className="mt-4 space-y-4 md:w-1/2">
               <p className="flex items-center ">
                 <FaPhoneAlt className="mr-6 text-2xl text-secondary" />

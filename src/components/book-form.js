@@ -51,8 +51,8 @@ const BookForm = () => {
   }
 
   return (
-    <>
-      <p className="font-semibold text-xl tracking-wide mb-5">
+    <div className="">
+      <p className="mb-5 text-xl font-semibold tracking-wide ">
         Vehicle Enquiry
       </p>
       <form onSubmit={handleSubmit}>
@@ -112,7 +112,7 @@ const BookForm = () => {
           <select
             value={model}
             onChange={(e) => setModel(e.target.value)}
-            className="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none sm:text-sm"
+            className="block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none sm:text-sm"
           >
             <option>Select Model</option>
             <optgroup label="Tata">
@@ -127,8 +127,8 @@ const BookForm = () => {
           </select>
         </div>
 
-        <p className="text-gray-700 mt-5 text-xs">
-          <span className="text-black font-bold text-sm">Disclaimer</span>: I
+        <p className="mt-5 text-xs text-gray-700">
+          <span className="text-sm font-bold text-black">Disclaimer</span>: I
           agree that by clicking the ‘Submit’ button below, I am explicitly
           soliciting a call/Message from Orange Groups or its Representatives on
           my ‘Mobile’.
@@ -139,7 +139,7 @@ const BookForm = () => {
             id="disclaimer"
             type="checkbox"
             required
-            className="h-4 w-4 rounded"
+            className="w-4 h-4 rounded"
           />
           <div className="ml-2 text-sm ">
             <label htmlFor="disclaimer" className="font-medium text-gray-700">
@@ -159,7 +159,7 @@ const BookForm = () => {
         >
           {loader ? (
             <div className="flex items-center justify-center">
-              <CgSpinner className="animate-spin h-5 mr-2 text-white w-5" />
+              <CgSpinner className="w-5 h-5 mr-2 text-white animate-spin" />
               Loading...
             </div>
           ) : (
@@ -167,7 +167,7 @@ const BookForm = () => {
           )}
         </button>
       </form>
-    </>
+    </div>
   );
 };
 

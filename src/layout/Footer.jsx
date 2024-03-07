@@ -36,11 +36,11 @@ const Footer = () => {
             </p>
 
             <a
-              href="tel:+9985412345"
-              className="flex items-center gap-3 pb-4 text-[#fff] text-opacity-70 hover:text-opacity-100"
+              href="tel:9985412345"
+              className="flex items-center gap-3 pb-4 text-[#fff] text-opacity-70 hover:text-opacity-100 whitespace-nowrap"
             >
               <FaPhone className="text-white " />
-              +91 99854 12345
+             99854 12345
             </a>
             <a
               href="mailto:info@orangeauto.in"

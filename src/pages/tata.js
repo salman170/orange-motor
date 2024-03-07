@@ -13,7 +13,7 @@ const Tata = () => {
         alt=""
       />
       <Breadcrumb pageName="Tata Motors" />
-      <div className="grid grid-cols-3 gap-10 mx-auto my-10 max-w-7xl">
+      <div className="grid gap-10 px-1 mx-auto my-10 md:grid-cols-3 max-w-7xl">
         <div className="col-span-2">
           <p className="text-2xl font-semibold">Tata Motors</p>
           <p className="mt-5 text-black/80">
@@ -45,7 +45,7 @@ const Tata = () => {
             strong presence across Andhra Pradesh and Telangana.
           </p>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-1 ">
           <BookForm />
         </div>
       </div>
