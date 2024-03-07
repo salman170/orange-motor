@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       {" "}
       <div className="py-20 text-white bg-secondary">
-        <div className="container grid px-5 mx-auto md:grid-cols-5">
+        <div className="container grid px-5 mx-auto lg:grid-cols-5">
           <div className="col-span-4">
             <p className="mb-5 text-5xl font-semibold">
               Quality means doing it right <br />

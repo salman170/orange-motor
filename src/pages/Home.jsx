@@ -306,7 +306,7 @@ const Home = () => {
               <div className="z-10 flex items-center order-1 w-[70px] h-[70px] rounded-full  bg-white text-[#8fbae7]">
                 <h1 className="mx-auto text-4xl font-semibold ">2017</h1>
               </div>
-              <div className="order-1 w-5/12 px-6 py-4 text-center  rounded-lg shadow-xl bg-[#8fb9e778] ">
+              <div className="order-1 w-5/12 px-6 py-4 text-center  rounded-lg shadow-xl bg-[#8fbae7] ">
                 <img
                   src={require("../assets/homepage/Tata Logo.png")}
                   alt=""
@@ -518,12 +518,12 @@ const Home = () => {
               className="flex flex-row-reverse items-center justify-between w-full gap-4 mb-8 left-timeline md:gap-0"
             >
               <div className="order-1 w-0 md:w-5/12"></div>
-              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#8fb9e778]">
+              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#8fbae7]">
                 <h1 className="mx-auto text-2xl font-semibold lg:text-4xl ">
                   2017
                 </h1>
               </div>
-              <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#8fb9e778] w-full">
+              <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#8fbae7] w-full">
                 <img
                   src={require("../assets/homepage/Tata Logo.png")}
                   alt=""
