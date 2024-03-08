@@ -2,10 +2,12 @@ import { IoClose, IoLogoInstagram } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaWhatsapp } from "react-icons/fa";
 import { IoIosCall, IoLogoYoutube, IoMdMail } from "react-icons/io";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 
 const ModalSidePanel = ({ open, setOpen }) => {
+  const [showBrands, setShowBrands] = useState(false);
+
   useEffect(() => {
     const body = document.body;
     if (open) {
@@ -36,6 +38,29 @@ const ModalSidePanel = ({ open, setOpen }) => {
     { name: "Contact Us", path: "/contact-us" },
   ];
 
+  const brands = [
+    {
+      name: "Tata",
+      href: "/tata",
+    },
+    {
+      name: "Jeep",
+      href: "/",
+    },
+    {
+      name: "Honda",
+      href: "/",
+    },
+    {
+      name: "Kawasaki",
+      href: "/",
+    },
+    {
+      name: "Harley Davidson",
+      href: "/",
+    },
+  ];
+
   return (
     <div
       id="container"
@@ -53,7 +78,10 @@ const ModalSidePanel = ({ open, setOpen }) => {
               <Link
                 key={index}
                 to={tab.path}
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  setOpen(false);
+                  setShowBrands(false);
+                }}
                 className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
               >
                 {tab.name}
@@ -112,6 +140,31 @@ const ModalSidePanel = ({ open, setOpen }) => {
                 <IoMdMail />
               </a>
             </div>
+            <div className="flex justify-center">
+              <button
+                className="px-4 py-2 mt-4 text-white rounded-lg bg-secondary hover:bg-primary"
+                onClick={() => setShowBrands(!showBrands)}
+              >
+                {showBrands ? "Hide Brands" : "Show Brands"}
+              </button>
+            </div>
+            {showBrands && (
+              <div className="flex flex-col gap-2 mt-4">
+                {brands.map((brand, index) => (
+                  <Link
+                    key={index}
+                    to={brand.href}
+                    onClick={() => {
+                      setOpen(false);
+                      setShowBrands(false);
+                    }}
+                    className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
+                  >
+                    {brand.name}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
         </div>
         <div className="absolute top-5 right-5">

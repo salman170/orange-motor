@@ -25,10 +25,11 @@ function Slider() {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={10}
         pagination={{
           dynamicBullets: true,
         }}
+        speed={500}
         autoplay={{ delay: 3000 }}
         loop={true}
         grabCursor={true}
@@ -46,14 +47,14 @@ function Slider() {
         <SwiperSlide>
           <img
             src="https://scontent-ord5-1.xx.fbcdn.net/v/t1.6435-9/123683543_216776313206811_4698083266817034754_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=c2f564&_nc_ohc=DKQsmxPBizIAX9iQwWs&_nc_ht=scontent-ord5-1.xx&oh=00_AfCKj7ZTeC1oorAKWb0YhAtQ5Jve9j1TfAIhxdinX6QSfA&oe=6601932F"
-            className="object-cover w-full h-[88vh] overflow-hidden "
+            className="object-cover w-full h-[25vh] md:h-[88vh] sm:h-[40vh] overflow-hidden "
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src="https://www.libertyinsurance.in/images/car-brands/header-tata.jpg"
-            className="object-cover w-full h-[88vh] overflow-hidden"
+            className="object-cover w-full h-[25vh] md:h-[88vh] sm:h-[40vh] overflow-hidden"
             alt=""
           />
         </SwiperSlide>
@@ -84,7 +85,6 @@ function Slider() {
           className="absolute z-10 p-1 rounded-full cursor-pointer right-3 sm:right-10 top-1/2 sm:top-1/2 bg-white/60 hover:bg-[#F17D28] sm:p-3 shadow-xl"
         >
           <GrFormNext />
-          
         </div>
       </Swiper>
     </>

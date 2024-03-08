@@ -2,16 +2,15 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { CgSpinner } from "react-icons/cg";
-
 import { Toaster, toast } from 'react-hot-toast';
 
-const BookForm = () => {
+const ContactUsForm = () => {
   const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
       phone: "",
-      model: "",
+      message: "",
       disclaimer: false,
     },
     validationSchema: Yup.object({
@@ -20,7 +19,7 @@ const BookForm = () => {
       phone: Yup.string()
         .matches(/^[6-9][0-9]{6,9}$/, "Invalid phone number")
         .required("Phone is required"),
-      model: Yup.string().required("Model is required"),
+      message: Yup.string().required("Message is required").max(300, "Message must be at most 300 characters"),
       disclaimer: Yup.boolean().oneOf([true], "Must accept disclaimer"),
     }),
     onSubmit: async (values, { setSubmitting, resetForm }) => {
@@ -37,7 +36,7 @@ const BookForm = () => {
           name: "",
           email: "",
           phone: "",
-          model: "",
+          message: "",
           disclaimer: false,
         });
       } catch (error) {
@@ -53,9 +52,7 @@ const BookForm = () => {
 
   return (
     <div className="">
-      <p className="mb-5 text-xl font-semibold tracking-wide ">
-        Vehicle Enquiry
-      </p>
+     
       <form onSubmit={formik.handleSubmit}>
         <div className="mt-3">
           <label htmlFor="name">
@@ -102,29 +99,17 @@ const BookForm = () => {
         </div>
 
         <div className="mt-3">
-          <label htmlFor="model">
-            Model <span className="text-red-600">*</span>
+          <label htmlFor="message">
+            Message <span className="text-red-600">*</span>
           </label>
-          <select
-            name="model" // Add the name attribute to match the field name in Formik
-            onChange={formik.handleChange} // Call handleChange to update Formik state
-            onBlur={formik.handleBlur} // Optionally handle onBlur event
-            className="block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none sm:text-sm"
-          >
-            <option value="">Select Model</option>
-            <optgroup label="Tata">
-              <option value="Tiago">Tiago</option>
-              <option value="Altroz">Altroz</option>
-              <option value="Tigor">Tigor</option>
-              <option value="Punch">Punch</option>
-              <option value="Nexon">Nexon</option>
-              <option value="Harrier">Harrier</option>
-              <option value="Safari">Safari</option>
-            </optgroup>
-          </select>
+          <textarea
+            id="message"
+            className="border w-full rounded p-1.5 outline-none max-h-44"
+            {...formik.getFieldProps("message")} // Update to "message" field
+          />
 
-          {formik.touched.model && formik.errors.model ? (
-            <div className="text-red-500">{formik.errors.model}</div>
+          {formik.touched.message && formik.errors.message ? (
+            <div className="text-red-500">{formik.errors.message}</div> // Corrected error message
           ) : null}
         </div>
 
@@ -141,7 +126,8 @@ const BookForm = () => {
             type="checkbox"
             checked={formik.values.disclaimer} // Use checked instead of value
             onChange={formik.handleChange} // Handle onChange to update formik state
-             required
+            
+            required
             {...formik.getFieldProps("disclaimer")}
           />
           <div className="ml-2 text-sm ">
@@ -153,7 +139,6 @@ const BookForm = () => {
             <div className="text-red-500">{formik.errors.disclaimer}</div>
           ) : null}
         </div>
-
         <button
           className={`${
             formik.isValid ? "bg-secondary hover:bg-primary" : "bg-gray-300"
@@ -176,4 +161,4 @@ const BookForm = () => {
   );
 };
 
-export default BookForm;
+export default ContactUsForm;

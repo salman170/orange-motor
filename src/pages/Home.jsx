@@ -220,7 +220,7 @@ const Home = () => {
                 <img
                   src={require("../assets/others/white_logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-12 mx-auto mb-4"
                 />
                 <h3 className="text-xl font-semibold uppercase">
@@ -251,7 +251,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/chevrolet logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-24 mx-auto"
                 />
                 <h3 className="mb-3 text-xl font-semibold uppercase ">
@@ -282,7 +282,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/Honda Logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-32 mx-auto"
                 />
                 <h3 className="mb-6 text-xl font-semibold uppercase">
@@ -313,7 +313,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/Tata Logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-32 mx-auto"
                 />
                 <h3 className="mb-6 text-xl font-semibold uppercase">
@@ -344,7 +344,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/Kawasaki Logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-24 mx-auto"
                 />
                 <h3 className="mb-3 text-xl font-semibold uppercase ">
@@ -375,7 +375,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/jeep Logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-24 mx-auto"
                 />
                 <h3 className="mb-3 text-xl font-semibold uppercase ">
@@ -406,7 +406,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/Harley Logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-24 mx-auto"
                 />
                 <h3 className="mb-3 text-xl font-semibold uppercase ">
@@ -450,7 +450,7 @@ const Home = () => {
                 <img
                   src={require("../assets/others/white_logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-12 mx-auto mb-4"
                 />
                 <h3 className="font-semibold uppercase md:text-xl">
@@ -476,7 +476,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/chevrolet logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-16 mx-auto mb-4 md:h-24"
                 />
                 <h3 className="font-semibold uppercase md:text-xl">
@@ -502,7 +502,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/Honda Logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-24 mx-auto mb-4 md:h-12"
                 />
                 <h3 className="font-semibold uppercase md:text-xl">
@@ -529,7 +529,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/Tata Logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-24 mx-auto md:h-24"
                 />
                 <h3 className="pb-4 -mt-4 font-semibold uppercase md:text-xl">
@@ -555,7 +555,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/Kawasaki Logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-16 mx-auto md:h-24 "
                 />
                 <h3 className="mb-3 font-semibold uppercase md:text-xl ">
@@ -582,7 +582,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/jeep Logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-20 mx-auto mb-4 md:h-24"
                 />
                 <h3 className="font-semibold uppercase md:text-xl">
@@ -608,7 +608,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/Harley Logo.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-16 mx-auto md:h-24"
                 />
                 <h3 className="mb-3 font-semibold uppercase md:text-xl ">
@@ -663,7 +663,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/trade.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-20"
                 />
               </div>
@@ -698,7 +698,7 @@ const Home = () => {
                 <img
                   src={require("../assets/homepage/assessories.png")}
                   alt=""
-                  srcset=""
+                  srcSet=""
                   className="h-20"
                 />
               </div>
