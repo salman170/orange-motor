@@ -12,6 +12,8 @@ import AboutUs from "./pages/AboutUs";
 import Locations from "./pages/Locations";
 import { Header } from "./layout/header";
 import Footer from "./layout/Footer";
+import Jeep from "./pages/Jeep";
+import Jeep2 from "./pages/Jeep2";
 
 const App = () => {
   const ScrollTop = () => {
@@ -28,7 +30,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tata" element={<Tata />} />
-        <Route path="/vehicles/:id" element={<Detail />} />
+        <Route path="/jeep" element={<Jeep2 />} />
+        <Route path="/jeep2" element={<Jeep />} />
+        <Route path="/vehicles/:position/:id" element={<Detail />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/locations" element={<Locations />} />
         <Route path="/contact-us" element={<ContactUs />} />

@@ -4,6 +4,7 @@ import { FaFacebookSquare, FaWhatsapp } from "react-icons/fa";
 import { IoIosCall, IoLogoYoutube, IoMdMail } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
+import { RxCaretDown } from "react-icons/rx";
 
 const ModalSidePanel = ({ open, setOpen }) => {
   const [showBrands, setShowBrands] = useState(false);
@@ -45,7 +46,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
     },
     {
       name: "Jeep",
-      href: "/",
+      href: "/jeep",
     },
     {
       name: "Honda",
@@ -74,19 +75,75 @@ const ModalSidePanel = ({ open, setOpen }) => {
       <div className="overflow-hidden bg-white shadow-2xl w-80">
         <div className="flex flex-col justify-between h-full gap-6 px-6 pt-20 pb-10">
           <div className="flex flex-col gap-2">
-            {tabs.map((tab, index) => (
-              <Link
-                key={index}
-                to={tab.path}
-                onClick={() => {
-                  setOpen(false);
-                  setShowBrands(false);
-                }}
-                className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
-              >
-                {tab.name}
-              </Link>
-            ))}
+            <Link
+              to={tabs[0].path}
+              onClick={() => {
+                setOpen(false);
+                setShowBrands(false);
+              }}
+              className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
+            >
+              {tabs[0].name}
+            </Link>
+            <Link
+              to={tabs[1].path}
+              onClick={() => {
+                setOpen(false);
+                setShowBrands(false);
+              }}
+              className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
+            >
+              {tabs[1].name}
+            </Link>
+            <div
+              to={tabs[2].path}
+              onClick={() => {
+                setShowBrands(!showBrands);
+              }}
+              className="flex items-center justify-between w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
+            >
+              <div>{tabs[2].name}</div>{" "}
+              <div className={`${showBrands ? "rotate-180" : ""}`}>
+                <RxCaretDown />
+              </div>
+            </div>
+            {showBrands && (
+              <div className="flex flex-col gap-2 pl-3 text-sm text-secondary">
+                {brands.map((brand, index) => (
+                  <Link
+                    key={index}
+                    to={brand.href}
+                    onClick={() => {
+                      setOpen(false);
+                      setShowBrands(false);
+                    }}
+                    className="w-full py-2 pl-6 border-b cursor-pointer "
+                  >
+                    &#12297; {brand.name}
+                  </Link>
+                ))}
+              </div>
+            )}
+            <Link
+              to={tabs[3].path}
+              onClick={() => {
+                setOpen(false);
+                setShowBrands(false);
+              }}
+              className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
+            >
+              {tabs[3].name}
+            </Link>
+            <Link
+              to={tabs[4].path}
+              onClick={() => {
+                setOpen(false);
+                setShowBrands(false);
+              }}
+              className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
+            >
+              {tabs[4].name}
+            </Link>
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-4 px-4 py-1 text-sm text-white bg-secondary">
@@ -140,7 +197,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
                 <IoMdMail />
               </a>
             </div>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <button
                 className="px-4 py-2 mt-4 text-white rounded-lg bg-secondary hover:bg-primary"
                 onClick={() => setShowBrands(!showBrands)}
@@ -164,7 +221,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
                   </Link>
                 ))}
               </div>
-            )}
+            )} */}
           </div>
         </div>
         <div className="absolute top-5 right-5">

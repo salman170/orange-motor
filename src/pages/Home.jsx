@@ -18,7 +18,20 @@ const Home = () => {
 
   return (
     <div className="">
-      <Slider />
+      <div className="relative ">
+        <Slider />
+        <div
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="500"
+          className="absolute left-0 w-full text-4xl bottom-[18%] z-20 text-secondary hidden md:block"
+        >
+          <div className="container mx-auto ">
+            Welcome to <br />
+            <span className="text-5xl lg:text-6xl">Orange Group</span>
+          </div>
+        </div>
+      </div>
 
       <div className="grid gap-8 px-5 mx-auto my-10 md:grid-cols-3 max-w-7xl">
         <div className="col-span-1 space-y-2 ">
@@ -128,13 +141,13 @@ const Home = () => {
             data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
             className="p-2 rounded bg-slate-100"
           >
-            <Link to="/tata">
-            <img
-              src={require("../assets/homepage/jeep Logo.png")}
-              className="w-full h-28"
-              alt=""
-            />
-            <p className="font-semibold text-center text-black/80">Jeep</p>
+            <Link to="/jeep">
+              <img
+                src={require("../assets/homepage/jeep Logo.png")}
+                className="w-full h-28"
+                alt=""
+              />
+              <p className="font-semibold text-center text-black/80">Jeep</p>
             </Link>
           </div>
           <div
@@ -158,14 +171,12 @@ const Home = () => {
             data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
             className="p-2 rounded bg-slate-100"
           >
-              <img
-                src={require("../assets/homepage/Kawasaki Logo.png")}
-                className="w-full h-28"
-                alt=""
-              />
-              <p className="font-semibold text-center text-black/80">
-                Kawasaki
-              </p>{" "}
+            <img
+              src={require("../assets/homepage/Kawasaki Logo.png")}
+              className="w-full h-28"
+              alt=""
+            />
+            <p className="font-semibold text-center text-black/80">Kawasaki</p>{" "}
           </div>
           <div
             data-aos="zoom-in"

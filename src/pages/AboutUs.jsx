@@ -168,7 +168,7 @@ const AboutUs = () => {
           {swot.map((item, index) => (
             <div key={index} className="mb-4">
               <h2 className="mb-4 text-2xl font-semibold text-secondary">{item.title}</h2>
-              <ul>
+              <ul className="pl-4 list-disc">
                 {item.points.map((point, index) => (
                   <li key={index}>{point}</li>
                 ))}

@@ -170,15 +170,15 @@ const Locations = () => {
     <div className="py-10 bg-gray-50 ">
       <div className="container px-1 py-6 mx-auto rounded-lg">
         <h1 className="mb-6 text-4xl font-semibold">Locations</h1>
-        <div className="flex flex-wrap gap-2 mb-5 md:mt-10">
+        <div className="flex flex-wrap gap-2 mb-5 md:mt-5 lg:mb-8">
           {brands.map((brand, index) => (
             <button
               key={index}
               onClick={() => setSelectedTab(index)}
-              className={`px-4 md:px-6 lg:px-8 py-2 rounded-lg focus:outline-none ${
+              className={`px-4 md:px-6 lg:px-8 py-2 rounded-lg focus:outline-none flex-grow ${
                 selectedTab === index
-                  ? "bg-secondary text-white"
-                  : "bg-secondary-light border"
+                  ? "bg-secondary text-white shadow-lg"
+                  : "bg-secondary-light border border-secondary"
               }`}
             >
               {brand.name}
@@ -190,13 +190,13 @@ const Locations = () => {
           {brands[selectedTab]?.locations.map((location, index) => (
             <div
               key={index}
-              className="p-4 duration-300 bg-white rounded-lg shadow-md cursor-default group hover:scale-95"
+              className="p-4 duration-300 bg-white rounded-lg shadow-md cursor-default group hover:scale-95 hover:bg-secondary"
             >
               <h2 className="mb-2 text-xl font-semibold">{location.name}</h2>
-              <p className="flex items-center gap-2 pt-2 mb-2">
-                <FaMapMarkerAlt className="text-secondary" /> Address:
+              <p className="flex items-center gap-2 pt-2 mb-2 group-hover:text-white">
+                <FaMapMarkerAlt className="text-secondary group-hover:text-white" /> Address:
               </p>
-              <p className="text-gray-700">{location.address}</p>
+              <p className="text-gray-700 group-hover:text-white ">{location.address}</p>
             </div>
           ))}
         </div>

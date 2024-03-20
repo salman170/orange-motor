@@ -1,12 +1,11 @@
 import BookForm from "../components/book-form";
 import Breadcrumb from "../components/breadcrumb";
 import Card from "../components/card";
-import { models } from "../json";
+import { model } from "../json";
 
 const Tata = () => {
   return (
     <>
-     
       <img
         src={require("../assets/others/tata_banner.jpg")}
         className="object-cover max-w-full"
@@ -50,11 +49,12 @@ const Tata = () => {
         </div>
       </div>
 
-      <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 max-w-7xl md:grid-cols-2 xl:grid-cols-4">
-        {models.map((item) => (
+      <div className="grid gap-5 py-10 mx-auto lg:grid-cols-3 max-w-7xl md:grid-cols-2 xl:grid-cols-4">
+        {model[0].map((item) => (
           <Card
             key={item.id}
             id={item?.id}
+            position="0"
             banner={item?.pic}
             title={item?.name}
             price={item?.price}

@@ -1,7 +1,7 @@
 export const cars = [
   {
     name: "Tiago",
-    img: require("../assets/tiago.png"),
+    img: require("../assets/tata/tiago.png"),
     link: "/tiago",
     price: 0,
     kmpl: 0,
@@ -10,7 +10,7 @@ export const cars = [
   },
   {
     name: "Altroz",
-    img: require("../assets/altroz.png"),
+    img: require("../assets/tata/altroz.png"),
     link: "/altroz",
     price: 0,
     kmpl: 0,
@@ -19,7 +19,7 @@ export const cars = [
   },
   {
     name: "Tigor",
-    img: require("../assets/tigor.png"),
+    img: require("../assets/tata/tigor.png"),
     link: "/tigor",
     price: 0,
     kmpl: 0,
@@ -28,7 +28,7 @@ export const cars = [
   },
   {
     name: "Punch",
-    img: require("../assets/punch.png"),
+    img: require("../assets/tata/punch.png"),
     link: "/punch",
     price: 0,
     kmpl: 0,
@@ -37,7 +37,7 @@ export const cars = [
   },
   {
     name: "Nexon",
-    img: require("../assets/nexon.png"),
+    img: require("../assets/tata/nexon.png"),
     link: "/nexon",
     price: 0,
     kmpl: 0,
@@ -46,7 +46,7 @@ export const cars = [
   },
   {
     name: "Harrier",
-    img: require("../assets/harrier.png"),
+    img: require("../assets/tata/harrier.png"),
     link: "/harrier",
     price: 0,
     kmpl: 0,

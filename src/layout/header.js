@@ -16,7 +16,7 @@ const navigation = {
     },
     {
       name: "Jeep",
-      href: "/",
+      href: "/jeep",
     },
     {
       name: "Honda",
@@ -36,32 +36,32 @@ const navigation = {
 // const cars = [
 //   {
 //     name: "Tiago",
-//     img: require("../assets/tiago.png"),
+//     img: require("../assets/tata/tiago.png"),
 //     link: "/tiago",
 //   },
 //   {
 //     name: "Altroz",
-//     img: require("../assets/altroz.png"),
+//     img: require("../assets/tata/altroz.png"),
 //     link: "/altroz",
 //   },
 //   {
 //     name: "Tigor",
-//     img: require("../assets/tigor.png"),
+//     img: require("../assets/tata/tigor.png"),
 //     link: "/tigor",
 //   },
 //   {
 //     name: "Punch",
-//     img: require("../assets/punch.png"),
+//     img: require("../assets/tata/punch.png"),
 //     link: "/punch",
 //   },
 //   {
 //     name: "Nexon",
-//     img: require("../assets/nexon.png"),
+//     img: require("../assets/tata/nexon.png"),
 //     link: "/nexon",
 //   },
 //   {
 //     name: "Harrier",
-//     img: require("../assets/harrier.png"),
+//     img: require("../assets/tata/harrier.png"),
 //     link: "/harrier",
 //   },
 //   {
@@ -86,9 +86,9 @@ export function Header() {
 
   return (
     <>
-    <div className="sticky top-0 z-40 w-full bg-white shadow-lg">
-      {/* Mobile menu */}
-      {/* <MobileHeader
+      <div className="sticky top-0 z-40 w-full bg-white shadow-lg">
+        {/* Mobile menu */}
+        {/* <MobileHeader
         veh={veh}
         service={service}
         setService={setService}
@@ -97,38 +97,38 @@ export function Header() {
         setOpen={setOpen}
       /> */}
 
-      <header className="relative bg-white border-gray-200 shadow-sm">
-        <nav aria-label="Top" className="px-4 md:mx-20 sm:px-6 lg:px-8">
-          <div className="flex items-center h-24">
-            {/* Logo */}
-            <div className="flex ml-4 lg:ml-0">
-              <Link to="/">
-                <img
-                  className="w-auto h-10"
-                  src={require("../assets/others/logo.png")}
-                  loading="lazy"
-                  alt=""
-                />
-              </Link>
-            </div>
-
-            {/* Flyout menus */}
-            <Popover.Group className="hidden lg:ml-auto lg:block lg:self-stretch">
-              <div className="flex h-full space-x-8">
-                <Link
-                  to="/"
-                  className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                >
-                  Home
+        <header className="relative bg-white border-gray-200 shadow-sm">
+          <nav aria-label="Top" className="px-4 md:mx-20 sm:px-6 lg:px-8">
+            <div className="flex items-center h-24">
+              {/* Logo */}
+              <div className="flex ml-4 lg:ml-0">
+                <Link to="/">
+                  <img
+                    className="w-auto h-10"
+                    src={require("../assets/others/logo.png")}
+                    loading="lazy"
+                    alt=""
+                  />
                 </Link>
-                <Link
-                  to="/about-us"
-                  className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                >
-                  About Us
-                </Link>
+              </div>
 
-                {/* <Popover className="flex">
+              {/* Flyout menus */}
+              <Popover.Group className="hidden lg:ml-auto lg:block lg:self-stretch">
+                <div className="flex h-full space-x-8">
+                  <Link
+                    to="/"
+                    className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    to="/about-us"
+                    className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                  >
+                    About Us
+                  </Link>
+
+                  {/* <Popover className="flex">
                   {({ open }) => (
                     <>
                       <div className="relative flex">
@@ -188,82 +188,82 @@ export function Header() {
                   )}
                 </Popover> */}
 
-                <Popover className="flex">
-                  {({ open }) => (
-                    <>
-                      <div className="relative flex">
-                        <Popover.Button
-                          className={classNames(
-                            open
-                              ? "border-[#051641] text-[#051641]"
-                              : "border-transparent text-black hover:text-black",
-                            "relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px outline-none focus:outline-none"
-                          )}
+                  <Popover className="flex">
+                    {({ open }) => (
+                      <>
+                        <div className="relative flex">
+                          <Popover.Button
+                            className={classNames(
+                              open
+                                ? "border-[#051641] text-[#051641]"
+                                : "border-transparent text-black hover:text-black",
+                              "relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px outline-none focus:outline-none"
+                            )}
+                          >
+                            Brands
+                          </Popover.Button>
+                        </div>
+
+                        <Transition
+                          as={Fragment}
+                          enter="transition ease-out duration-200"
+                          enterFrom="opacity-0"
+                          enterTo="opacity-100"
+                          leave="transition ease-in duration-150"
+                          leaveFrom="opacity-100"
+                          leaveTo="opacity-0"
                         >
-                          Brands
-                        </Popover.Button>
-                      </div>
+                          <Popover.Panel className="absolute top-full -ml-6 text-sm shadow rounded overflow-hidden w-full max-w-[145px]">
+                            <div
+                              className="absolute inset-0 bg-white top-1/2"
+                              aria-hidden="true"
+                            />
+                            {navigation?.brands.map((item, index) => (
+                              <Link to={item.href} key={index}>
+                                <p className="relative z-10 p-3 bg-white hover:bg-gray-100">
+                                  {item.name}
+                                </p>
+                              </Link>
+                            ))}
+                          </Popover.Panel>
+                        </Transition>
+                      </>
+                    )}
+                  </Popover>
 
-                      <Transition
-                        as={Fragment}
-                        enter="transition ease-out duration-200"
-                        enterFrom="opacity-0"
-                        enterTo="opacity-100"
-                        leave="transition ease-in duration-150"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
-                      >
-                        <Popover.Panel className="absolute top-full -ml-6 text-sm shadow rounded overflow-hidden w-full max-w-[145px]">
-                          <div
-                            className="absolute inset-0 bg-white top-1/2"
-                            aria-hidden="true"
-                          />
-                          {navigation?.brands.map((item, index) => (
-                            <Link to={item.href} key={index}>
-                              <p className="relative z-10 p-3 bg-white hover:bg-gray-100">
-                                {item.name}
-                              </p>
-                            </Link>
-                          ))}
-                        </Popover.Panel>
-                      </Transition>
-                    </>
-                  )}
-                </Popover>
+                  {navigation.pages.map((page) => (
+                    <Link
+                      key={page.name}
+                      to={page.href}
+                      className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                    >
+                      {page.name}
+                    </Link>
+                  ))}
+                </div>
+              </Popover.Group>
 
-                {navigation.pages.map((page) => (
-                  <Link
-                    key={page.name}
-                    to={page.href}
-                    className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+              <div className="flex items-center ml-auto lg:hidden">
+                {/* Search */}
+                <div className="flex lg:ml-6">
+                  <button
+                    type="button"
+                    className="p-2 text-gray-400 bg-white rounded-md lg:hidden"
+                    onClick={() => setOpen(true)}
                   >
-                    {page.name}
-                  </Link>
-                ))}
-              </div>
-            </Popover.Group>
-
-            <div className="flex items-center ml-auto lg:hidden">
-              {/* Search */}
-              <div className="flex lg:ml-6">
-                <button
-                  type="button"
-                  className="p-2 text-gray-400 bg-white rounded-md lg:hidden"
-                  onClick={() => setOpen(true)}
-                >
-                  <span className="sr-only">Open menu</span>
-                  <HiOutlineBars3BottomRight
-                    className="w-10 h-10 text-secondary"
-                    aria-hidden="true"
-                  />
-                </button>
+                    <span className="sr-only">Open menu</span>
+                    <HiOutlineBars3BottomRight
+                      className="w-10 h-10 text-secondary"
+                      aria-hidden="true"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
-      </header>
-      <ModalSidePanel open={open} setOpen={setOpen} />
-    </div>
+          </nav>
+        </header>
+        <ModalSidePanel open={open} setOpen={setOpen} />
+      </div>
     </>
   );
 }

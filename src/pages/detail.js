@@ -1,19 +1,20 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
-import { models } from "../json";
+
 import CurrencyFormatter from "../components/currency-formatter";
 import BookForm from "../components/book-form";
 import CarSlider2 from "../components/CarSlider2";
+import { model } from "../json";
 
 const Detail = () => {
-  const { id } = useParams();
+  const { id, position } = useParams();
   const [car, setCar] = useState(null);
 
   const navigate = useNavigate();
 
   useEffect(() => {
-    const selectedCar = models.find((item) => item.id === id);
+    const selectedCar = model[position].find((item) => item.id === id);
     if (selectedCar) {
       setCar(selectedCar);
     }
@@ -21,7 +22,7 @@ const Detail = () => {
     if (!selectedCar) {
       navigate("/");
     }
-  }, [id, navigate]);
+  }, [id, navigate,position]);
 
   return (
     <div className="bg-gray-50">
