@@ -28,7 +28,7 @@ const proposelSchema = object().shape({
 function ModelEnquiry({ open, setOpen, title, model }) {
   const [loading, setLoading] = useState(false);
 
-//   let history = useNavigate();
+  //   let history = useNavigate();
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -85,8 +85,6 @@ function ModelEnquiry({ open, setOpen, title, model }) {
                   onSubmit={async (values, { setSubmitting }) => {
                     setLoading(true);
                     setSubmitting(true);
-                    // First API call - Zoho Web Form - name="WebToLeads54158000007156717"
-                    console.log(values);
                     alert("Form submitted successfully");
                     setLoading(false);
                     setOpen(false);
@@ -177,40 +175,8 @@ function ModelEnquiry({ open, setOpen, title, model }) {
                           disabled
                           className="w-full select-none text-lg h-10 font-sans border-b border-black outline-none placeholder:text-lg   px-0.5   text-gray-600 bg-white"
                         /> */}
-                        {/* <div className="flex w-full gap-3 ">
-                        <button
-                              type="button"
-                              className={`border-b border-black px-6 py-2.5  hover:bg-black hover:text-white duration-200 mt-4 lg:hover:rounded text-lg w-full `}
-                              onClick={() => setOpen(false)}
-                            >
-                              Cancel
-                            </button>
-                        <button
-                          type="submit"
-                          disabled={isSubmitting}
-                          className={`border-b border-black px-6 py-2.5  hover:bg-black hover:text-white duration-200 mt-4 lg:hover:rounded text-lg w-full `}
-                        >
-                          {loading ? (
-                            <div className="flex items-center justify-center">
-                              <CgSpinner className="w-5 h-5 mr-2 animate-spin" />
-                              Submitting
-                            </div>
-                          ) : (
-                            "Submit"
-                          )}
-                        </button>
-                        </div> */}
+
                         <div className="flex gap-4 pt-3 ">
-                          {/* {!loading && (
-                            <button
-                              type="button"
-                              className={` px-6 py-2  border hover:border-secondary duration-200  w-1/2 rounded-lg
-                               hover:scale-95  text-secondary`}
-                              onClick={() => setOpen(false)}
-                            >
-                              Back
-                            </button>
-                          )} */}
                           {!loading && (
                             <button
                               type="button"

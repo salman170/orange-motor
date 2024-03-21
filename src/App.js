@@ -19,10 +19,8 @@ import { useModelContext } from "./components/ModelProvider";
 const App = () => {
   const { openEnq, setOpenEnq, model } = useModelContext();
 
- 
   return (
     <>
-    
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

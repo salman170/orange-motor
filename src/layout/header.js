@@ -190,7 +190,9 @@ export function Header() {
                 </Popover> */}
 
                   <Popover className="flex">
-                    {({ open }) => (
+                    {(
+                      { open, close } // Destructure close from Popover render prop
+                    ) => (
                       <>
                         <div className="relative flex">
                           <Popover.Button
@@ -221,7 +223,10 @@ export function Header() {
                             />
                             {navigation?.brands.map((item, index) => (
                               <Link to={item.href} key={index}>
-                                <p className="relative z-10 p-3 bg-white hover:bg-gray-100">
+                                <p
+                                  className="relative z-10 p-3 bg-white hover:bg-gray-100"
+                                  onClick={() => close()} // Close the Popover on brand click
+                                >
                                   {item.name}
                                 </p>
                               </Link>
