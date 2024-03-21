@@ -188,11 +188,14 @@ const Home = () => {
             data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
             className="p-2 rounded bg-slate-100"
           >
-            <img
-              src={require("../assets/homepage/Harley Logo.png")}
-              className="w-full h-28"
-              alt=""
-            />
+            <Link to="/harley-davidson">
+              <img
+                src={require("../assets/homepage/Harley Logo.png")}
+                className="w-full h-28"
+                alt=""
+              />
+            </Link>
+
             <p className="font-semibold text-center text-black/80">
               Harley Davidson
             </p>

@@ -15,6 +15,7 @@ import Jeep from "./pages/Jeep";
 import Jeep2 from "./pages/Jeep2";
 import ModelEnquiry from "./layout/ModelEnquiry";
 import { useModelContext } from "./components/ModelProvider";
+import HarleyDavidson from "./pages/HarleyDavidson";
 
 const App = () => {
   const { openEnq, setOpenEnq, model } = useModelContext();
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/tata" element={<Tata />} />
         <Route path="/jeep" element={<Jeep2 />} />
         <Route path="/jeep2" element={<Jeep />} />
+        <Route path="/harley-davidson" element={<HarleyDavidson />} />
         <Route path="/vehicles/:position/:id" element={<Detail />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/locations" element={<Locations />} />

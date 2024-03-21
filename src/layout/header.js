@@ -28,7 +28,7 @@ const navigation = {
     },
     {
       name: "Harely Davidson",
-      href: "/",
+      href: "/harley-davidson",
     },
   ],
 };
