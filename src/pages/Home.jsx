@@ -6,15 +6,18 @@ import { GiMechanicGarage } from "react-icons/gi";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BsShieldCheck } from "react-icons/bs";
 import LeaderSlider from "../components/LeaderSlider";
+import { brands } from "../json";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Home = () => {
   useEffect(() => {
     // AOS.init();
     AOS.init({ once: true });
   }, []);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   return (
     <div className="">
@@ -829,8 +832,48 @@ const Home = () => {
         <h2 className="my-10 text-4xl font-semibold text-center select-none">
           Our Outlets
         </h2>
-        <div className="bg-secondary w-full h-[1px]"></div>
-        <div className="grid gap-5 my-10 md:grid-cols-2 lg:grid-cols-3 ">
+        {/* <div className="bg-secondary w-full h-[1px]"></div> */}
+        <div className="flex flex-wrap gap-2 mb-5 md:mt-5 lg:mb-8">
+          {brands.map((brand, index) => (
+            <button
+              key={index}
+              onClick={() => setSelectedTab(index)}
+              className={`px-4 md:px-6 lg:px-8 py-2 rounded-lg focus:outline-none flex-grow ${
+                selectedTab === index
+                  ? "bg-secondary text-white shadow-lg"
+                  : "bg-secondary-light border border-secondary"
+              }`}
+            >
+              {brand.name}
+            </button>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {brands[selectedTab]?.locations.map((location, index) => (
+            <div
+              key={index}
+              className="flex flex-col justify-between p-4 duration-300 bg-white rounded-lg shadow-md cursor-default group hover:scale-95 hover:bg-secondary "
+            >
+              <div className="">
+                <h2 className="mb-2 text-xl font-semibold">{location.name}</h2>
+                <p className="text-gray-700 group-hover:text-white ">
+                  {location.address}
+                </p>
+              </div>
+
+              <a
+                href={location.map}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 pt-3 pb-2 group-hover:text-white "
+              >
+                View Google Map{" "}
+                <FaMapMarkerAlt className="text-secondary group-hover:text-white" />
+              </a>
+            </div>
+          ))}
+        </div>
+        {/* <div className="grid gap-5 my-10 md:grid-cols-2 lg:grid-cols-3 ">
           <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
             {" "}
             <iframe
@@ -896,7 +939,7 @@ const Home = () => {
               // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
