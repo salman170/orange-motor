@@ -82,7 +82,9 @@ export function Header() {
   const location = useLocation();
   useEffect(() => {
     setOpen(false);
+     window.scrollTo(0, 0);
   }, [location.pathname]);
+
 
   return (
     <>

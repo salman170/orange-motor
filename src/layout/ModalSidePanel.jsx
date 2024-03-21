@@ -7,7 +7,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { RxCaretDown } from "react-icons/rx";
 
 const ModalSidePanel = ({ open, setOpen }) => {
-  const [showBrands, setShowBrands] = useState(false);
+  const [showBrands, setShowBrands] = useState(true);
 
   useEffect(() => {
     const body = document.body;
@@ -79,7 +79,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
               to={tabs[0].path}
               onClick={() => {
                 setOpen(false);
-                setShowBrands(false);
+                // setShowBrands(false);
               }}
               className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
             >
@@ -89,7 +89,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
               to={tabs[1].path}
               onClick={() => {
                 setOpen(false);
-                setShowBrands(false);
+                // setShowBrands(false);
               }}
               className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
             >
@@ -115,7 +115,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
                     to={brand.href}
                     onClick={() => {
                       setOpen(false);
-                      setShowBrands(false);
+                      // setShowBrands(false);
                     }}
                     className="w-full py-2 pl-6 border-b cursor-pointer "
                   >
@@ -128,7 +128,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
               to={tabs[3].path}
               onClick={() => {
                 setOpen(false);
-                setShowBrands(false);
+                // setShowBrands(false);
               }}
               className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
             >
@@ -138,7 +138,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
               to={tabs[4].path}
               onClick={() => {
                 setOpen(false);
-                setShowBrands(false);
+                // setShowBrands(false);
               }}
               className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
             >

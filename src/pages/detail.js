@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
-
 import CurrencyFormatter from "../components/currency-formatter";
 import BookForm from "../components/book-form";
 import CarSlider2 from "../components/CarSlider2";
 import { model } from "../json";
+import { useModelContext } from "../components/ModelProvider";
 
 const Detail = () => {
   const { id, position } = useParams();
   const [car, setCar] = useState(null);
+
+  const { setOpenEnq, setModel } = useModelContext();
 
   const navigate = useNavigate();
 
@@ -22,11 +24,10 @@ const Detail = () => {
     if (!selectedCar) {
       navigate("/");
     }
-  }, [id, navigate,position]);
+  }, [id, navigate, position]);
 
   return (
     <div className="bg-gray-50">
-     
       <div className="max-w-screen-xl px-5 py-10 mx-auto">
         <p className="my-8 font-medium text-gray-600/90">
           <Link to={"/"}>Home</Link> /&nbsp;
@@ -41,9 +42,18 @@ const Detail = () => {
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
           <div className="col-span-2 space-y-10 lg:col-span-2">
             {/* Slider */}
-            <div className="overflow-hidden rounded-lg ">
-              <CarSlider2 sliders={car?.banners} />
-              
+            <div className="col-span-2 space-y-10 lg:col-span-2">
+              <div className="overflow-hidden rounded-lg">
+                {car?.banners.length > 1 ? (
+                  <CarSlider2 sliders={car?.banners} />
+                ) : (
+                  <img
+                    src={car?.banners[0]?.img}
+                    alt=""
+                    className="object-cover w-full h-96"
+                  />
+                )}
+              </div>
             </div>
 
             <div className="space-y-4">
@@ -158,12 +168,15 @@ const Detail = () => {
                 {CurrencyFormatter.format(car?.price)}
                 <span className="text-red-600">*</span>
               </h1>
-              <a
-                href="#form"
-                className="flex items-center justify-center w-full py-3 font-medium text-white bg-red-600 rounded-lg shadow"
+              <div
+                onClick={() => {
+                  setOpenEnq(true);
+                  setModel(car?.name);
+                }}
+                className="flex items-center justify-center w-full py-3 font-medium text-white rounded-lg shadow cursor-pointer bg-secondary"
               >
-                Buy
-              </a>
+                Book Now
+              </div>
             </div>
 
             <div className="p-8 bg-white border border-gray-200 rounded-lg">

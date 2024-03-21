@@ -916,23 +916,11 @@ export const model = [
           price: 3100000,
         },
       ],
-      // banners: [
-      //   {
-      //     img: require("../assets/compass/front-view.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/compass/interior.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/compass/panoramic-sunroof.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/compass/rear-view.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/compass/side-view.webp"),
-      //   },
-      // ],
+      banners: [
+        {
+          img: require("../assets/jeep/comapss.jpg"),
+        },
+      ],
 
       // Dimensions & Capacity
       dimensions: [
@@ -1028,23 +1016,11 @@ export const model = [
           price: 3800000,
         },
       ],
-      // banners: [
-      //   {
-      //     img: require("../assets/meridian/front-view.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/meridian/interior.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/meridian/panoramic-sunroof.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/meridian/rear-view.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/meridian/side-view.webp"),
-      //   },
-      // ],
+      banners: [
+        {
+          img: require("../assets/jeep/meridian.jpg"),
+        },
+      ],
 
       // Dimensions & Capacity
       dimensions: [
@@ -1140,23 +1116,11 @@ export const model = [
           price: 3200000,
         },
       ],
-      // banners: [
-      //   {
-      //     img: require("../assets/wrangler/front-view.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/wrangler/interior.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/wrangler/panoramic-sunroof.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/wrangler/rear-view.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/wrangler/side-view.webp"),
-      //   },
-      // ],
+      banners: [
+        {
+          img: require("../assets/jeep/wrangler.jpg"),
+        },
+      ],
 
       // Dimensions & Capacity
       dimensions: [
@@ -1252,23 +1216,11 @@ export const model = [
           price: 5300000,
         },
       ],
-      // banners: [
-      //   {
-      //     img: require("../assets/grand-cherokee/front-view.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/grand-cherokee/interior.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/grand-cherokee/panoramic-sunroof.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/grand-cherokee/rear-view.webp"),
-      //   },
-      //   {
-      //     img: require("../assets/grand-cherokee/side-view.webp"),
-      //   },
-      // ],
+      banners: [
+        {
+          img: require("../assets/jeep/grand.png"),
+        },
+      ],
 
       // Dimensions & Capacity
       dimensions: [

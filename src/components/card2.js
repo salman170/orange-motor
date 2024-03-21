@@ -1,13 +1,12 @@
 import { PiGasPumpLight, PiEngineLight } from "react-icons/pi";
 import TransmissionSvg from "../assets/svg/transmission.svg";
 import CurrencyFormatter from "./currency-formatter";
+import { useModelContext } from "./ModelProvider";
 
 const Card2 = ({
-  id,
   title,
   engine,
   fuel,
-  position,
   brochure,
   transmission,
   price,
@@ -31,8 +30,10 @@ const Card2 = ({
     return emi.toFixed(0);
   };
 
+  const { setOpenEnq, setModel } = useModelContext();
+
   return (
-    <div className="py-1 overflow-hidden border rounded-lg group border-gray-200/70">
+    <div className="py-1 overflow-hidden border rounded-lg shadow-lg group border-gray-200/70">
       <div className="overflow-hidden bg-slate-100/80">
         <img
           src={banner}
@@ -97,16 +98,22 @@ const Card2 = ({
           <p className="text-sm ">From ₹ {calculateEMI()} / m</p>
         </div>
         <div className="flex items-center justify-between gap-4 py-3">
-          <div className="flex-grow w-1/2 px-2 py-2 text-center text-white duration-500 rounded-lg shadow-lg cursor-pointer md:px-4 lg:px-8 focus:outline-none bg-secondary hover:scale-105">
-            Buy Now
-          </div>
           <a href={brochure} target="_blank" rel="noreferrer" className="w-1/2">
             {" "}
             <div className="flex-grow px-2 py-2 text-sm text-center border rounded-lg cursor-pointer hover:shadow-lg md:px-4 lg:px-4 focus:outline-none text-secondary hover:border-secondary">
               {" "}
               View Brochure
             </div>
-          </a>
+          </a>{" "}
+          <div
+            onClick={() => {
+              setOpenEnq(true);
+              setModel(title);
+            }}
+            className="flex-grow w-1/2 px-2 py-2 text-center text-white duration-500 rounded-lg shadow-lg cursor-pointer md:px-4 lg:px-8 focus:outline-none bg-secondary hover:scale-105"
+          >
+            Book Now
+          </div>
         </div>
         {/* <div className="text-sm text-blue-500/90">View Details</div> */}
       </div>

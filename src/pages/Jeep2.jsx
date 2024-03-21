@@ -6,6 +6,7 @@ import {   model } from "../json";
 import Card2 from "../components/card2";
 
 const Jeep2 = () => {
+ 
   return (
     <div>
       <img
@@ -72,7 +73,7 @@ const Jeep2 = () => {
             strong presence across Andhra Pradesh and Telangana.
           </p>
         </div>
-        <div className="col-span-1 ">
+        <div className="col-span-2 p-2 lg:col-span-1">
           <BookForm />
         </div>
       </div>
@@ -90,9 +91,11 @@ const Jeep2 = () => {
             engine={item?.cc}
             brochure={item?.brochure}
             dimensions={item?.dimensions}
+           
           />
         ))}
       </div>
+  
     </div>
   );
 };

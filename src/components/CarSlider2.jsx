@@ -22,7 +22,6 @@ function CarSlider2({ sliders }) {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
 
-  console.log(sliders)
 
   return (
     <>

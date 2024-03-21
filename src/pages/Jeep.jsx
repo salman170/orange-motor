@@ -71,7 +71,7 @@ const Jeep = () => {
             strong presence across Andhra Pradesh and Telangana.
           </p>
         </div>
-        <div className="col-span-1 ">
+        <div className="col-span-2 p-2 lg:col-span-1">
           <BookForm />
         </div>
       </div>
