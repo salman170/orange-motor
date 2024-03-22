@@ -54,7 +54,7 @@ const Locations = () => {
                   rel="noreferrer"
                   className="flex items-center gap-2 pt-3 pb-2 group-hover:text-white"
                 >
-                  View Google Map{" "}
+                  View in Google Map{" "}
                   <FaMapMarkerAlt className="text-secondary group-hover:text-white" />
                 </a>
               </div>

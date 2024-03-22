@@ -20,7 +20,7 @@ const navigation = {
     },
     {
       name: "Honda",
-      href: "/",
+      href: "/honda",
     },
     {
       name: "Kawasaki",

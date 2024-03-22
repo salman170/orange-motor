@@ -4184,6 +4184,410 @@ export const model = [
       ],
     },
   ],
+
+  // Honda Scooty - 9
+  [
+    // Honda Dio 125
+    {
+      id: "dio_125",
+      category: "honda",
+      name: "Dio 125",
+      pic: require("../assets/honda/dio_125.jpg"),
+      price: 75000,
+      fuel: "Petrol",
+      transmission: "Automatic",
+      cc: "125",
+      variants: [
+        {
+          variant: "Scooty",
+          price: 75000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/dio_125.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 1803,
+        },
+        {
+          title: "Width (mm)",
+          value: 728,
+        },
+        {
+          title: "Height (mm)",
+          value: 1150,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 5.3,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 125,
+        },
+        {
+          title: "Max Power",
+          value: "8.29@6500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Automatic",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "105",
+        },
+        {
+          title: "Gross Weight",
+          value: 105,
+        },
+      ],
+    },
+    // Honda Dio
+    {
+      id: "dio",
+      category: "honda",
+      name: "Dio",
+      pic: require("../assets/honda/dio.jpg"),
+      price: 65000,
+      fuel: "Petrol",
+      transmission: "Automatic",
+      cc: "110",
+      variants: [
+        {
+          variant: "Scooty",
+          price: 65000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/dio.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 1791,
+        },
+        {
+          title: "Width (mm)",
+          value: 723,
+        },
+        {
+          title: "Height (mm)",
+          value: 1150,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 5.3,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 110,
+        },
+        {
+          title: "Max Power",
+          value: "7.76@8000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Automatic",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "104",
+        },
+        {
+          title: "Gross Weight",
+          value: 104,
+        },
+      ],
+    },
+    // Honda Activa 125
+    {
+      id: "activa_125",
+      category: "honda",
+      name: "Activa 125",
+      pic: require("../assets/honda/activa_125.jpg"),
+      price: 78000,
+      fuel: "Petrol",
+      transmission: "Automatic",
+      cc: "124",
+      variants: [
+        {
+          variant: "Scooty",
+          price: 78000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/activa_125.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 1850,
+        },
+        {
+          title: "Width (mm)",
+          value: 707,
+        },
+        {
+          title: "Height (mm)",
+          value: 1170,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 5.3,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 124,
+        },
+        {
+          title: "Max Power",
+          value: "8.18@6500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Automatic",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "111",
+        },
+        {
+          title: "Gross Weight",
+          value: 111,
+        },
+      ],
+    },
+    // Honda Activa 6G
+    {
+      id: "activa_6g",
+      category: "honda",
+      name: "Activa 6G",
+      pic: require("../assets/honda/activa_6g.jpg"),
+      price: 68000,
+      fuel: "Petrol",
+      transmission: "Automatic",
+      cc: "109",
+      variants: [
+        {
+          variant: "Scooty",
+          price: 68000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/activa_6g.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 1833,
+        },
+        {
+          title: "Width (mm)",
+          value: 697,
+        },
+        {
+          title: "Height (mm)",
+          value: 1156,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 5.3,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 109,
+        },
+        {
+          title: "Max Power",
+          value: "7.68@8000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Automatic",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "107",
+        },
+        {
+          title: "Gross Weight",
+          value: 107,
+        },
+      ],
+    },
+    // Honda Activa
+    {
+      id: "activa",
+      category: "honda",
+      name: "Activa",
+      pic: require("../assets/honda/activa.jpg"),
+      price: 66000,
+      fuel: "Petrol",
+      transmission: "Automatic",
+      cc: "109",
+      variants: [
+        {
+          variant: "Scooty",
+          price: 66000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/activa.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 1761,
+        },
+        {
+          title: "Width (mm)",
+          value: 710,
+        },
+        {
+          title: "Height (mm)",
+          value: 1149,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 5.3,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 109,
+        },
+        {
+          title: "Max Power",
+          value: "8.11@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Automatic",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "107",
+        },
+        {
+          title: "Gross Weight",
+          value: 107,
+        },
+      ],
+    },
+  ],
 ];
 
 export const brands = [

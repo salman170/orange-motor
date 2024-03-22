@@ -155,20 +155,22 @@ const Home = () => {
               <p className="font-semibold text-center text-black/80">Jeep</p>
             </div>
           </Link>
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="200"
-            data-aos-duration="500"
-            data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
-            className="p-2 rounded bg-slate-100"
-          >
-            <img
-              src={require("../assets/homepage/Honda Logo.png")}
-              className="w-full h-28"
-              alt=""
-            />
-            <p className="font-semibold text-center text-black/80">Honda</p>
-          </div>
+          <Link to="/honda">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="500"
+              data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
+              className="p-2 rounded bg-slate-100"
+            >
+              <img
+                src={require("../assets/homepage/Honda Logo.png")}
+                className="w-full h-28"
+                alt=""
+              />
+              <p className="font-semibold text-center text-black/80">Honda</p>
+            </div>
+          </Link>
           <Link to="/kawasaki">
             {" "}
             <div
@@ -878,7 +880,7 @@ const Home = () => {
                 rel="noreferrer"
                 className="flex items-center gap-2 pt-3 pb-2 group-hover:text-white "
               >
-                View Google Map{" "}
+                View in Google Map
                 <FaMapMarkerAlt className="text-secondary group-hover:text-white" />
               </a>
             </div>
