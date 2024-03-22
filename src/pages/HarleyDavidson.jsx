@@ -2,7 +2,7 @@ import React from "react";
 import Breadcrumb from "../components/breadcrumb";
 import BookForm from "../components/book-form";
 import { model } from "../json";
-import TwoVehCard from "../components/twoVehCard";
+import TwoVehCard from "../components/TwoVehCard";
 
 const HarleyDavidson = () => {
   return (
@@ -76,7 +76,8 @@ const HarleyDavidson = () => {
           <BookForm />
         </div>
       </div>
-      <div className="grid gap-5 py-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl">
+      
+      <div className="grid gap-5 py-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
         {model[9].map((item) => (
           <TwoVehCard
             key={item.id}
@@ -88,6 +89,7 @@ const HarleyDavidson = () => {
             fuel={item?.fuel}
             transmission={item?.transmission}
             engine={item?.cc}
+            category={item?.variants[0]}
             // brochure={item?.brochure}
             weight={item?.weight}
           />

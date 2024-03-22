@@ -54,7 +54,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
     },
     {
       name: "Kawasaki",
-      href: "/",
+      href: "/kawasaki",
     },
     {
       name: "Harley Davidson",

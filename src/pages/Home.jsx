@@ -118,14 +118,15 @@ const Home = () => {
       <div className="px-5 mx-auto max-w-7xl">
         <h2 className="my-10 text-4xl font-semibold text-center">Our Brands</h2>
         <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="50"
-            data-aos-duration="500"
-            data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
-            className="p-2 rounded bg-slate-100"
-          >
-            <Link to="/tata">
+          <Link to="/tata">
+            {" "}
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="500"
+              data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
+              className="p-2 rounded bg-slate-100"
+            >
               <img
                 src={require("../assets/homepage/Tata Logo.png")}
                 className="w-full h-28"
@@ -134,25 +135,26 @@ const Home = () => {
               <p className="font-semibold text-center text-black/80">
                 Tata Motors
               </p>
-            </Link>
-          </div>
+            </div>
+          </Link>
 
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="0"
-            data-aos-duration="500"
-            data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
-            className="p-2 rounded bg-slate-100"
-          >
-            <Link to="/jeep">
+          <Link to="/jeep">
+            {" "}
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="0"
+              data-aos-duration="500"
+              data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
+              className="p-2 rounded bg-slate-100"
+            >
               <img
                 src={require("../assets/homepage/jeep Logo.png")}
                 className="w-full h-28"
                 alt=""
               />
               <p className="font-semibold text-center text-black/80">Jeep</p>
-            </Link>
-          </div>
+            </div>
+          </Link>
           <div
             data-aos="zoom-in"
             data-aos-delay="200"
@@ -167,39 +169,45 @@ const Home = () => {
             />
             <p className="font-semibold text-center text-black/80">Honda</p>
           </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="300"
-            data-aos-duration="500"
-            data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
-            className="p-2 rounded bg-slate-100"
-          >
-            <img
-              src={require("../assets/homepage/Kawasaki Logo.png")}
-              className="w-full h-28"
-              alt=""
-            />
-            <p className="font-semibold text-center text-black/80">Kawasaki</p>{" "}
-          </div>
-          <div
-            data-aos="zoom-in"
-            data-aos-delay="400"
-            data-aos-duration="500"
-            data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
-            className="p-2 rounded bg-slate-100"
-          >
-            <Link to="/harley-davidson">
+          <Link to="/kawasaki">
+            {" "}
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              data-aos-duration="500"
+              data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
+              className="p-2 rounded bg-slate-100"
+            >
+              <img
+                src={require("../assets/homepage/Kawasaki Logo.png")}
+                className="w-full h-28"
+                alt=""
+              />
+              <p className="font-semibold text-center text-black/80">
+                Kawasaki
+              </p>{" "}
+            </div>
+          </Link>
+          <Link to="/harley-davidson">
+            {" "}
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              data-aos-duration="500"
+              data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
+              className="p-2 rounded bg-slate-100"
+            >
               <img
                 src={require("../assets/homepage/Harley Logo.png")}
                 className="w-full h-28"
                 alt=""
               />
-            </Link>
 
-            <p className="font-semibold text-center text-black/80">
-              Harley Davidson
-            </p>
-          </div>
+              <p className="font-semibold text-center text-black/80">
+                Harley Davidson
+              </p>
+            </div>
+          </Link>
         </div>
       </div>
 

@@ -889,6 +889,7 @@ export const model = [
       ],
     },
   ],
+  // Jeep - 1
   [
     // Jeep Compass
     {
@@ -1287,6 +1288,2898 @@ export const model = [
         {
           title: "Gross Weight",
           value: 2945,
+        },
+      ],
+    },
+  ],
+  // Kawasaki Ninja - 2
+  [
+    // Kawasaki Ninja H2R
+    {
+      id: "ninja_h2r",
+      category: "kawasaki",
+      name: "Ninja H2R",
+      pic: require("../assets/kawasaki/ninja_h2r.png"),
+      price: 5500000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "998",
+      variants: [
+        {
+          variant: "Ninja",
+          price: 5500000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/ninja_h2r.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2085,
+        },
+        {
+          title: "Width (mm)",
+          value: 770,
+        },
+        {
+          title: "Height (mm)",
+          value: 1125,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 17,
+        },
+        {
+          title: "Seating",
+          value: 1,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 998,
+        },
+        {
+          title: "Max Power",
+          value: "310@14000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "216",
+        },
+        {
+          title: "Gross Weight",
+          value: 216,
+        },
+      ],
+    },
+    // Kawasaki Ninja H2 SX
+    {
+      id: "ninja_h2_sx",
+      category: "kawasaki",
+      name: "Ninja H2 SX",
+      pic: require("../assets/kawasaki/ninja_h2_sx.png"),
+      price: 1500000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "998",
+      variants: [
+        {
+          variant: "Ninja",
+          price: 1500000,
+        },
+        {
+          variant: "Performance",
+          price: 1600000,
+        },
+        {
+          variant: "ABS",
+          price: 1700000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/ninja_h2_sx.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2380,
+        },
+        {
+          title: "Width (mm)",
+          value: 930,
+        },
+        {
+          title: "Height (mm)",
+          value: 1350,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 19,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 998,
+        },
+        {
+          title: "Max Power",
+          value: "200@11000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "256",
+        },
+        {
+          title: "Gross Weight",
+          value: 256,
+        },
+      ],
+    },
+    // Kawasaki Ninja H2 SX SE
+    {
+      id: "ninja_h2_sx_se",
+      category: "kawasaki",
+      name: "Ninja H2 SX SE",
+      pic: require("../assets/kawasaki/ninja_h2_sx_se.png"),
+      price: 1700000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "998",
+      variants: [
+        {
+          variant: "Ninja",
+          price: 1700000,
+        },
+        {
+          variant: "Performance",
+          price: 1800000,
+        },
+        {
+          variant: "ABS",
+          price: 1900000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/ninja_h2_sx_se.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2380,
+        },
+        {
+          title: "Width (mm)",
+          value: 930,
+        },
+        {
+          title: "Height (mm)",
+          value: 1350,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 19,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 998,
+        },
+        {
+          title: "Max Power",
+          value: "200@11000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "256",
+        },
+        {
+          title: "Gross Weight",
+          value: 256,
+        },
+      ],
+    },
+    // Kawasaki Ninja ZX-10R
+    {
+      id: "ninja_zx_10r",
+      category: "kawasaki",
+      name: "Ninja ZX-10R",
+      pic: require("../assets/kawasaki/ninja_zx_10r.png"),
+      price: 1350000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "998",
+      variants: [
+        {
+          variant: "Ninja",
+          price: 1350000,
+        },
+        {
+          variant: "Performance",
+          price: 1450000,
+        },
+        {
+          variant: "ABS",
+          price: 1550000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/ninja_zx_10r.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2095,
+        },
+        {
+          title: "Width (mm)",
+          value: 740,
+        },
+        {
+          title: "Height (mm)",
+          value: 1145,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 17,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 998,
+        },
+        {
+          title: "Max Power",
+          value: "203@13500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "206",
+        },
+        {
+          title: "Gross Weight",
+          value: 206,
+        },
+      ],
+    },
+    // Kawasaki Ninja ZX-6R
+    {
+      id: "ninja_zx_6r",
+      category: "kawasaki",
+      name: "Ninja ZX-6R",
+      pic: require("../assets/kawasaki/ninja_zx_6r.png"),
+      price: 1150000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "636",
+      variants: [
+        {
+          variant: "Ninja",
+          price: 1150000,
+        },
+        {
+          variant: "Performance",
+          price: 1200000,
+        },
+        {
+          variant: "ABS",
+          price: 1250000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/ninja_zx_6r.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2085,
+        },
+        {
+          title: "Width (mm)",
+          value: 705,
+        },
+        {
+          title: "Height (mm)",
+          value: 1130,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 17,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 636,
+        },
+        {
+          title: "Max Power",
+          value: "130@13500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "196",
+        },
+        {
+          title: "Gross Weight",
+          value: 196,
+        },
+      ],
+    },
+    // Kawasaki Ninja ZX-4R
+    {
+      id: "ninja_zx_4r",
+      category: "kawasaki",
+      name: "Ninja ZX-4R",
+      pic: require("../assets/kawasaki/ninja_zx_4r.png"),
+      price: 950000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "399",
+      variants: [
+        {
+          variant: "Ninja",
+          price: 950000,
+        },
+        {
+          variant: "ABS",
+          price: 1000000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/ninja_zx_4r.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 1980,
+        },
+        {
+          title: "Width (mm)",
+          value: 710,
+        },
+        {
+          title: "Height (mm)",
+          value: 1050,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 15,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 399,
+        },
+        {
+          title: "Max Power",
+          value: "50@10500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "185",
+        },
+        {
+          title: "Gross Weight",
+          value: 185,
+        },
+      ],
+    },
+    // Kawasaki Ninja 650
+    {
+      id: "ninja_650",
+      category: "kawasaki",
+      name: "Ninja 650",
+      pic: require("../assets/kawasaki/ninja_650.png"),
+      price: 750000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "649",
+      variants: [
+        {
+          variant: "Ninja",
+          price: 750000,
+        },
+        {
+          variant: "ABS",
+          price: 800000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/ninja_650.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2125,
+        },
+        {
+          title: "Width (mm)",
+          value: 740,
+        },
+        {
+          title: "Height (mm)",
+          value: 1140,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 15,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 649,
+        },
+        {
+          title: "Max Power",
+          value: "68@8000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "193",
+        },
+        {
+          title: "Gross Weight",
+          value: 193,
+        },
+      ],
+    },
+    // Kawasaki Ninja 500
+    {
+      id: "ninja_500",
+      category: "kawasaki",
+      name: "Ninja 500",
+      pic: require("../assets/kawasaki/ninja_500.png"),
+      price: 550000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "498",
+      variants: [
+        {
+          variant: "Ninja",
+          price: 550000,
+        },
+        {
+          variant: "ABS",
+          price: 600000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/ninja_500.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2085,
+        },
+        {
+          title: "Width (mm)",
+          value: 740,
+        },
+        {
+          title: "Height (mm)",
+          value: 1140,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 15,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 498,
+        },
+        {
+          title: "Max Power",
+          value: "47@9000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "193",
+        },
+        {
+          title: "Gross Weight",
+          value: 193,
+        },
+      ],
+    },
+    // Kawasaki Ninja 400
+    {
+      id: "ninja_400",
+      category: "kawasaki",
+      name: "Ninja 400",
+      pic: require("../assets/kawasaki/ninja_400.png"),
+      price: 450000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "399",
+      variants: [
+        {
+          variant: "Ninja",
+          price: 450000,
+        },
+        {
+          variant: "ABS",
+          price: 500000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/ninja_400.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2020,
+        },
+        {
+          title: "Width (mm)",
+          value: 710,
+        },
+        {
+          title: "Height (mm)",
+          value: 1120,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 14,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 399,
+        },
+        {
+          title: "Max Power",
+          value: "45@10000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "168",
+        },
+        {
+          title: "Gross Weight",
+          value: 168,
+        },
+      ],
+    },
+    // Kawasaki Ninja 300
+    {
+      id: "ninja_300",
+      category: "kawasaki",
+      name: "Ninja 300",
+      pic: require("../assets/kawasaki/ninja_300.png"),
+      price: 375000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "296",
+      variants: [
+        {
+          variant: "Ninja",
+          price: 375000,
+        },
+        {
+          variant: "ABS",
+          price: 425000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/ninja_300.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2015,
+        },
+        {
+          title: "Width (mm)",
+          value: 715,
+        },
+        {
+          title: "Height (mm)",
+          value: 1110,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 17,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 296,
+        },
+        {
+          title: "Max Power",
+          value: "39@11000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "172",
+        },
+        {
+          title: "Gross Weight",
+          value: 172,
+        },
+      ],
+    },
+  ],
+  // Kawasaki Z - 3
+  [
+    // Kawasaki Z H2 SE
+    {
+      id: "z_h2_se",
+      category: "kawasaki",
+      name: "Z H2 SE",
+      pic: require("../assets/kawasaki/z_h2_se.png"),
+      price: 1725000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "998",
+      variants: [
+        {
+          variant: "z",
+          price: 1725000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/z_h2_se.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2135,
+        },
+        {
+          title: "Width (mm)",
+          value: 830,
+        },
+        {
+          title: "Height (mm)",
+          value: 1195,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 19,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 998,
+        },
+        {
+          title: "Max Power",
+          value: "200@11000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "239",
+        },
+        {
+          title: "Gross Weight",
+          value: 239,
+        },
+      ],
+    },
+    // Kawasaki Z H2
+    {
+      id: "z_h2",
+      category: "kawasaki",
+      name: "Z H2",
+      pic: require("../assets/kawasaki/z_h2.png"),
+      price: 1660000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "998",
+      variants: [
+        {
+          variant: "z",
+          price: 1660000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/z_h2.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2085,
+        },
+        {
+          title: "Width (mm)",
+          value: 850,
+        },
+        {
+          title: "Height (mm)",
+          value: 1145,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 19,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 998,
+        },
+        {
+          title: "Max Power",
+          value: "200@11000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "239",
+        },
+        {
+          title: "Gross Weight",
+          value: 239,
+        },
+      ],
+    },
+    // Kawasaki Z900RS
+    {
+      id: "z900rs",
+      category: "kawasaki",
+      name: "Z900RS",
+      pic: require("../assets/kawasaki/z900rs.png"),
+      price: 1650000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "948",
+      variants: [
+        {
+          variant: "z",
+          price: 1650000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/z900rs.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2100,
+        },
+        {
+          title: "Width (mm)",
+          value: 865,
+        },
+        {
+          title: "Height (mm)",
+          value: 1115,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 17,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 948,
+        },
+        {
+          title: "Max Power",
+          value: "111@8500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "214",
+        },
+        {
+          title: "Gross Weight",
+          value: 214,
+        },
+      ],
+    },
+    // Kawasaki Z900
+    {
+      id: "z900",
+      category: "kawasaki",
+      name: "Z900",
+      pic: require("../assets/kawasaki/z900.png"),
+      price: 1230000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "948",
+      variants: [
+        {
+          variant: "z",
+          price: 1230000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/z900.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2065,
+        },
+        {
+          title: "Width (mm)",
+          value: 825,
+        },
+        {
+          title: "Height (mm)",
+          value: 1065,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 17,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 948,
+        },
+        {
+          title: "Max Power",
+          value: "92@8500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "212",
+        },
+        {
+          title: "Gross Weight",
+          value: 212,
+        },
+      ],
+    },
+    // Kawasaki Z650RS
+    {
+      id: "z650rs",
+      category: "kawasaki",
+      name: "Z650RS ",
+      pic: require("../assets/kawasaki/z650rs.png"),
+      price: 915000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "649",
+      variants: [
+        {
+          variant: "z",
+          price: 915000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/z650rs.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2115,
+        },
+        {
+          title: "Width (mm)",
+          value: 800,
+        },
+        {
+          title: "Height (mm)",
+          value: 1100,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 15,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 649,
+        },
+        {
+          title: "Max Power",
+          value: "68@8000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "190",
+        },
+        {
+          title: "Gross Weight",
+          value: 190,
+        },
+      ],
+    },
+    // Kawasaki Z650
+    {
+      id: "z650",
+      category: "kawasaki",
+      name: "Z650",
+      pic: require("../assets/kawasaki/z650.png"),
+      price: 800000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "649",
+      variants: [
+        {
+          variant: "z",
+          price: 800000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/z650.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2115,
+        },
+        {
+          title: "Width (mm)",
+          value: 775,
+        },
+        {
+          title: "Height (mm)",
+          value: 1065,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 15,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 649,
+        },
+        {
+          title: "Max Power",
+          value: "68@8000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "191",
+        },
+        {
+          title: "Gross Weight",
+          value: 191,
+        },
+      ],
+    },
+  ],
+  // Kawasaki Urban Cruiser - 4
+  [
+    // Kawasaki Eliminator
+    {
+      id: "eliminator",
+      category: "kawasaki",
+      name: "Eliminator",
+      pic: require("../assets/kawasaki/eliminator.png"),
+      price: 600000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "250",
+      variants: [
+        {
+          variant: "Urban Cruiser",
+          price: 600000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/eliminator.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2300,
+        },
+        {
+          title: "Width (mm)",
+          value: 850,
+        },
+        {
+          title: "Height (mm)",
+          value: 1100,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 11,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 250,
+        },
+        {
+          title: "Max Power",
+          value: "25@9000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "173",
+        },
+        {
+          title: "Gross Weight",
+          value: 173,
+        },
+      ],
+    },
+    // Kawasaki Vulcan S
+    {
+      id: "vulcan_s",
+      category: "kawasaki",
+      name: "Vulcan S",
+      pic: require("../assets/kawasaki/vulcan_s.png"),
+      price: 750000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "649",
+      variants: [
+        {
+          variant: "Urban Cruiser",
+          price: 750000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/vulcan_s.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2310,
+        },
+        {
+          title: "Width (mm)",
+          value: 855,
+        },
+        {
+          title: "Height (mm)",
+          value: 1090,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 14,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 649,
+        },
+        {
+          title: "Max Power",
+          value: "61@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "228",
+        },
+        {
+          title: "Gross Weight",
+          value: 228,
+        },
+      ],
+    },
+  ],
+  // Kawasaki Versys - 5
+  [
+    // Kawasaki Versys 650
+    {
+      id: "versys_650",
+      category: "kawasaki",
+      name: "Versys 650",
+      pic: require("../assets/kawasaki/versys_650.png"),
+      price: 850000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "649",
+      variants: [
+        {
+          variant: "Versys 650",
+          price: 850000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/versys_650.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2165,
+        },
+        {
+          title: "Width (mm)",
+          value: 840,
+        },
+        {
+          title: "Height (mm)",
+          value: 1400,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 21,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 649,
+        },
+        {
+          title: "Max Power",
+          value: "69@8500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "216",
+        },
+        {
+          title: "Gross Weight",
+          value: 216,
+        },
+      ],
+    },
+  ],
+  // Kawasaki W - 6
+  [
+    // Kawasaki W175 Street
+    {
+      id: "w175_street",
+      category: "kawasaki",
+      name: "W175 Street",
+      pic: require("../assets/kawasaki/w175_street.png"),
+      price: 110000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "177",
+      variants: [
+        {
+          variant: "W",
+          price: 110000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/w175_street.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 1915,
+        },
+        {
+          title: "Width (mm)",
+          value: 755,
+        },
+        {
+          title: "Height (mm)",
+          value: 1050,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 13,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 177,
+        },
+        {
+          title: "Max Power",
+          value: "13.8@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "126",
+        },
+        {
+          title: "Gross Weight",
+          value: 126,
+        },
+      ],
+    },
+    // Kawasaki W175
+    {
+      id: "w175",
+      category: "kawasaki",
+      name: "W175",
+      pic: require("../assets/kawasaki/w175.png"),
+      price: 108000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "177",
+      variants: [
+        {
+          variant: "W",
+          price: 108000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/w175.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 1915,
+        },
+        {
+          title: "Width (mm)",
+          value: 755,
+        },
+        {
+          title: "Height (mm)",
+          value: 1050,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 13,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 177,
+        },
+        {
+          title: "Max Power",
+          value: "13.8@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "126",
+        },
+        {
+          title: "Gross Weight",
+          value: 126,
+        },
+      ],
+    },
+  ],
+  // Kawasaki KX - 7
+  [
+    // Kawasaki KX450
+    {
+      id: "kx450",
+      category: "kawasaki",
+      name: "KX450",
+      pic: require("../assets/kawasaki/kx450.png"),
+      price: 960000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "449",
+      variants: [
+        {
+          variant: "KX",
+          price: 960000,
+        },
+      ],
+      banners: [
+        {
+          // img: require("../assets/kawasaki/kx450.png"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 449,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "110.8",
+        },
+        {
+          title: "Gross Weight",
+          value: 110.8,
+        },
+      ],
+    },
+    // Kawasaki KX250
+    {
+      id: "kx250",
+      category: "kawasaki",
+      name: "KX250",
+      pic: require("../assets/kawasaki/kx250.png"),
+      price: 840000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "249",
+      variants: [
+        {
+          variant: "KX",
+          price: 840000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/kx250.png"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 249,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "105.2",
+        },
+        {
+          title: "Gross Weight",
+          value: 105.2,
+        },
+      ],
+    },
+    // Kawasaki KX112
+    {
+      id: "kx112",
+      category: "kawasaki",
+      name: "KX112",
+      pic: require("../assets/kawasaki/kx112.png"),
+      price: 450000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "112",
+      variants: [
+        {
+          variant: "KX",
+          price: 450000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/kx112.png"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 112,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "80.7",
+        },
+        {
+          title: "Gross Weight",
+          value: 80.7,
+        },
+      ],
+    },
+    // Kawasaki KX85
+    {
+      id: "kx85",
+      category: "kawasaki",
+      name: "KX85",
+      pic: require("../assets/kawasaki/kx85.png"),
+      price: 358000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "84",
+      variants: [
+        {
+          variant: "KX",
+          price: 358000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/kx85.png"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 84,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "77",
+        },
+        {
+          title: "Gross Weight",
+          value: 77,
+        },
+      ],
+    },
+    // Kawasaki KX65
+    {
+      id: "kx65",
+      category: "kawasaki",
+      name: "KX65",
+      pic: require("../assets/kawasaki/kx65.png"),
+      price: 280000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "64",
+      variants: [
+        {
+          variant: "KX",
+          price: 280000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/kx65.png"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 64,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "61",
+        },
+        {
+          title: "Gross Weight",
+          value: 61,
+        },
+      ],
+    },
+  ],
+  // Kawasaki KLX - 8
+  [
+    // Kawasaki KLX 450R
+    {
+      id: "klx_450r",
+      category: "kawasaki",
+      name: "KLX 450R",
+      pic: require("../assets/kawasaki/klx_450r.png"),
+      price: 990000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "449",
+      variants: [
+        {
+          variant: "KLX",
+          price: 990000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/klx_450r.png"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 449,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "131.7",
+        },
+        {
+          title: "Gross Weight",
+          value: 131.7,
+        },
+      ],
+    },
+    // Kawasaki KLX 300R
+    {
+      id: "klx_300r",
+      category: "kawasaki",
+      name: "KLX 300R",
+      pic: require("../assets/kawasaki/klx_300r.png"),
+      price: 860000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "292",
+      variants: [
+        {
+          variant: "KLX",
+          price: 860000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/klx_300r.png"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 292,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "134.4",
+        },
+        {
+          title: "Gross Weight",
+          value: 134.4,
+        },
+      ],
+    },
+    // Kawasaki KLX 230R S
+    {
+      id: "klx_230r_s",
+      category: "kawasaki",
+      name: "KLX 230R S",
+      pic: require("../assets/kawasaki/klx_230r_s.png"),
+      price: 750000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "233",
+      variants: [
+        {
+          variant: "KLX",
+          price: 750000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/klx_230r_s.png"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 233,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "118",
+        },
+        {
+          title: "Gross Weight",
+          value: 118,
+        },
+      ],
+    },
+    // Kawasaki KLX 140R F
+    {
+      id: "klx_140r_f",
+      category: "kawasaki",
+      name: "KLX 140R F",
+      pic: require("../assets/kawasaki/klx_140r_f.png"),
+      price: 500000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "144",
+      variants: [
+        {
+          variant: "KLX",
+          price: 500000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/klx_140r_f.png"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 144,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "99.8",
+        },
+        {
+          title: "Gross Weight",
+          value: 99.8,
+        },
+      ],
+    },
+    // Kawasaki KLX 110R L
+    {
+      id: "klx_110r_l",
+      category: "kawasaki",
+      name: "KLX 110R L",
+      pic: require("../assets/kawasaki/klx_110r_l.png"),
+      price: 400000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "112",
+      variants: [
+        {
+          variant: "KLX",
+          price: 400000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/kawasaki/klx_110r_l.png"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 112,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "76.3",
+        },
+        {
+          title: "Gross Weight",
+          value: 76.3,
+        },
+      ],
+    },
+  ],
+
+  // Harley-Davidson
+  [
+    // HARLEY-DAVIDSON X™440
+    {
+      id: "x_440",
+      category: "harley-davidson",
+      name: "X™440",
+      pic: require("../assets/harley-davidson/x_440.webp"),
+      price: 25000,
+      fuel: "Petrol",
+      transmission: "6-Speed Manual",
+      cc: "440",
+      variants: [
+        {
+          variant: "HARLEY-DAVIDSON X",
+          price: 25000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/x_440.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 440,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "6-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "200",
+        },
+        {
+          title: "Gross Weight",
+          value: 200,
+        },
+      ],
+    },
+    // STREET GLIDE™
+    {
+      id: "street_glide",
+      category: "harley-davidson",
+      name: "Street Glide™",
+      pic: require("../assets/harley-davidson/street_glide.webp"),
+      price: 28000,
+      fuel: "Petrol",
+      transmission: "6-Speed Manual",
+      cc: "107",
+      variants: [
+        {
+          variant: "Grand American Touring",
+          price: 28000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/street_glide.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 107,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "6-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "350",
+        },
+        {
+          title: "Gross Weight",
+          value: 350,
+        },
+      ],
+    },
+    // ROAD GLIDE™
+    {
+      id: "road_glide",
+      category: "harley-davidson",
+      name: "Road Glide™",
+      pic: require("../assets/harley-davidson/road_glide.webp"),
+      price: 30000,
+      fuel: "Petrol",
+      transmission: "6-Speed Manual",
+      cc: "114",
+      variants: [
+        {
+          variant: "Grand American Touring",
+          price: 30000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/road_glide.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 114,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "6-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "370",
+        },
+        {
+          title: "Gross Weight",
+          value: 370,
+        },
+      ],
+    },
+    // BREAKOUT™ 117
+    {
+      id: "breakout_117",
+      category: "harley-davidson",
+      name: "Breakout™ 117",
+      pic: require("../assets/harley-davidson/breakout_117.webp"),
+      price: 32000,
+      fuel: "Petrol",
+      transmission: "6-Speed Manual",
+      cc: "117",
+      variants: [
+        {
+          variant: "Cruiser",
+          price: 32000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/breakout_117.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 117,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "6-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "380",
+        },
+        {
+          title: "Gross Weight",
+          value: 380,
+        },
+      ],
+    },
+    // HERITAGE CLASSIC
+    {
+      id: "heritage_classic",
+      category: "harley-davidson",
+      name: "Heritage Classic",
+      pic: require("../assets/harley-davidson/heritage_classic.webp"),
+      price: 35000,
+      fuel: "Petrol",
+      transmission: "6-Speed Manual",
+      cc: "114",
+      variants: [
+        {
+          variant: "Cruiser",
+          price: 35000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/heritage_classic.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 114,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "6-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "340",
+        },
+        {
+          title: "Gross Weight",
+          value: 340,
+        },
+      ],
+    },
+    // FAT BOY™ 114
+    {
+      id: "fat_boy_114",
+      category: "harley-davidson",
+      name: "Fat Boy™ 114",
+      pic: require("../assets/harley-davidson/fat_boy_114.webp"),
+      price: 34000,
+      fuel: "Petrol",
+      transmission: "6-Speed Manual",
+      cc: "114",
+      variants: [
+        {
+          variant: "Cruiser",
+          price: 34000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/fat_boy_114.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 114,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "6-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "330",
+        },
+        {
+          title: "Gross Weight",
+          value: 330,
+        },
+      ],
+    },
+    // FAT BOB™ 114
+    {
+      id: "fat_bob_114",
+      category: "harley-davidson",
+      name: "Fat Bob™ 114",
+      pic: require("../assets/harley-davidson/fat_bob_114.webp"),
+      price: 36000,
+      fuel: "Petrol",
+      transmission: "6-Speed Manual",
+      cc: "114",
+      variants: [
+        {
+          variant: "Cruiser",
+          price: 36000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/fat_bob_114.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 114,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "6-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "318",
+        },
+        {
+          title: "Gross Weight",
+          value: 318,
+        },
+      ],
+    },
+    // PAN AMERICA™ 1250 SPECIAL
+    {
+      id: "pan_america_1250_special",
+      category: "harley-davidson",
+      name: "Pan America™ 1250 Special",
+      pic: require("../assets/harley-davidson/pan_america_1250_special.webp"),
+      price: 38000,
+      fuel: "Petrol",
+      transmission: "6-Speed Manual",
+      cc: "1250",
+      variants: [
+        {
+          variant: "Adventure Touring",
+          price: 38000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/pan_america_1250_special.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 1250,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "6-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "242",
+        },
+        {
+          title: "Gross Weight",
+          value: 242,
+        },
+      ],
+    },
+    // NIGHTSTER™
+    {
+      id: "nightster",
+      category: "harley-davidson",
+      name: "Nightster™",
+      pic: require("../assets/harley-davidson/nightster.webp"),
+      price: 28000,
+      fuel: "Petrol",
+      transmission: "5-Speed Manual",
+      cc: "1200",
+      variants: [
+        {
+          variant: "Sport",
+          price: 28000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/nightster.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 1200,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "5-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "250",
+        },
+        {
+          title: "Gross Weight",
+          value: 250,
+        },
+      ],
+    },
+    // SPORTSTER™ S
+    {
+      id: "sportster_s",
+      category: "harley-davidson",
+      name: "Sportster™ S",
+      pic: require("../assets/harley-davidson/sportster_s.webp"),
+      price: 32000,
+      fuel: "Petrol",
+      transmission: "6-Speed Manual",
+      cc: "1250",
+      variants: [
+        {
+          variant: "Sport",
+          price: 32000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/sportster_s.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 1250,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "6-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "228",
+        },
+        {
+          title: "Gross Weight",
+          value: 228,
+        },
+      ],
+    },
+
+    // NIGHTSTER™ SPECIAL
+    {
+      id: "nightster_special",
+      category: "harley-davidson",
+      name: "Nightster™ Special",
+      pic: require("../assets/harley-davidson/nightster_special.webp"),
+      price: 30000,
+      fuel: "Petrol",
+      transmission: "6-Speed Manual",
+      cc: "883",
+      variants: [
+        {
+          variant: "Sport",
+          price: 30000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/harley-davidson/nightster_special.webp"),
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 883,
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "6-Speed Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "240",
+        },
+        {
+          title: "Gross Weight",
+          value: 240,
         },
       ],
     },

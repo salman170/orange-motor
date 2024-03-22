@@ -5,7 +5,7 @@ import { useModelContext } from "./ModelProvider";
 
 const TwoVehCard = ({
   title,
-
+  category,
   engine,
   fuel,
   transmission,
@@ -26,7 +26,7 @@ const TwoVehCard = ({
         interestRatePerMonth *
         Math.pow(1 + interestRatePerMonth, tenureInMonths)) /
       (Math.pow(1 + interestRatePerMonth, tenureInMonths) - 1);
-
+console.log(category)
     // Rounding off to 2 decimal places and converting to string
     return emi.toFixed(0);
   };
@@ -63,18 +63,19 @@ const TwoVehCard = ({
             <p>{transmission}</p>
           </div>
         </div>
-        <div className="flex justify-between gap-2 py-3 text-sm capitalize text-gray-800/80">
+        <div className="grid grid-cols-3 gap-2 py-3 text-sm capitalize text-gray-800/80 ">
+          
           {weight.map((x, i) => {
             return (
-              <div
-                key={i}
-                className="flex flex-col items-center justify-center"
-              >
+              <div key={i} className="flex flex-col justify-center">
                 <p className="text-secondary">{x.title}</p>
                 <p>{x.value}</p>
               </div>
             );
-          })}
+          })}<div className="flex flex-col justify-center col-span-2">
+            <p className="text-secondary">Variant</p>
+            <p className="font-medium">{category.variant}</p>
+          </div>
         </div>
 
         <div className="w-full h-px bg-gray-200/80"></div>
