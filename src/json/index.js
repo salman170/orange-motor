@@ -4996,7 +4996,7 @@ export const model = [
       id: "shine",
       category: "honda",
       name: "Shine",
-      pic: require("../assets/honda/shine_125.jpg"),
+      pic: require("../assets/honda/shine.png"),
       price: 74500,
       fuel: "Petrol",
       transmission: "Manual",
@@ -5009,7 +5009,7 @@ export const model = [
       ],
       banners: [
         {
-          img: require("../assets/honda/shine_125.jpg"),
+          img: require("../assets/honda/shine.png"),
         },
       ],
       dimensions: [
