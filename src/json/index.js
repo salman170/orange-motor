@@ -4996,7 +4996,7 @@ export const model = [
       id: "shine",
       category: "honda",
       name: "Shine",
-      pic: require("../assets/honda/shine.png"),
+      pic: require("../assets/honda/shine_125.jpg"),
       price: 74500,
       fuel: "Petrol",
       transmission: "Manual",
@@ -5009,7 +5009,7 @@ export const model = [
       ],
       banners: [
         {
-          img: require("../assets/honda/shine.png"),
+          img: require("../assets/honda/shine_125.jpg"),
         },
       ],
       dimensions: [
@@ -5228,6 +5228,730 @@ export const model = [
         {
           title: "Gross Weight",
           value: 112,
+        },
+      ],
+    },
+  ],
+
+  // Honda Big Bikes - 11
+  [
+    // Honda CB300F
+    {
+      id: "cb300f",
+      category: "honda",
+      name: "CB300F",
+      pic: require("../assets/honda/cb300f.png"),
+      price: 450000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "286",
+      variants: [
+        {
+          variant: "Big Bikes",
+          price: 450000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/cb300f.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2030,
+        },
+        {
+          title: "Width (mm)",
+          value: 720,
+        },
+        {
+          title: "Height (mm)",
+          value: 1100,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 13,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 286,
+        },
+        {
+          title: "Max Power",
+          value: "30.5@8000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "143",
+        },
+        {
+          title: "Gross Weight",
+          value: 143,
+        },
+      ],
+    },
+    // Honda CB300R
+    {
+      id: "cb300r",
+      category: "honda",
+      name: "CB300R",
+      pic: require("../assets/honda/cb300r.png"),
+      price: 500000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "286",
+      variants: [
+        {
+          variant: "Big Bikes",
+          price: 500000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/cb300r.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2028,
+        },
+        {
+          title: "Width (mm)",
+          value: 802,
+        },
+        {
+          title: "Height (mm)",
+          value: 1052,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 10,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 286,
+        },
+        {
+          title: "Max Power",
+          value: "30.5@8000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "143",
+        },
+        {
+          title: "Gross Weight",
+          value: 143,
+        },
+      ],
+    },
+    // Honda CB350
+    {
+      id: "cb350",
+      category: "honda",
+      name: "CB350",
+      pic: require("../assets/honda/cb350.png"),
+      price: 600000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "348",
+      variants: [
+        {
+          variant: "Big Bikes",
+          price: 600000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/cb350.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2156,
+        },
+        {
+          title: "Width (mm)",
+          value: 836,
+        },
+        {
+          title: "Height (mm)",
+          value: 1108,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 15,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 348,
+        },
+        {
+          title: "Max Power",
+          value: "20.8@5500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "181",
+        },
+        {
+          title: "Gross Weight",
+          value: 181,
+        },
+      ],
+    },
+    // H’ness CB350
+    {
+      id: "hness_cb350",
+      category: "honda",
+      name: "H’ness CB350",
+      pic: require("../assets/honda/hiness.png"),
+      price: 650000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "348",
+      variants: [
+        {
+          variant: "Big Bikes",
+          price: 650000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/hiness.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2163,
+        },
+        {
+          title: "Width (mm)",
+          value: 800,
+        },
+        {
+          title: "Height (mm)",
+          value: 1097,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 15,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 348,
+        },
+        {
+          title: "Max Power",
+          value: "21.1@5500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "181",
+        },
+        {
+          title: "Gross Weight",
+          value: 181,
+        },
+      ],
+    },
+    // CB350RS
+    {
+      id: "cb350rs",
+      category: "honda",
+      name: "CB350RS",
+      pic: require("../assets/honda/cb350rs.png"),
+      price: 700000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "348",
+      variants: [
+        {
+          variant: "Big Bikes",
+          price: 700000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/cb350rs.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2175,
+        },
+        {
+          title: "Width (mm)",
+          value: 800,
+        },
+        {
+          title: "Height (mm)",
+          value: 1097,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 15,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 348,
+        },
+        {
+          title: "Max Power",
+          value: "21.1@5500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "181",
+        },
+        {
+          title: "Gross Weight",
+          value: 181,
+        },
+      ],
+    },
+    // NX500
+    {
+      id: "nx500",
+      category: "honda",
+      name: "NX500",
+      pic: require("../assets/honda/nx500.png"),
+      price: 750000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "500",
+      variants: [
+        {
+          variant: "Big Bikes",
+          price: 750000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/nx500.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2215,
+        },
+        {
+          title: "Width (mm)",
+          value: 930,
+        },
+        {
+          title: "Height (mm)",
+          value: 1375,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 15,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 500,
+        },
+        {
+          title: "Max Power",
+          value: "34@8600",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "153",
+        },
+        {
+          title: "Gross Weight",
+          value: 153,
+        },
+      ],
+    },
+    // TRANSALP
+    {
+      id: "transalp",
+      category: "honda",
+      name: "TRANSALP",
+      pic: require("../assets/honda/translap.png"),
+      price: 800000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "750",
+      variants: [
+        {
+          variant: "Big Bikes",
+          price: 800000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/translap.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2260,
+        },
+        {
+          title: "Width (mm)",
+          value: 870,
+        },
+        {
+          title: "Height (mm)",
+          value: 1415,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 20,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 750,
+        },
+        {
+          title: "Max Power",
+          value: "43.1@7750",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "177",
+        },
+        {
+          title: "Gross Weight",
+          value: 177,
+        },
+      ],
+    },
+    // AFRICA TWIN
+    {
+      id: "africa_twin",
+      category: "honda",
+      name: "AFRICA TWIN",
+      pic: require("../assets/honda/africatwin.png"),
+      price: 900000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "1084",
+      variants: [
+        {
+          variant: "Big Bikes",
+          price: 900000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/africatwin.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2345,
+        },
+        {
+          title: "Width (mm)",
+          value: 930,
+        },
+        {
+          title: "Height (mm)",
+          value: 1570,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 24,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 1084,
+        },
+        {
+          title: "Max Power",
+          value: "100.5@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "226",
+        },
+        {
+          title: "Gross Weight",
+          value: 226,
+        },
+      ],
+    },
+    // GOLD WING TOUR
+    {
+      id: "gold_wing_tour",
+      category: "honda",
+      name: "GOLD WING TOUR",
+      pic: require("../assets/honda/goldwing.png"),
+      price: 2500000,
+      fuel: "Petrol",
+      transmission: "Automatic",
+      cc: "1833",
+      variants: [
+        {
+          variant: "Big Bikes",
+          price: 2500000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/goldwing.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2471,
+        },
+        {
+          title: "Width (mm)",
+          value: 945,
+        },
+        {
+          title: "Height (mm)",
+          value: 1435,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 21.1,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 1833,
+        },
+        {
+          title: "Max Power",
+          value: "126.5@5500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Automatic",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "389",
+        },
+        {
+          title: "Gross Weight",
+          value: 389,
         },
       ],
     },

@@ -73,7 +73,10 @@ const Honda = () => {
         </div>
       </div>
 
-      <div className="grid gap-5 py-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
+      {/* <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
+        Scooty
+      </div> */}
+      <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
         {model[10].map((item) => (
           <TwoVehCard
             key={item.id}
@@ -91,12 +94,15 @@ const Honda = () => {
           />
         ))}
       </div>
-      <div className="grid gap-5 py-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
+      {/* <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
+        Motorcycle
+      </div>
+      <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
         {model[11].map((item) => (
           <TwoVehCard
             key={item.id}
             id={item?.id}
-            position="10"
+            position="11"
             banner={item?.pic}
             title={item?.name}
             price={item?.price}
@@ -109,6 +115,27 @@ const Honda = () => {
           />
         ))}
       </div>
+      <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
+        Big Bikes
+      </div>
+      <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
+        {model[12].map((item) => (
+          <TwoVehCard
+            key={item.id}
+            id={item?.id}
+            position="11"
+            banner={item?.pic}
+            title={item?.name}
+            price={item?.price}
+            fuel={item?.fuel}
+            transmission={item?.transmission}
+            engine={item?.cc}
+            category={item?.variants[0]}
+            // brochure={item?.brochure}
+            weight={item?.weight}
+          />
+        ))}
+      </div> */}
     </div>
   );
 };

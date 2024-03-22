@@ -53,9 +53,9 @@ const Kawasaki = () => {
           <BookForm />
         </div>
       </div>
-      <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
+      {/* <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
         Ninja
-      </div>
+      </div> */}
       <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
         {model[2].map((item) => (
           <TwoVehCard
