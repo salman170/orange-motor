@@ -4588,6 +4588,650 @@ export const model = [
       ],
     },
   ],
+
+  // Honda Motorcyles - 10
+  [
+    // Honda SP 125
+    {
+      id: "sp_125",
+      category: "honda",
+      name: "SP 125",
+      pic: require("../assets/honda/sp_125.jpg"),
+      price: 78000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "124",
+      variants: [
+        {
+          variant: "Motorcyles",
+          price: 78000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/sp_125.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2023,
+        },
+        {
+          title: "Width (mm)",
+          value: 785,
+        },
+        {
+          title: "Height (mm)",
+          value: 1107,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 11,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 124,
+        },
+        {
+          title: "Max Power",
+          value: "10.72@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "117",
+        },
+        {
+          title: "Gross Weight",
+          value: 117,
+        },
+      ],
+    },
+    // Honda SP160
+    {
+      id: "sp_160",
+      category: "honda",
+      name: "SP 160",
+      pic: require("../assets/honda/sp_160.jpg"),
+      price: 91000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "163",
+      variants: [
+        {
+          variant: "Motorcyles",
+          price: 91000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/sp_160.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2046,
+        },
+        {
+          title: "Width (mm)",
+          value: 790,
+        },
+        {
+          title: "Height (mm)",
+          value: 1108,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 12,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 163,
+        },
+        {
+          title: "Max Power",
+          value: "12.81@8000",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "115",
+        },
+        {
+          title: "Gross Weight",
+          value: 115,
+        },
+      ],
+    },
+
+    // Honda Unicorn
+    {
+      id: "unicorn",
+      category: "honda",
+      name: "Unicorn",
+      pic: require("../assets/honda/unicorn.png"),
+      price: 96700,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "162.7",
+      variants: [
+        {
+          variant: "Motorcyles",
+          price: 96700,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/unicorn.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2092,
+        },
+        {
+          title: "Width (mm)",
+          value: 756,
+        },
+        {
+          title: "Height (mm)",
+          value: 1100,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 13,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 162.7,
+        },
+        {
+          title: "Max Power",
+          value: "12.91@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "140",
+        },
+        {
+          title: "Gross Weight",
+          value: 140,
+        },
+      ],
+    },
+    // Honda Hornet 2.0
+    {
+      id: "hornet_2.0",
+      category: "honda",
+      name: "Hornet 2.0",
+      pic: require("../assets/honda/hornet_2.0.jpg"),
+      price: 141667,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "184.4",
+      variants: [
+        {
+          variant: "Motorcyles",
+          price: 141667,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/hornet_2.0.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2047,
+        },
+        {
+          title: "Width (mm)",
+          value: 783,
+        },
+        {
+          title: "Height (mm)",
+          value: 1064,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 12,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 184.4,
+        },
+        {
+          title: "Max Power",
+          value: "17.26@8500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "142",
+        },
+        {
+          title: "Gross Weight",
+          value: 142,
+        },
+      ],
+    },
+    // Honda Shine 125
+    {
+      id: "shine_125",
+      category: "honda",
+      name: "Shine 125",
+      pic: require("../assets/honda/shine_125.jpg"),
+      price: 78000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "124",
+      variants: [
+        {
+          variant: "Motorcyles",
+          price: 78000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/shine_125.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2045,
+        },
+        {
+          title: "Width (mm)",
+          value: 737,
+        },
+        {
+          title: "Height (mm)",
+          value: 1072,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 10.5,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 124,
+        },
+        {
+          title: "Max Power",
+          value: "10.74@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "115",
+        },
+        {
+          title: "Gross Weight",
+          value: 115,
+        },
+      ],
+    }, // Honda Shine
+    {
+      id: "shine",
+      category: "honda",
+      name: "Shine",
+      pic: require("../assets/honda/shine_125.jpg"),
+      price: 74500,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "124",
+      variants: [
+        {
+          variant: "Motorcyles",
+          price: 74500,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/shine_125.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2045,
+        },
+        {
+          title: "Width (mm)",
+          value: 737,
+        },
+        {
+          title: "Height (mm)",
+          value: 1072,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 10.5,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 124,
+        },
+        {
+          title: "Max Power",
+          value: "10.74@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "115",
+        },
+        {
+          title: "Gross Weight",
+          value: 115,
+        },
+      ],
+    },
+    // Honda Livo
+    {
+      id: "livo",
+      category: "honda",
+      name: "Livo",
+      pic: require("../assets/honda/livo.jpg"),
+      price: 72500,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "109.51",
+      variants: [
+        {
+          variant: "Motorcyles",
+          price: 72500,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/livo.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2020,
+        },
+        {
+          title: "Width (mm)",
+          value: 746,
+        },
+        {
+          title: "Height (mm)",
+          value: 1099,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 9,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 109.51,
+        },
+        {
+          title: "Max Power",
+          value: "8.79@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "115",
+        },
+        {
+          title: "Gross Weight",
+          value: 115,
+        },
+      ],
+    },
+    // Honda CD 110 Dream
+    {
+      id: "cd_110_dream",
+      category: "honda",
+      name: "CD 110 Dream",
+      pic: require("../assets/honda/cd_110_dream.jpg"),
+      price: 66000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "109.51",
+      variants: [
+        {
+          variant: "Standard",
+          price: 66000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/cd_110_dream.jpg"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2044,
+        },
+        {
+          title: "Width (mm)",
+          value: 736,
+        },
+        {
+          title: "Height (mm)",
+          value: 1072,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 9.1,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 109.51,
+        },
+        {
+          title: "Max Power",
+          value: "8.79@7500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Drum",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "112",
+        },
+        {
+          title: "Gross Weight",
+          value: 112,
+        },
+      ],
+    },
+  ],
 ];
 
 export const brands = [

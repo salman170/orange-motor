@@ -91,6 +91,24 @@ const Honda = () => {
           />
         ))}
       </div>
+      <div className="grid gap-5 py-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
+        {model[11].map((item) => (
+          <TwoVehCard
+            key={item.id}
+            id={item?.id}
+            position="10"
+            banner={item?.pic}
+            title={item?.name}
+            price={item?.price}
+            fuel={item?.fuel}
+            transmission={item?.transmission}
+            engine={item?.cc}
+            category={item?.variants[0]}
+            // brochure={item?.brochure}
+            weight={item?.weight}
+          />
+        ))}
+      </div>
     </div>
   );
 };
