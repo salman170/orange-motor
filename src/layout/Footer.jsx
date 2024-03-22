@@ -22,7 +22,7 @@ const Footer = () => {
               <br /> types of information from you.
             </p>
             <div className="my-10">
-              <Link to="/" className="bg-black  px-7 py-2.5">
+              <Link to="/contact-us" className="bg-black  px-7 py-2.5">
                 Contact For Queries
               </Link>
             </div>
@@ -40,7 +40,7 @@ const Footer = () => {
               className="flex items-center gap-3 pb-4 text-[#fff] text-opacity-70 hover:text-opacity-100 whitespace-nowrap"
             >
               <FaPhone className="text-white " />
-             99854 12345
+              99854 12345
             </a>
             <a
               href="mailto:info@orangeauto.in"
@@ -64,16 +64,16 @@ const Footer = () => {
             <div className="flex flex-col items-center w-full mt-4 md:space-x-10 md:flex-row md:justify-end">
               <Link to="/">Dealership</Link>
               <Link to="/">Support</Link>
-              <Link to="/">Experience </Link>
-              <Link to="/">Shopping Tools</Link>
+              <Link to="/">Service </Link>
+              <Link to="/">Experinced</Link>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-black">
-        <div className="container flex flex-col justify-between gap-2 px-1 py-3 mx-auto text-xs text-white md:flex-row">
+      <div className="flex justify-between text-white bg-black ">
+        <div className="container flex flex-col justify-between gap-2 px-1 py-3 mx-auto text-xs md:flex-row">
           <div>© Copyright ORANGE AUTO PVT LTD. All Rights Reserved</div>
-          {/* <div>Designed & Developed by BroaddCast Business Solutions LLP</div> */}
+          <div>Designed & Developed by SRCG</div>
         </div>
       </div>
     </div>
