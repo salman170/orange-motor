@@ -73,9 +73,9 @@ const Honda = () => {
         </div>
       </div>
 
-      {/* <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
+      <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
         Scooty
-      </div> */}
+      </div>
       <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
         {model[10].map((item) => (
           <TwoVehCard
@@ -94,7 +94,7 @@ const Honda = () => {
           />
         ))}
       </div>
-      {/* <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
+       <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
         Motorcycle
       </div>
       <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
@@ -115,7 +115,7 @@ const Honda = () => {
           />
         ))}
       </div>
-      <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
+    <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
         Big Bikes
       </div>
       <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
@@ -135,7 +135,7 @@ const Honda = () => {
             weight={item?.weight}
           />
         ))}
-      </div> */}
+      </div>  
     </div>
   );
 };
