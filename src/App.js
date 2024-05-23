@@ -18,6 +18,7 @@ import { useModelContext } from "./components/ModelProvider";
 import HarleyDavidson from "./pages/HarleyDavidson";
 import Kawasaki from "./pages/Kawasaki";
 import Honda from "./pages/Honda";
+import Gallery from "./pages/Gallery";
 
 const App = () => {
   const { openEnq, setOpenEnq, model } = useModelContext();
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/vehicles/:position/:id" element={<Detail />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/locations" element={<Locations />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

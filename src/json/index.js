@@ -451,24 +451,295 @@ export const model = [
       category: "tata",
       name: "Punch",
       pic: require("../assets/others/punch.png"),
-      price: 800000,
+      price: 612900,
       fuel: "Petrol",
       transmission: "Manual / Automatic",
       cc: "1199",
-      variants: [
+      allVariants: [
         {
-          variant: "XE",
-          price: 800000,
+          variantTitle: "PUNCH MT - BSVI",
+          variants: [
+            {
+              variant: " Pure",
+              price: 612900,
+            },
+            {
+              variant: " Pure Rhythm",
+              price: 637900,
+            },
+            {
+              variant: " Adventure",
+              price: 699900,
+            },
+            {
+              variant: " Adv Camo",
+              price: 699900,
+            },
+            {
+              variant: " Adventure Rhythm",
+              price: 734900,
+            },
+            {
+              variant: " Adv Rhythm Camo",
+              price: 734900,
+            },
+            {
+              variant: " Accomplished",
+              price: 784900,
+            },
+            {
+              variant: " ACC CAMO",
+              price: 779900,
+            },
+            {
+              variant: " Accomplish Rhythm",
+              price: 799900,
+            },
+            {
+              variant: " Accomplish Dazzle",
+              price: 814900,
+            },
+            {
+              variant: " Accomplish Dazzle Camo",
+              price: 817900,
+            },
+            {
+              variant: " Accomplished SR",
+              price: 834900,
+            },
+            {
+              variant: " Creative",
+              price: 851900,
+            },
+            {
+              variant: " Creative DT",
+              price: 884900,
+            },
+            {
+              variant: " Accomplish Dazzle SR",
+              price: 874900,
+            },
+            {
+              variant: " Creative IRA",
+              price: 881900,
+            },
+            {
+              variant: " Creative IRA DT",
+              price: 891900,
+            },
+            {
+              variant: " Creative DT SR",
+              price: 929900,
+            },
+            {
+              variant: " Creative Flagship DT",
+              price: 959900,
+            },
+          ],
         },
         {
-          variant: "XM",
-          price: 850000,
+          variantTitle: "PUNCH AMT - BSVI",
+          variants: [
+            {
+              variant: " Adventure AMT",
+              price: 759900,
+            },
+            {
+              variant: " Adv Camo AMT",
+              price: 759900,
+            },
+            {
+              variant: " Adventure Rhythm AMT",
+              price: 794900,
+            },
+            {
+              variant: " Adv Rhythm Camo AMT",
+              price: 794900,
+            },
+            {
+              variant: " Accomplish AMT",
+              price: 844900,
+            },
+            {
+              variant: " Acc Camo AMT",
+              price: 839900,
+            },
+            {
+              variant: " Accomplish Dazzle AMT",
+              price: 844900,
+            },
+            {
+              variant: " Acc Dazzle Camo AMT",
+              price: 877900,
+            },
+            {
+              variant: " Accomplished SR AMT",
+              price: 889900,
+            },
+            {
+              variant: " Creative AMT",
+              price: 911900,
+            },
+            {
+              variant: " Creative AMT DT",
+              price: 944900,
+            },
+            {
+              variant: " Accomplish Dazzle SR AMT",
+              price: 939900,
+            },
+            {
+              variant: " Creative IRA AMT",
+              price: 941900,
+            },
+            {
+              variant: " Creative IRA AMT DT",
+              price: 951900,
+            },
+            {
+              variant: " Creative AMT DT SR",
+              price: 959900,
+            },
+            {
+              variant: " Creative Flagship AMT DT",
+              price: 1019900,
+            },
+          ],
         },
         {
-          variant: "XT",
-          price: 900000,
+          variantTitle: "PUNCH CNG - BSVI",
+          variants: [
+            {
+              variant: " Pure CNG",
+              price: 722900,
+            },
+            {
+              variant: " Adventure CNG",
+              price: 794900,
+            },
+            {
+              variant: " Adventure Rhythm CNG",
+              price: 829900,
+            },
+            {
+              variant: " Accomplish CNG",
+              price: 894900,
+            },
+            {
+              variant: " Accomplish Dazzle S CNG",
+              price: 984900,
+            },
+          ],
+        },
+        {
+          variantTitle: "PUNCH EV",
+          variants: [
+            {
+              variant: " EV Smart",
+              price: 1099000,
+            },
+            {
+              variant: " EV Smart +",
+              price: 1149000,
+            },
+            {
+              variant: " EV Adventure",
+              price: 1199000,
+            },
+            {
+              variant: " EV Adventure S",
+              price: 1249000,
+            },
+            {
+              variant: " EV Empowered",
+              price: 1279000,
+            },
+            {
+              variant: " EV Adventure LR",
+              price: 1299000,
+            },
+            {
+              variant: " EV Empowered +",
+              price: 1329000,
+            },
+            {
+              variant: " EV Empowered S",
+              price: 1329000,
+            },
+            {
+              variant: " EV Adventure LR ACFC",
+              price: 1349000,
+            },
+            {
+              variant: " EV Adventure S LR",
+              price: 1349000,
+            },
+            {
+              variant: " EV Empowered +S",
+              price: 1379000,
+            },
+            {
+              variant: " EV Empowered LR",
+              price: 1399000,
+            },
+            {
+              variant: " EV Adventure S LR ACFC",
+              price: 1399000,
+            },
+            {
+              variant: " EV Empowered S LR",
+              price: 1449000,
+            },
+            {
+              variant: " EV Empowered + LR",
+              price: 1449000,
+            },
+            {
+              variant: " EV Empowered LR ACFC",
+              price: 1449000,
+            },
+            {
+              variant: " EV Empowered + LR ACFC",
+              price: 1499000,
+            },
+            {
+              variant: " EV Empowered S LR ACFC",
+              price: 1499000,
+            },
+            {
+              variant: " EV Empowered +S LR",
+              price: 1499000,
+            },
+            {
+              variant: " EV Empowered +S LR ACFC",
+              price: 1549000,
+            },
+          ],
         },
       ],
+      variants: [
+        {
+          variant: "Punch Pure CNG",
+          price: 722900,
+        },
+        {
+          variant: "Punch Adventure CNG",
+          price: 794900,
+        },
+        {
+          variant: "Punch Adventure Rhythm CNG",
+          price: 829900,
+        },
+        {
+          variant: "Punch Accomplish CNG",
+          price: 894900,
+        },
+        {
+          variant: "Punch Accomplish Dazzle S CNG",
+          price: 984900,
+        },
+      ],
+
       banners: [
         {
           img: require("../assets/tata/punch/headlamp-1.webp"),
@@ -4193,14 +4464,24 @@ export const model = [
       category: "honda",
       name: "Dio 125",
       pic: require("../assets/honda/dio_125.jpg"),
-      price: 75000,
+      price: 85900,
       fuel: "Petrol",
       transmission: "Automatic",
       cc: "125",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/Dio125_Brochure.pdf",
       variants: [
         {
-          variant: "Scooty",
-          price: 75000,
+          variant: "DIO STD 125OBD2 ",
+          price: 85900,
+        },
+        {
+          variant: "DIO 125 SMART-OBD2",
+          price: 93800,
+        },
+        {
+          variant: "DIO 125 LTD ED ",
+          price: 94800,
         },
       ],
       banners: [
@@ -4273,14 +4554,24 @@ export const model = [
       category: "honda",
       name: "Dio",
       pic: require("../assets/honda/dio.jpg"),
-      price: 65000,
+      price: 74293,
       fuel: "Petrol",
       transmission: "Automatic",
       cc: "110",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/Dio_Brochure.pdf",
       variants: [
         {
-          variant: "Scooty",
-          price: 65000,
+          variant: "DIO STD-OBD2 ",
+          price: 74293,
+        },
+        {
+          variant: "DIO DLX-OBD2 ",
+          price: 78294,
+        },
+        {
+          variant: "DIO SMART-OBD2  ",
+          price: 81794,
         },
       ],
       banners: [
@@ -4353,14 +4644,28 @@ export const model = [
       category: "honda",
       name: "Activa 125",
       pic: require("../assets/honda/activa_125.jpg"),
-      price: 78000,
+      price: 82228,
       fuel: "Petrol",
       transmission: "Automatic",
       cc: "124",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/Activa125_Brochure2023_Latest.pdf",
       variants: [
         {
-          variant: "Scooty",
-          price: 78000,
+          variant: "ACTIVA 125 DRUM -OBD2",
+          price: 82228,
+        },
+        {
+          variant: "ACTIVA 125 DRUM ALLOY -OBD2",
+          price: 85896,
+        },
+        {
+          variant: "ACTIVA 125 DISC -OBD2",
+          price: 89401,
+        },
+        {
+          variant: "ACTIVA 125 SMART -OBD2",
+          price: 91401,
         },
       ],
       banners: [
@@ -4428,99 +4733,109 @@ export const model = [
       ],
     },
     // Honda Activa 6G
-    {
-      id: "activa_6g",
-      category: "honda",
-      name: "Activa 6G",
-      pic: require("../assets/honda/activa_6g.jpg"),
-      price: 68000,
-      fuel: "Petrol",
-      transmission: "Automatic",
-      cc: "109",
-      variants: [
-        {
-          variant: "Scooty",
-          price: 68000,
-        },
-      ],
-      banners: [
-        {
-          img: require("../assets/honda/activa_6g.jpg"),
-        },
-      ],
-      dimensions: [
-        {
-          title: "Length (mm)",
-          value: 1833,
-        },
-        {
-          title: "Width (mm)",
-          value: 697,
-        },
-        {
-          title: "Height (mm)",
-          value: 1156,
-        },
-        {
-          title: "Fuel Tank(L)",
-          value: 5.3,
-        },
-        {
-          title: "Seating",
-          value: 2,
-        },
-      ],
-      engine: [
-        {
-          title: "Capacity(cc)",
-          value: 109,
-        },
-        {
-          title: "Max Power",
-          value: "7.68@8000",
-        },
-        {
-          title: "Fuel Type",
-          value: "Petrol",
-        },
-        {
-          title: "Transmission",
-          value: "Automatic",
-        },
-      ],
-      weight: [
-        {
-          title: "Front",
-          value: "Drum",
-        },
-        {
-          title: "Rear",
-          value: "Drum",
-        },
-        {
-          title: "Kerb",
-          value: "107",
-        },
-        {
-          title: "Gross Weight",
-          value: 107,
-        },
-      ],
-    },
+    // {
+    //   id: "activa_6g",
+    //   category: "honda",
+    //   name: "Activa 6G",
+    //   pic: require("../assets/honda/activa_6g.jpg"),
+    //   price: 68000,
+    //   fuel: "Petrol",
+    //   transmission: "Automatic",
+    //   cc: "109",
+    //   variants: [
+    //     {
+    //       variant: "Scooty",
+    //       price: 68000,
+    //     },
+    //   ],
+    //   banners: [
+    //     {
+    //       img: require("../assets/honda/activa_6g.jpg"),
+    //     },
+    //   ],
+    //   dimensions: [
+    //     {
+    //       title: "Length (mm)",
+    //       value: 1833,
+    //     },
+    //     {
+    //       title: "Width (mm)",
+    //       value: 697,
+    //     },
+    //     {
+    //       title: "Height (mm)",
+    //       value: 1156,
+    //     },
+    //     {
+    //       title: "Fuel Tank(L)",
+    //       value: 5.3,
+    //     },
+    //     {
+    //       title: "Seating",
+    //       value: 2,
+    //     },
+    //   ],
+    //   engine: [
+    //     {
+    //       title: "Capacity(cc)",
+    //       value: 109,
+    //     },
+    //     {
+    //       title: "Max Power",
+    //       value: "7.68@8000",
+    //     },
+    //     {
+    //       title: "Fuel Type",
+    //       value: "Petrol",
+    //     },
+    //     {
+    //       title: "Transmission",
+    //       value: "Automatic",
+    //     },
+    //   ],
+    //   weight: [
+    //     {
+    //       title: "Front",
+    //       value: "Drum",
+    //     },
+    //     {
+    //       title: "Rear",
+    //       value: "Drum",
+    //     },
+    //     {
+    //       title: "Kerb",
+    //       value: "107",
+    //     },
+    //     {
+    //       title: "Gross Weight",
+    //       value: 107,
+    //     },
+    //   ],
+    // },
     // Honda Activa
     {
       id: "activa",
       category: "honda",
       name: "Activa",
       pic: require("../assets/honda/activa.jpg"),
-      price: 66000,
+      price: 77835,
       fuel: "Petrol",
       transmission: "Automatic",
       cc: "109",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/Scooter_Bole_toh_Activa%20_%20Brochure.pdf",
       variants: [
         {
-          variant: "Scooty",
-          price: 66000,
+          variant: "ACTIVA STD-OBD2",
+          price: 77835,
+        },
+        {
+          variant: "ACTIVA DLX-OBD2",
+          price: 80335,
+        },
+        {
+          variant: "ACTIVA SMART",
+          price: 83835,
         },
       ],
       banners: [
@@ -4597,14 +4912,20 @@ export const model = [
       category: "honda",
       name: "SP 125",
       pic: require("../assets/honda/sp_125.jpg"),
-      price: 78000,
+      price: 86023,
       fuel: "Petrol",
       transmission: "Manual",
       cc: "124",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/SP125_brochure.pdf",
       variants: [
         {
-          variant: "Motorcyles",
-          price: 78000,
+          variant: "SP125 DRUM OBD2",
+          price: 86023,
+        },
+        {
+          variant: "SP125 DISC OBD2",
+          price: 90023,
         },
       ],
       banners: [
@@ -4677,14 +4998,20 @@ export const model = [
       category: "honda",
       name: "SP 160",
       pic: require("../assets/honda/sp_160.jpg"),
-      price: 91000,
+      price: 117500,
       fuel: "Petrol",
       transmission: "Manual",
       cc: "163",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/SP160_Brochure.pdf",
       variants: [
         {
-          variant: "Motorcyles",
-          price: 91000,
+          variant: "SP160 DRUM OBD2 ",
+          price: 117500,
+        },
+        {
+          variant: "SP160 DISC OBD2 ",
+          price: 121900,
         },
       ],
       banners: [
@@ -4758,14 +5085,16 @@ export const model = [
       category: "honda",
       name: "Unicorn",
       pic: require("../assets/honda/unicorn.png"),
-      price: 96700,
+      price: 108400,
       fuel: "Petrol",
       transmission: "Manual",
       cc: "162.7",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/Unicorn_Brochure_24.pdf",
       variants: [
         {
-          variant: "Motorcyles",
-          price: 96700,
+          variant: "UNICORN ABS ",
+          price: 108400,
         },
       ],
       banners: [
@@ -4838,14 +5167,20 @@ export const model = [
       category: "honda",
       name: "Hornet 2.0",
       pic: require("../assets/honda/hornet_2.0.jpg"),
-      price: 141667,
+      price: 139000,
       fuel: "Petrol",
       transmission: "Manual",
       cc: "184.4",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/Hornet__Latest_Brochure_pdf.pdf",
       variants: [
         {
-          variant: "Motorcyles",
-          price: 141667,
+          variant: "HORNET 2.0 ABS ",
+          price: 139000,
+        },
+        {
+          variant: "HORNET 2.0 LTD ED ",
+          price: 140000,
         },
       ],
       banners: [
@@ -4918,14 +5253,20 @@ export const model = [
       category: "honda",
       name: "Shine 125",
       pic: require("../assets/honda/shine_125.jpg"),
-      price: 78000,
+      price: 80700,
       fuel: "Petrol",
       transmission: "Manual",
       cc: "124",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/Shine125_Brochure_2023.pdf",
       variants: [
         {
-          variant: "Motorcyles",
-          price: 78000,
+          variant: "SHINE 125 DRUM-OBD2",
+          price: 80700,
+        },
+        {
+          variant: "SHINE 125 DISC-OBD2",
+          price: 84700,
         },
       ],
       banners: [
@@ -4996,15 +5337,16 @@ export const model = [
       id: "shine",
       category: "honda",
       name: "Shine",
-      pic: require("../assets/honda/shine_125.jpg"),
-      price: 74500,
+      pic: require("../assets/honda/shine.jpg"),
+      price: 66600,
       fuel: "Petrol",
       transmission: "Manual",
       cc: "124",
+      brochure: "https://www.honda2wheelersindia.com/assets/pdf/Shine_100.pdf",
       variants: [
         {
-          variant: "Motorcyles",
-          price: 74500,
+          variant: "SHINE 100 OBD2",
+          price: 66600,
         },
       ],
       banners: [
@@ -5077,14 +5419,20 @@ export const model = [
       category: "honda",
       name: "Livo",
       pic: require("../assets/honda/livo.jpg"),
-      price: 72500,
+      price: 79800,
       fuel: "Petrol",
       transmission: "Manual",
       cc: "109.51",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/Livo_new_brochure_latest.pdf",
       variants: [
         {
-          variant: "Motorcyles",
-          price: 72500,
+          variant: "LIVO DRUM",
+          price: 79800,
+        },
+        {
+          variant: "LIVO DISC",
+          price: 83800,
         },
       ],
       banners: [
@@ -5157,14 +5505,16 @@ export const model = [
       category: "honda",
       name: "CD 110 Dream",
       pic: require("../assets/honda/cd_110_dream.jpg"),
-      price: 66000,
+      price: 73400,
       fuel: "Petrol",
       transmission: "Manual",
       cc: "109.51",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/CD110_Brochure.pdf",
       variants: [
         {
-          variant: "Standard",
-          price: 66000,
+          variant: "CD 110 Dream",
+          price: 73400,
         },
       ],
       banners: [
@@ -5228,6 +5578,88 @@ export const model = [
         {
           title: "Gross Weight",
           value: 112,
+        },
+      ],
+    },
+    // Honda CB200X
+    {
+      id: "cb200x",
+      category: "honda",
+      name: "CB200X",
+      pic: require("../assets/honda/cb300f.png"),
+      price: 146999,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "184",
+      brochure:
+        "https://www.honda2wheelersindia.com/assets/pdf/CB_200X_Brochure.pdf",
+      variants: [
+        {
+          variant: "CB200X",
+          price: 146999,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/honda/cb300f.png"),
+        },
+      ],
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 2035,
+        },
+        {
+          title: "Width (mm)",
+          value: 843,
+        },
+        {
+          title: "Height (mm)",
+          value: 1248,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 12,
+        },
+        {
+          title: "Seating",
+          value: 2,
+        },
+      ],
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 184,
+        },
+        {
+          title: "Max Power",
+          value: "17.03@8500",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "147",
+        },
+        {
+          title: "Gross Weight",
+          value: 147,
         },
       ],
     },

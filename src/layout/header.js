@@ -7,6 +7,7 @@ import ModalSidePanel from "./ModalSidePanel";
 const navigation = {
   pages: [
     { name: "Locations", href: "/locations" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Contact Us", href: "/contact-us" },
   ],
   brands: [
@@ -104,24 +105,66 @@ export function Header() {
               {/* Logo */}
               <div className="flex ml-4 lg:ml-0">
                 <Link to="/">
-                  <img
+                  {/* <img
                     className="w-auto h-10"
                     src={require("../assets/others/logo.png")}
                     loading="lazy"
                     alt=""
-                  />
+                  /> */}
                 </Link>
               </div>
 
               {/* Flyout menus */}
               <Popover.Group className="hidden lg:ml-auto lg:block lg:self-stretch">
                 <div className="flex h-full space-x-8">
-                  <Link
-                    to="/"
-                    className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
-                  >
-                    Home
-                  </Link>
+                  <Popover className="flex">
+                    {(
+                      { open, close } // Destructure close from Popover render prop
+                    ) => (
+                      <>
+                        <div className="relative flex">
+                          <Popover.Button
+                            className={classNames(
+                              open
+                                ? "border-[#051641] text-[#051641]"
+                                : "border-transparent text-black hover:text-black",
+                              "relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px outline-none focus:outline-none"
+                            )}
+                          >
+                            Brands
+                          </Popover.Button>
+                        </div>
+
+                        <Transition
+                          as={Fragment}
+                          enter="transition ease-out duration-200"
+                          enterFrom="opacity-0"
+                          enterTo="opacity-100"
+                          leave="transition ease-in duration-150"
+                          leaveFrom="opacity-100"
+                          leaveTo="opacity-0"
+                        >
+                          <Popover.Panel className="absolute top-full -ml-6 text-sm shadow rounded overflow-hidden w-full max-w-[145px]">
+                            <div
+                              className="absolute inset-0 bg-white top-1/2"
+                              aria-hidden="true"
+                            />
+                            {navigation?.brands.map((item, index) => (
+                              <Link to={item.href} key={index}>
+                                <p
+                                  className="relative z-10 p-3 bg-white hover:bg-gray-100"
+                                  onClick={() => close()} // Close the Popover on brand click
+                                >
+                                  {item.name}
+                                </p>
+                              </Link>
+                            ))}
+                          </Popover.Panel>
+                        </Transition>
+                      </>
+                    )}
+                  </Popover>
+                 
                   <Link
                     to="/about-us"
                     className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
@@ -188,54 +231,6 @@ export function Header() {
                     </>
                   )}
                 </Popover> */}
-
-                  <Popover className="flex">
-                    {(
-                      { open, close } // Destructure close from Popover render prop
-                    ) => (
-                      <>
-                        <div className="relative flex">
-                          <Popover.Button
-                            className={classNames(
-                              open
-                                ? "border-[#051641] text-[#051641]"
-                                : "border-transparent text-black hover:text-black",
-                              "relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px outline-none focus:outline-none"
-                            )}
-                          >
-                            Brands
-                          </Popover.Button>
-                        </div>
-
-                        <Transition
-                          as={Fragment}
-                          enter="transition ease-out duration-200"
-                          enterFrom="opacity-0"
-                          enterTo="opacity-100"
-                          leave="transition ease-in duration-150"
-                          leaveFrom="opacity-100"
-                          leaveTo="opacity-0"
-                        >
-                          <Popover.Panel className="absolute top-full -ml-6 text-sm shadow rounded overflow-hidden w-full max-w-[145px]">
-                            <div
-                              className="absolute inset-0 bg-white top-1/2"
-                              aria-hidden="true"
-                            />
-                            {navigation?.brands.map((item, index) => (
-                              <Link to={item.href} key={index}>
-                                <p
-                                  className="relative z-10 p-3 bg-white hover:bg-gray-100"
-                                  onClick={() => close()} // Close the Popover on brand click
-                                >
-                                  {item.name}
-                                </p>
-                              </Link>
-                            ))}
-                          </Popover.Panel>
-                        </Transition>
-                      </>
-                    )}
-                  </Popover>
 
                   {navigation.pages.map((page) => (
                     <Link

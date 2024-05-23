@@ -6,10 +6,12 @@ import BookForm from "../components/book-form";
 import CarSlider2 from "../components/CarSlider2";
 import { model } from "../json";
 import { useModelContext } from "../components/ModelProvider";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Detail = () => {
   const { id, position } = useParams();
   const [car, setCar] = useState(null);
+  const [selected, setSelected] = useState(0);
 
   const { setOpenEnq, setModel } = useModelContext();
 
@@ -28,7 +30,7 @@ const Detail = () => {
 
   return (
     <div className="bg-gray-50">
-      <div className="max-w-screen-xl px-5 py-10 mx-auto">
+      <div className="container px-5 py-10 mx-auto xl:max-w-screen-xl">
         <p className="my-8 font-medium text-gray-600/90">
           <Link to={"/"}>Home</Link> /&nbsp;
           <span className="capitalize ">{car?.category}</span>&nbsp;/&nbsp;
@@ -108,7 +110,7 @@ const Detail = () => {
                     </tbody>
                   </table>
 
-                  <table className="w-full mt-5">
+                  <table className="flex w-full mt-5 ">
                     <tbody>
                       {car?.engine?.slice(3, 6).map((item, index) => (
                         <tr key={index}>
@@ -186,19 +188,56 @@ const Detail = () => {
             <div className="p-8 bg-white border border-gray-200 rounded-lg">
               <h2 className="text-xl font-medium">Variants & Prices</h2>
 
-              <table className="w-full mt-5">
-                <tbody>
-                  {car?.variants.map((item, index) => (
-                    <tr key={index}>
-                      <td className="px-0 md:px-5 py-2.5">{item?.variant}</td>
-                      <td className="px-0 md:px-5 py-2.5 text-gray-900/80">
-                        {CurrencyFormatter.format(item?.price)}
-                        <span className="text-red-600">*</span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+              {!car?.allVariants && (
+                <table className="w-full mt-5">
+                  <tbody>
+                    {car?.variants.map((item, index) => (
+                      <tr key={index}>
+                        <td className="px-0.5 text-sm"> {item?.variant}</td>
+                        <td className="px-0.5 text-gray-900/80 text-sm py-1 ">
+                          {CurrencyFormatter.format(item?.price)}
+                          <span className="text-red-600">*</span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+              {car?.allVariants?.map((car, i) => {
+                return (
+                  <div key={i} className="mt-5">
+                    {car?.variantTitle && (
+                      <div
+                        onClick={() => setSelected(i)}
+                        className="flex justify-between font-semibold cursor-pointer text-secondary"
+                      >
+                        {car?.variantTitle}{" "}
+                        <IoIosArrowDown
+                          className={`${i !== selected && "rotate-180"}`}
+                        />
+                      </div>
+                    )}
+                    {i === selected && (
+                      <table className="w-full mt-2 ">
+                        <tbody>
+                          {car?.variants.map((item, index) => (
+                            <tr
+                              key={index}
+                              className="text-sm duration-200 border cursor-pointer group hover:border-secondary hover:bg-gray-50"
+                            >
+                              <td className="pl-2 text-sm ">{item?.variant}</td>
+                              <td className="p-0.5 text-gray-900/80   group-hover:text-secondary duration-200">
+                                {CurrencyFormatter.format(item?.price)}
+                                {/* <span className="text-red-600">*</span> */}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
