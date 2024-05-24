@@ -127,7 +127,7 @@ export function Header() {
                             className={classNames(
                               open
                                 ? "border-[#051641] text-[#051641]"
-                                : "border-transparent text-black hover:text-black",
+                                : "border-transparent text-black hover:text-secondary",
                               "relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px outline-none focus:outline-none"
                             )}
                           >

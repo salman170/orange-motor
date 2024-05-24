@@ -1,130 +1,185 @@
 export const model = [
   [
     //tiago
-    // {
-    //   id: "tiago",
-    //   category: "tata",
-    //   name: "Tiago",
-    //   pic: require("../assets/others/tiago.png"),
-    //   price: 2482000,
-    //   fuel: "Petrol / Hybrid",
-    //   transmission: "e-CVT",
-    //   cc: "1987",
-    //   variants: [
-    //     {
-    //       variant: "Zeta+ 7 STR",
-    //       price: 2482000,
-    //     },
-    //     {
-    //       variant: "Zeta+ 8 STR	",
-    //       price: 2487000,
-    //     },
-    //     {
-    //       variant: "Alpha+ 7STR	",
-    //       price: 2842000,
-    //     },
-    //   ],
-    //   banners: [
-    //     {
-    //       img: require("../assets/tata/altroz/1.webp"),
-    //     },
-    //     {
-    //       img: require("../assets/tata/altroz/2.webp"),
-    //     },
-    //     {
-    //       img: require("../assets/tata/altroz/3.webp"),
-    //     },
-    //     {
-    //       img: require("../assets/tata/altroz/4.webp"),
-    //     },
-    //   ],
-
-    //   // dimensions & capacity
-    //   dimensions: [
-    //     //should be 6 items or max 6 items
-    //     {
-    //       title: "Length (mm)",
-    //       value: 4755,
-    //     },
-    //     {
-    //       title: "Width (mm)",
-    //       value: 1845,
-    //     },
-    //     {
-    //       title: "Height (mm)",
-    //       value: 1795,
-    //     },
-    //     {
-    //       title: "Fuel Tank(L)",
-    //       value: 52,
-    //     },
-    //     {
-    //       title: "Seating",
-    //       value: 7,
-    //     },
-    //     {
-    //       title: "Bootspace(L)",
-    //       value: 318,
-    //     },
-    //   ],
-
-    //   //engine & transmission
-    //   engine: [
-    //     {
-    //       title: "Capacity(cc)",
-    //       value: 1987,
-    //     },
-    //     {
-    //       title: "Max Power",
-    //       value: "112kw@6000",
-    //     },
-    //     {
-    //       title: "Fuel Type",
-    //       value: "Petrol / Hybrid",
-    //     },
-    //     {
-    //       title: "Hybrid Motor",
-    //       value: "AC Synchronous Motor",
-    //     },
-    //     {
-    //       title: "Hybrid Max Power",
-    //       value: "83.73kw@4000",
-    //     },
-    //     {
-    //       title: "Transmission",
-    //       value: "e-CVT",
-    //     },
-    //   ],
-
-    //   //weights & brakes
-    //   weight: [
-    //     {
-    //       title: "Front",
-    //       value: "Ventilated Disc",
-    //     },
-    //     {
-    //       title: "Rear",
-    //       value: "Solid Disc",
-    //     },
-    //     {
-    //       title: "Kerb",
-    //       value: "1620/1630",
-    //     },
-    //     {
-    //       title: "Gross Weight",
-    //       value: 2300,
-    //     },
-    //   ],
-    // },
     {
       id: "tiago",
       category: "tata",
       name: "Tiago",
       pic: require("../assets/others/tiago.png"),
-      price: 600000,
+      price: 564900,
       fuel: "Petrol",
       transmission: "Manual",
       cc: "1199",
+      allVariants: [
+        {
+          variantTitle: "TIAGO | PETROL  BS-VI",
+          variants: [
+            {
+              variant: "Tiago (P) XE",
+              price: 564900,
+            },
+            {
+              variant: "Tiago (P) XM",
+              price: 599900,
+            },
+            {
+              variant: "Tiago (P) XTO",
+              price: 619900,
+            },
+            {
+              variant: "Tiago (P) XT",
+              price: 639900,
+            },
+            {
+              variant: "Tiago (P) XT RHYTHM",
+              price: 659900,
+            },
+            {
+              variant: "Tiago (P) XT NRG",
+              price: 669900,
+            },
+            {
+              variant: "Tiago (P) NRG",
+              price: 729900,
+            },
+            {
+              variant: "Tiago P XZ+",
+              price: 729900,
+            },
+            {
+              variant: "Tiago (P) XZ+ DT New",
+              price: 739900,
+            },
+          ],
+        },
+        {
+          variantTitle: "TIAGO AUTOMATIC",
+          variants: [
+            {
+              variant: "Tiago (P) XTA",
+              price: 694900,
+            },
+            {
+              variant: "Tiago (P) XZA",
+              price: 694900,
+            },
+            {
+              variant: "Tiago (P) XZO+",
+              price: 699900,
+            },
+            {
+              variant: "Tiago (P) XZO+ DT",
+              price: 709900,
+            },
+            {
+              variant: "Tiago (P) XZOA+",
+              price: 754900,
+            },
+            {
+              variant: "Tiago (P) XZOA+ DT",
+              price: 764900,
+            },
+            {
+              variant: "Tiago (P) NRGA",
+              price: 784900,
+            },
+            {
+              variant: "Tiago (P) XZA+",
+              price: 784900,
+            },
+            {
+              variant: "Tiago (P) XZA+ DT",
+              price: 794900,
+            },
+          ],
+        },
+        {
+          variantTitle: "TIAGO CNG",
+          variants: [
+            {
+              variant: "Tiago XE CNG",
+              price: 659900,
+            },
+            {
+              variant: "Tiago XM CNG",
+              price: 694900,
+            },
+            {
+              variant: "Tiago XT CNG",
+              price: 734900,
+            },
+            {
+              variant: "Tiago XT RHYTHM CNG",
+              price: 764900,
+            },
+            {
+              variant: "Tiago XT NRG CNG",
+              price: 754900,
+            },
+            {
+              variant: "Tiago XZ+ CNG",
+              price: 824900,
+            },
+            {
+              variant: "Tiago XT NRG CNG",
+              price: 824900,
+            },
+            {
+              variant: "Tiago XZ+ DT CNG",
+              price: 834900,
+            },
+            {
+              variant: "Tiago XTA CNG",
+              price: 789900,
+            },
+            {
+              variant: "Tiago XZA+ CNG",
+              price: 879900,
+            },
+            {
+              variant: "Tiago XZ NRGA CNG",
+              price: 879900,
+            },
+            {
+              variant: "Tiago XZA+ DT CNG",
+              price: 889900,
+            },
+          ],
+        },
+        {
+          variantTitle: "Tiago EV",
+          variants: [
+            {
+              variant: "Tiago EV MR XE",
+              price: 799000,
+            },
+            {
+              variant: "Tiago EV MR XT",
+              price: 899000,
+            },
+            {
+              variant: "Tiago EV LR XT",
+              price: 999000,
+            },
+            {
+              variant: "Tiago EV LR XZ+",
+              price: 1089000,
+            },
+            {
+              variant: "Tiago EV LR XZ+ AC FC WMU",
+              price: 1139000,
+            },
+            {
+              variant: "Tiago EV LR XZ+ TECH LUX",
+              price: 1139000,
+            },
+            {
+              variant: "Tiago EV LR XZ+ TECH LUX AC FC WMU",
+              price: 1189000,
+            },
+          ],
+        },
+      ],
       variants: [
         {
           variant: "XE",
@@ -232,10 +287,96 @@ export const model = [
       category: "tata",
       name: "Altroz",
       pic: require("../assets/others/altroz.png"),
-      price: 750000,
+      price: 664900,
       fuel: "Petrol / Diesel",
       transmission: "Manual",
       cc: "1497",
+      allVariants: [
+        {
+          variantTitle: "ALTROZ | PETROL BS - VI ",
+          variants: [
+            { variant: "XE 1.2 P", price: 664900 },
+            { variant: "XE+ 1.2 P", price: 679900 },
+            { variant: "XM 1.2 P", price: 699900 },
+            { variant: "XM S 1.2 P", price: 744900 },
+            { variant: "XM+ 1.2 P", price: 759900 },
+            { variant: "XM+ S 1.2 P", price: 809900 },
+            { variant: "XT 1.2 P", price: 809900 },
+            { variant: "XZ 1.2 P", price: 859900 },
+            { variant: "XZ(O) 1.2 P", price: 828900 },
+            { variant: "XT 1.2 P Dark", price: 835900 },
+            { variant: "XZ+ 1.2 P", price: 899990 },
+            { variant: "XZ+ S 1.2 P", price: 909990 },
+            { variant: "XZ+ 1.2 P Dark", price: 919900 },
+            { variant: "XZ+ S 1.2 P Dark", price: 949990 },
+            { variant: "XZ+ OS 1.2 P", price: 964990 },
+          ],
+        },
+        {
+          variantTitle: "ALTROZ (P) TURBO VI",
+          variants: [
+            { variant: "XT TC 1.2 P", price: 834900 },
+            { variant: "XT TC 1.2 P Dark", price: 870900 },
+            { variant: "XZ TC 1.2 P", price: 919900 },
+            { variant: "XZ TC (O) 1.2 P", price: 899900 },
+            { variant: "XZ+ TC 1.2 P", price: 959990 },
+            { variant: "XZ+ S TC 1.2 P", price: 969990 },
+            { variant: "XZ+ TC 1.2 P Dark", price: 949990 },
+            { variant: "XZ+ S TC 1.2 P Dark", price: 1009990 },
+          ],
+        },
+        {
+          variantTitle: "ALTROZ | DIESEL VI",
+          variants: [
+            { variant: "XE 1.5 D", price: 754900 },
+            { variant: "XE+ 1.5 D", price: 814900 },
+            { variant: "XM+ 1.5 D", price: 889900 },
+            { variant: "XM+ S 1.5 D", price: 939900 },
+            { variant: "XT 1.5 D", price: 939900 },
+            { variant: "XZ 1.5 D", price: 989900 },
+            { variant: "XZ(O) 1.5 D", price: 953900 },
+            { variant: "XT 1.5 D Dark", price: 940900 },
+            { variant: "XZ+ 1.5 D ", price: 1034900 },
+            { variant: "XZ+ S 1.5 D ", price: 1039990 },
+            { variant: "XZ+ 1.5 D Dark", price: 1049900 },
+            { variant: "XZ+ S 1.5 D Dark ", price: 1079900 },
+          ],
+        },
+        {
+          variantTitle: "ALTROZ DCA (AUTOMATIC) PETROL BS- VI",
+          variants: [
+            { variant: "Altroz XMA+ 1.2 P", price: 859900 },
+            { variant: "Altroz XTA 1.2 P", price: 909900 },
+            { variant: "Altroz XTA 1.2 P DARK", price: 945900 },
+            { variant: "Altroz XZA (O) 1.2 P", price: 969900 },
+            { variant: "Altroz XZA+ 1.2 P", price: 999990 },
+            { variant: "Altroz XZA+ S 1.2 P DARK", price: 1009990 },
+            { variant: "Altroz XZA+ S 1.2 P", price: 1039990 },
+            { variant: "Altroz XZA+OS 1.2 P", price: 1064990 },
+          ],
+        },
+        {
+          variantTitle: "ALTROZ CNG BS- VI",
+          variants: [
+            { variant: "Altroz XE CNG", price: 759900 },
+            { variant: "Altroz XM+ CNG", price: 844900 },
+            { variant: "Altroz XM+ S CNG", price: 894900 },
+            { variant: "Altroz XZ CNG", price: 959900 },
+            { variant: "Altroz XZ+ S CNG", price: 1009990 },
+            { variant: "Altroz XZ+ OS CNG", price: 1064990 },
+          ],
+        },
+        // {
+        //   variantTitle: "PUNCH EV",
+        //   variants: [
+        //     {
+        //       variant: " EV Empowered S LR",
+        //       price: 1449000,
+        //     },
+
+        //   ],
+        // },
+      ],
       variants: [
         {
           variant: "XE",
@@ -340,10 +481,132 @@ export const model = [
       category: "tata",
       name: "Tigor",
       pic: require("../assets/others/tigor.png"),
-      price: 700000,
+      price: 629900,
       fuel: "Petrol / Diesel",
       transmission: "Manual",
       cc: "1199",
+      allVariants: [
+        {
+          variantTitle: "TIGOR | PETROL  BS-VI",
+          variants: [
+            {
+              variant: "Tigor (P) XE",
+              price: 629900,
+            },
+            {
+              variant: "Tigor (P) XM",
+              price: 679900,
+            },
+            {
+              variant: "Tigor (P) XZ",
+              price: 729900,
+            },
+            {
+              variant: "Tigor (P) XMA",
+              price: 739900,
+            },
+            {
+              variant: "Tigor (P) XZ+",
+              price: 799900,
+            },
+            {
+              variant: "Tigor (P) XZ+ DT",
+              price: 774900,
+            },
+            {
+              variant: "Tigor (P) XZ+ DT LP",
+              price: 793900,
+            },
+            {
+              variant: "Tigor (P) XZ+ LP",
+              price: 799900,
+            },
+            {
+              variant: "Tigor (P) XZA+ New",
+              price: 859900,
+            },
+            {
+              variant: "Tigor (P) XZA+ DT",
+              price: 834900,
+            },
+            {
+              variant: "Tigor (P) XZA+ DT LP",
+              price: 853900,
+            },
+            {
+              variant: "Tigor (P) XZA+ LP",
+              price: 859900,
+            },
+          ],
+        },
+        {
+          variantTitle: "TIAGO CNG",
+          variants: [
+            {
+              variant: "Tigor XM CNG",
+              price: 774900,
+            },
+            {
+              variant: "Tigor XZ CNG",
+              price: 824900,
+            },
+            {
+              variant: "Tigor XZ+ CNG",
+              price: 894900,
+            },
+            {
+              variant: "Tigor XZ+ DT CNG",
+              price: 864900,
+            },
+            {
+              variant: "Tigor XZ+ DT LP CNG",
+              price: 883900,
+            },
+            {
+              variant: "Tigor XZA CNG",
+              price: 884900,
+            },
+            {
+              variant: "Tigor XZ+ LP CNG",
+              price: 894900,
+            },
+            {
+              variant: "Tigor XZA+ CNG",
+              price: 954900,
+            },
+          ],
+        },
+
+        {
+          variantTitle: "TIAGO ZIPTON - EV",
+          variants: [
+            {
+              variant: "Tiago XE EV",
+              price: 1249000,
+            },
+            {
+              variant: "Tiago XT EV",
+              price: 1299000,
+            },
+            {
+              variant: "Tiago EV XM",
+              price: 1299000,
+            },
+            {
+              variant: "Tiago XZ+ EV",
+              price: 1349000,
+            },
+            {
+              variant: "Tiago XZ+ DT",
+              price: 1364000,
+            },
+            {
+              variant: "Tiago XZ+ LUX EV",
+              price: 1375000,
+            },
+          ],
+        },
+      ],
       variants: [
         {
           variant: "XE",
@@ -833,10 +1096,283 @@ export const model = [
       category: "tata",
       name: "Nexon",
       pic: require("../assets/others/nexon.png"),
-      price: 1000000,
+      price: 799990,
       fuel: "Petrol / Diesel",
       transmission: "Manual / Automatic",
       cc: "1199",
+      allVariants: [
+        {
+          variantTitle: "NEXON | PETROL BS-VI",
+          variants: [
+            { variant: "Nexon Smart (O) 1.2", price: 799990 },
+            { variant: "Nexon Smart 1.2", price: 814990 },
+            { variant: "Nexon Smart + 1.2", price: 889990 },
+            { variant: "Nexon Smart + S 1.2", price: 939990 },
+            { variant: "Nexon Pure 1.2", price: 979990 },
+            { variant: "Nexon Pure S 1.2", price: 1029990 },
+            { variant: "Nexon Creative 1.2", price: 1109990 },
+            { variant: "Nexon Creative DT 1.2", price: 1119990 },
+            { variant: "Nexon Creative DARK 1.2", price: 1144990 },
+            { variant: "Nexon Creative + 1.2", price: 1179990 },
+            { variant: "Nexon Creative + DT 1.2", price: 1189990 },
+            { variant: "Nexon Creative + DARK 1.2", price: 1214990 },
+            { variant: "Nexon Creative + S 1.2", price: 1229990 },
+            { variant: "Nexon Creative DCA 1.2", price: 1229990 },
+            { variant: "Nexon Creative + S DT 1.2", price: 1239990 },
+            { variant: "Nexon Creative DCA DT 1.2", price: 1239990 },
+            { variant: "Nexon Creative DCA DARK 1.2", price: 1264990 },
+            { variant: "Nexon Creative + S DARK 1.2", price: 1264990 },
+            { variant: "Nexon Creative + DCA 1.2", price: 1299990 },
+            { variant: "Nexon Creative + DCA DT 1.2", price: 1309990 },
+            { variant: "Nexon Creative + DCA DARK 1.2", price: 1334990 },
+            { variant: "Nexon Creative + S DCA 1.2", price: 1349990 },
+            { variant: "Nexon Creative + S DCA DT 1.2", price: 1359990 },
+            { variant: "Nexon Fearless DT 1.2", price: 1259990 },
+            { variant: "Nexon FearlessPr DT 1.2", price: 1259990 },
+            { variant: "Nexon Fearless DARK 1.2", price: 1294990 },
+            { variant: "Nexon Fearless + DT 1.2", price: 1309990 },
+            { variant: "Nexon FearlessPr + DT 1.2", price: 1309990 },
+            { variant: "Nexon Fearless S DT 1.2", price: 1309990 },
+            { variant: "Nexon FearlessPr S DT 1.2", price: 1309990 },
+            { variant: "Nexon Fearless + S DT 1.2", price: 1359990 },
+            { variant: "Nexon FearlessPr + S DT 1.2", price: 1359990 },
+            { variant: "Nexon Fearless DCA DT 1.2", price: 1379990 },
+            { variant: "Nexon FearlessPr DCA DT 1.2", price: 1379990 },
+            { variant: "Nexon Fearless + S DARK 1.2", price: 1379990 },
+            { variant: "Nexon Fearless DCA DARK 1.2", price: 1414990 },
+            { variant: "Nexon Fearless + DCA DT 1.2", price: 1429990 },
+            { variant: "Nexon FearlessPr + DCA DT 1.2", price: 1429990 },
+            { variant: "Nexon Fearless S DCA DT 1.2", price: 1429990 },
+            { variant: "Nexon FearlessPr S DCA DT 1.2", price: 1429990 },
+            { variant: "Nexon Fearless + S DCA DT 1.2", price: 1479990 },
+            { variant: "Nexon FearlessPr +S DCA DT 1.2", price: 1479990 },
+            { variant: "Nexon Fearless + S DCA DARK 1.2", price: 1499990 },
+            { variant: "Nexon Smart + AMT 1.2", price: 969990 },
+            { variant: "Nexon Pure AMT 1.2", price: 1049990 },
+            { variant: "Nexon Pure S AMT 1.2", price: 1099990 },
+            { variant: "Nexon Creative AMT 1.2", price: 1179990 },
+            { variant: "Nexon Creative AMT DT 1.2", price: 1189990 },
+            { variant: "Nexon Creative AMT DARK 1.2", price: 1214990 },
+            { variant: "Nexon Creative + AMT 1.2", price: 1249990 },
+            { variant: "Nexon Creative + AMT DT 1.2", price: 1259990 },
+            { variant: "Nexon Creative + AMT DARK 1.2", price: 1284990 },
+            { variant: "Nexon Creative + S AMT 1.2", price: 1299990 },
+            { variant: "Nexon Creative + S AMT DT 1.2", price: 1309990 },
+            { variant: "Nexon Creative + S AMT DARK 1.2", price: 1334990 },
+            { variant: "Nexon Creative + S DCA DARK 1.2", price: 1384990 },
+          ],
+        },
+        {
+          variantTitle: "NEXON | DIESEL BS-VI",
+          variants: [
+            { variant: "Nexon Smart + 1.5", price: 999990 },
+            { variant: "Nexon Smart + S 1.5", price: 1049990 },
+            { variant: "Nexon Pure 1.5", price: 1109990 },
+            { variant: "Nexon Pure S 1.5", price: 1159990 },
+            { variant: "Nexon Creative 1.5", price: 1249990 },
+            { variant: "Nexon Creative DT 1.5", price: 1259990 },
+            { variant: "Nexon Creative DK 1.5", price: 1284990 },
+            { variant: "Nexon Creative + 1.5", price: 1319990 },
+            { variant: "Nexon Creative + DT 1.5", price: 1329990 },
+            { variant: "Nexon Creative + DK 1.5", price: 1354990 },
+            { variant: "Nexon Creative + S 1.5", price: 1369990 },
+            { variant: "Nexon Creative + S DT 1.5", price: 1379990 },
+            { variant: "Nexon Fearless DT 1.5", price: 1399990 },
+            { variant: "Nexon FearlessPr DT 1.5", price: 1399990 },
+            { variant: "Nexon Creative + S DK 1.5", price: 1404990 },
+            { variant: "Nexon Fearless DARK 1.5", price: 1434990 },
+            { variant: "Nexon Fearless + DT 1.5", price: 1449990 },
+            { variant: "Nexon FearlessPr + DT 1.5", price: 1449990 },
+            { variant: "Nexon Fearless S DT 1.5", price: 1449990 },
+            { variant: "Nexon FearlessPr S DT 1.5", price: 1449990 },
+            { variant: "Nexon Fearless + S DT 1.5", price: 1499990 },
+            { variant: "Nexon FearlessPr + S DT 1.5", price: 1499990 },
+            { variant: "Nexon Fearless + S DK 1.5", price: 1519990 },
+            { variant: "Nexon Pure AMT 1.5", price: 1179990 },
+            { variant: "Nexon Pure S AMT 1.5", price: 1229990 },
+            { variant: "Nexon Creative AMT 1.5", price: 1309990 },
+            { variant: "Nexon Creative AMT DT 1.5", price: 1319990 },
+            { variant: "Nexon Creative AMT DK 1.5", price: 1344990 },
+            { variant: "Nexon Creative + AMT 1.5", price: 1389990 },
+            { variant: "Nexon Creative + AMT DT 1.5", price: 1399990 },
+            { variant: "Nexon Creative + AMT DK 1.5", price: 1424990 },
+            { variant: "Nexon Creative + S AMT 1.5", price: 1439990 },
+            { variant: "Nexon Creative + S AMT DT 1.5", price: 1449990 },
+            { variant: "Nexon Fearless AMT DT 1.5", price: 1469990 },
+            { variant: "Nexon FearlessPr AMT DT 1.5", price: 1469990 },
+            { variant: "Nexon Creative + S AMT DK 1.5", price: 1474990 },
+            { variant: "Nexon Fearless AMT DK 1.5", price: 1504990 },
+            { variant: "Nexon Fearless + AMT DT 1.5", price: 1509990 },
+            { variant: "Nexon FearlessPr + AMT DT 1.5", price: 1509990 },
+            { variant: "Nexon Fearless S AMT DT 1.5", price: 1509990 },
+            { variant: "Nexon FearlessPr S AMT DT 1.5", price: 1509990 },
+            { variant: "Nexon FearlessPr +S AMT DT 1.5", price: 1559990 },
+            { variant: "Nexon Fearless + S AMT DT 1.5", price: 1559990 },
+            { variant: "Nexon Fearless + S AMT DK 1.5", price: 1579990 },
+          ],
+        },
+        {
+          variantTitle: "NEXON (OLD) | DIESEL VI",
+          variants: [
+            { variant: "Nexon (D) XM", price: 999900 },
+            { variant: "Nexon (D) XM (S)", price: 1079900 },
+            { variant: "Nexon (D) XM+ (S)", price: 1144900 },
+            { variant: "Nexon (D) XZ+", price: 1209900 },
+            { variant: "Nexon (D) XZ+ S", price: 1284900 },
+            { variant: "Nexon (D) XZ+ S DT", price: 1299900 },
+            { variant: "Nexon (D) XZ+ S DARK", price: 1314900 },
+            { variant: "Nexon (D) XZ+ (L)", price: 1277900 },
+            { variant: "Nexon (D) XZ+ DK", price: 1239900 },
+            { variant: "Nexon (D) XZ+ (L) Dark", price: 1307900 },
+            { variant: "Nexon (D) XZ+ LUX", price: 1319900 },
+            { variant: "Nexon (D) XZ+ LUX DT", price: 1334900 },
+            { variant: "Nexon (D) XZ+ LUX DK", price: 1349900 },
+            { variant: "Nexon (D) XZ+ LUXS", price: 1369900 },
+            { variant: "Nexon (D) XZ+ LUXS KR", price: 1369900 },
+            { variant: "Nexon (D) XZ+ LUXS DT", price: 1384900 },
+            { variant: "Nexon (D) XZ+ LUXS DK", price: 1389900 },
+            { variant: "Nexon (D) XZ+ LUXS RDK", price: 1394900 },
+          ],
+        },
+        {
+          variantTitle: "NEXON (D) OLD AUTOMATIC",
+          variants: [
+            { variant: "Nexon (D) XMA (S)", price: 1144900 },
+            { variant: "Nexon (D) XMA+ (S)", price: 1204900 },
+            { variant: "Nexon (D) XZA+", price: 1274900 },
+            { variant: "Nexon (D) XZA+ Dark", price: 1304900 },
+            { variant: "Nexon (D) XZA+ LUX", price: 1384900 },
+            { variant: "Nexon (D) XZA+ LUX DT", price: 1399900 },
+            { variant: "Nexon (D) XZA+ LUX DK", price: 1414900 },
+            { variant: "Nexon (D) XZA+ LUXS", price: 1434900 },
+            { variant: "Nexon (D) XZA+ LUXS KR", price: 1434900 },
+            { variant: "Nexon (D) XZA+ LUXS DT", price: 1449900 },
+            { variant: "Nexon (D) XZA+ LUXS DK", price: 1454900 },
+            { variant: "Nexon (D) XZA+ LUXS RDK", price: 1459900 },
+          ],
+        },
+        {
+          variantTitle: "NEXON (D) OLD JET VI",
+          variants: [
+            {
+              variant: "Nexon (D) Z+ LUXS JET",
+              price: 1382900,
+            },
+          ],
+        },
+        {
+          variantTitle: "NEXON (D) JET  OLD AUTOMATIC",
+          variants: [
+            {
+              variant: "Nexon (D) XZA+ LUXS JET",
+              price: 1447900,
+            },
+          ],
+        },
+        {
+          variantTitle: "NEXON | PETROL VI (OLD)",
+          variants: [
+            { variant: "Nexon (P) XE", price: 799900 },
+            { variant: "Nexon (P) XM", price: 899900 },
+            { variant: "Nexon (P) XM (S)", price: 959900 },
+            { variant: "Nexon (P) XM+(S)", price: 999900 },
+            { variant: "Nexon (P) XZ+", price: 1069900 },
+            { variant: "Nexon (P) XZ+ S", price: 1144900 },
+            { variant: "Nexon (P) XZ+ S DT", price: 1159900 },
+            { variant: "Nexon (P) XZ+ (L)", price: 1147900 },
+            { variant: "Nexon (P) XZ+ LUX", price: 1179900 },
+            { variant: "Nexon (P) XZ+ LUX DT", price: 1194900 },
+            { variant: "Nexon (P) XZ+ LUX DARK", price: 1209900 },
+            { variant: "Nexon (P) XZ+ DT (L)", price: 1162900 },
+            { variant: "Nexon (P) XZ+ P", price: 1197900 },
+            { variant: "Nexon (P) XZ+ LUXS", price: 1229900 },
+            { variant: "Nexon (P) XZ+ LUXS KR", price: 1229900 },
+            { variant: "Nexon (P) XZ+ DT P", price: 1212900 },
+            { variant: "Nexon (P) XZ+ Dark", price: 1099900 },
+            { variant: "Nexon (P) XZ+ S Dark", price: 1174900 },
+            { variant: "Nexon (P) XZ+ (L) Dark", price: 1177900 },
+            { variant: "Nexon (P) XZ+ LUXS DT", price: 1244900 },
+            { variant: "Nexon (P) XZ+ LUXS DK", price: 1249900 },
+            { variant: "Nexon (P) XZ+ LUXS RDK", price: 1254900 },
+          ],
+        },
+        {
+          variantTitle: "NEXON (P) AUTOMATIC (OLD)",
+          variants: [
+            { variant: "Nexon (P) XMA", price: 964900 },
+            { variant: "Nexon (P) XMA (S)", price: 1024900 },
+            { variant: "Nexon (P) XMA + (S)", price: 1064900 },
+            { variant: "Nexon (P) XZA+", price: 1134900 },
+            { variant: "Nexon (P) XZA+ (S)", price: 1209900 },
+            { variant: "Nexon (P) XZA+ (S) DT", price: 1224900 },
+            { variant: "Nexon (P) XZA+ S DK", price: 1239900 },
+            { variant: "Nexon (P) XZA+ LUX", price: 1244900 },
+            { variant: "Nexon (P) XZA+ LUX DT", price: 1259900 },
+            { variant: "Nexon (P) XZA+ LUX DK", price: 1274900 },
+            { variant: "Nexon (P) XZA+ LUXS", price: 1294900 },
+            { variant: "Nexon (P) XZA+ LUXS KR", price: 1294900 },
+            { variant: "Nexon (P) XZA+ LUXS DT", price: 1309900 },
+            { variant: "Nexon (P) XZA+ LUXS DK", price: 1314900 },
+            { variant: "Nexon (P) XZA+ LUXS RDK", price: 1319900 },
+            { variant: "Nexon (P) XZA+ Dark", price: 1164900 },
+          ],
+        },
+        {
+          variantTitle: "NEXON (P) HS, KZR & JET (OLD)",
+          variants: [
+            { variant: "Nexon (P) XZ+ HS", price: 1114900 },
+            { variant: "Nexon (P) XZ+ DT HS", price: 1129900 },
+            { variant: "Nexon (P) XZ+ JET", price: 1222900 },
+            { variant: "Nexon (P) XZ+ LUXS JET", price: 1242900 },
+          ],
+        },
+        {
+          variantTitle: "NEXON (P) HS, KZR & JET AUTOMATIC (OLD)",
+          variants: [{ variant: "Nexon (P) XZA+ LUXS JET", price: 1307900 }],
+        },
+        {
+          variantTitle: "NEXON - EV -2.0 MAX VI",
+          variants: [
+            { variant: "Nexon 2.0 EV XM 3.3", price: 1649000 },
+            { variant: "Nexon 2.0 EV XM 7.2", price: 1699000 },
+            { variant: "Nexon 2.0 EV XZ+ 3.3", price: 1749000 },
+            { variant: "Nexon 2.0 EV XZ+ 7.2", price: 1799000 },
+            { variant: "Nexon 2.0 EV XZ+ lux 3.3", price: 1879000 },
+            { variant: "Nexon 2.0 EV XZ+ lux 3.3 JET", price: 1869000 },
+            { variant: "Nexon 2.0 EV XZ+ lux 7.2", price: 1929000 },
+            { variant: "Nexon 2.0 EV XZ+ lux 7.2 JET", price: 1919000 },
+            { variant: "Nexon EV XZ+ lux Dark 3.3 KW", price: 1904000 },
+            { variant: "Nexon EV XZ+ lux Dark 7.3 KW", price: 1954000 },
+          ],
+        },
+        {
+          variantTitle: "NEXON - EV -3.0 ",
+          variants: [
+            { variant: "Creative+ MR", price: 1449000 },
+            { variant: "Fearless MR", price: 1599000 },
+            { variant: "Fearless+ MR", price: 1649000 },
+            { variant: "Fearless+S MR", price: 1699000 },
+            { variant: "Empowered MR", price: 1749000 },
+            { variant: "Fearless LR", price: 1699000 },
+            { variant: "Fearless+ LR", price: 1749000 },
+            { variant: "Fearless+S LR", price: 1799000 },
+            { variant: "Empowered+ LR", price: 1929000 },
+            { variant: "Nexon EV 3.0 Dark Edition", price: 1949000 },
+          ],
+        },
+        {
+          variantTitle: "NEXON - EV -VI ",
+          variants: [
+            { variant: "NEXON EV XM", price: 1449000 },
+            { variant: "NEXON EV XZ+", price: 1599000 },
+            { variant: "NEXON EV XZ+ LUX", price: 1699000 },
+            { variant: "NEXON EV XZ+ FLEET", price: 1630000 },
+            { variant: "Nexon EV XZ+ Dark", price: 1619000 },
+            { variant: "Nexon EV XZ+ lux Dark", price: 1719000 },
+            { variant: "Nexon EV XZ+ lux JET", price: 1719000 },
+          ],
+        },
+      ],
       variants: [
         {
           variant: "XE",
@@ -944,10 +1480,290 @@ export const model = [
       category: "tata",
       name: "Harrier",
       pic: require("../assets/others/harrier.png"),
-      price: 1800000,
+      price: 1519900,
       fuel: "Diesel",
       transmission: "Manual / Automatic",
       cc: "1956",
+      allVariants: [
+        {
+          variantTitle: "NEW HARRIER - PHASE LIFT",
+          variants: [
+            {
+              variant: "Harrier Smart",
+              price: 1549000,
+            },
+            {
+              variant: "Harrier Smart (O)",
+              price: 1599000,
+            },
+            {
+              variant: "Harrier Pure",
+              price: 1699000,
+            },
+            {
+              variant: "Harrier Pure (O)",
+              price: 1749000,
+            },
+            {
+              variant: "Harrier Pure +",
+              price: 1869000,
+            },
+            {
+              variant: "Harrier Pure + S",
+              price: 1969000,
+            },
+            {
+              variant: "Harrier Pure + S DK",
+              price: 1999000,
+            },
+            {
+              variant: "Harrier Adventure",
+              price: 2019000,
+            },
+            {
+              variant: "Harrier Adventure +",
+              price: 2169000,
+            },
+            {
+              variant: "Harrier Adventure + DK",
+              price: 2224000,
+            },
+            {
+              variant: "Harrier Adventure + A",
+              price: 2269000,
+            },
+            {
+              variant: "Harrier Fearless DT",
+              price: 2299000,
+            },
+            {
+              variant: "Harrier Fearless DK",
+              price: 2354000,
+            },
+            {
+              variant: "Harrier Fearless + DT",
+              price: 2449000,
+            },
+            {
+              variant: "Harrier Fearless + DK",
+              price: 2504000,
+            },
+          ],
+        },
+        {
+          variantTitle: "HARRIER AUTOMATIC",
+          variants: [
+            {
+              variant: "Harrier Pure + (AT)",
+              price: 1999000,
+            },
+            {
+              variant: "Harrier Pure + S (AT)",
+              price: 2109000,
+            },
+            {
+              variant: "Harrier Pure + S DK (AT)",
+              price: 2139000,
+            },
+            {
+              variant: "Harrier Adventure + (AT)",
+              price: 2309000,
+            },
+            {
+              variant: "Harrier Adventure + DK (AT)",
+              price: 2364000,
+            },
+            {
+              variant: "Harrier Adventure + A (AT)",
+              price: 2409000,
+            },
+            {
+              variant: "Harrier Fearless DT (AT)",
+              price: 2439000,
+            },
+            {
+              variant: "Harrier Fearless DK (AT)",
+              price: 2494000,
+            },
+            {
+              variant: "Harrier Fearless + DT (AT)",
+              price: 2589000,
+            },
+            {
+              variant: "Harrier Fearless + DK (AT)",
+              price: 2644000,
+            },
+          ],
+        },
+        {
+          variantTitle: "HARRIER-VI (OLD)",
+          variants: [
+            {
+              variant: "Harrier XE",
+              price: 1519900,
+            },
+            {
+              variant: "Harrier XM",
+              price: 1664900,
+            },
+            {
+              variant: "Harrier XMS",
+              price: 1790000,
+            },
+            {
+              variant: "Harrier XT+",
+              price: 1889400,
+            },
+            {
+              variant: "Harrier XZ",
+              price: 1944400,
+            },
+            {
+              variant: "Harrier XZ DT",
+              price: 1964400,
+            },
+            {
+              variant: "Harrier XZ+",
+              price: 2151900,
+            },
+            {
+              variant: "Harrier XZ+ DT",
+              price: 2171900,
+            },
+            {
+              variant: "Harrier XZ+ JET",
+              price: 2119900,
+            },
+          ],
+        },
+        {
+          variantTitle: "HARRIER AUTOMATIC (OLD)",
+          variants: [
+            {
+              variant: "Harrier XMAS",
+              price: 1920000,
+            },
+            {
+              variant: "Harrier XTA+",
+              price: 2019400,
+            },
+            {
+              variant: "Harrier XZS",
+              price: 2041400,
+            },
+            {
+              variant: "Harrier XZA",
+              price: 2074400,
+            },
+            {
+              variant: "Harrier XZS DT",
+              price: 2061400,
+            },
+            {
+              variant: "Harrier XZA DT",
+              price: 2094400,
+            },
+            {
+              variant: "Harrier XZAS",
+              price: 2171400,
+            },
+            {
+              variant: "Harrier XZAS DT",
+              price: 2191400,
+            },
+            {
+              variant: "Harrier XZA+",
+              price: 2281900,
+            },
+            {
+              variant: "Harrier XZA+ DT",
+              price: 2301900,
+            },
+            {
+              variant: "Harrier XZA+ KZR",
+              price: 2245900,
+            },
+            {
+              variant: "Harrier XZA+ JET",
+              price: 2249900,
+            },
+            {
+              variant: "Harrier XZA+ O",
+              price: 2381900,
+            },
+            {
+              variant: "Harrier XZA+ O DT",
+              price: 2401900,
+            },
+            {
+              variant: "Harrier XZA+ JET",
+              price: 2249900,
+            },
+          ],
+        },
+        {
+          variantTitle: "DARK EDITION AUTOMATIC (OLD)",
+          variants: [
+            {
+              variant: "Harrier XT+ Dark Edition",
+              price: 1924400,
+            },
+            {
+              variant: "Harrier XTA+ Dark Edition",
+              price: 2054400,
+            },
+            {
+              variant: "Harrier XZS Dark Edition",
+              price: 2076400,
+            },
+            {
+              variant: "Harrier XZ+ Dark Edition",
+              price: 2186900,
+            },
+            {
+              variant: "Harrier XZ+ RDK",
+              price: 2196900,
+            },
+            {
+              variant: "Harrier XZAS Dark Edition",
+              price: 2206400,
+            },
+            {
+              variant: "Harrier XZA+ Dark Edition",
+              price: 2316900,
+            },
+            {
+              variant: "Harrier XZA+ RDK",
+              price: 2326900,
+            },
+            {
+              variant: "Harrier XZA+ O Dark Edition",
+              price: 2416900,
+            },
+            {
+              variant: "Harrier XZA+ O RDK",
+              price: 2426900,
+            },
+          ],
+        },
+        // {
+        //   variantTitle: "HARRIER CAMO DARK",
+        //   variants: [
+        //     {
+        //       variant: "XE",
+        //       price: 1800000,
+        //     },
+        //     {
+        //       variant: "XM",
+        //       price: 1850000,
+        //     },
+        //     {
+        //       variant: "XT",
+        //       price: 1900000,
+        //     },
+        //   ],
+        // },
+      ],
       variants: [
         {
           variant: "XE",
@@ -1059,6 +1875,110 @@ export const model = [
       fuel: "Diesel",
       transmission: "Manual / Automatic",
       cc: "1956",
+      allVariants: [
+        {
+          variantTitle: "NEW SAFARI - PHASE LIFT",
+          variants: [
+            { variant: "Safari Smart", price: 1619000 },
+            { variant: "Safari Smart (O)", price: 1669000 },
+            { variant: "Safari Pure", price: 1769000 },
+            { variant: "Safari Pure (O)", price: 1819000 },
+            { variant: "Safari Pure +", price: 1939000 },
+            { variant: "Safari Pure + S", price: 2039000 },
+            { variant: "Safari Pure + S DK", price: 2069000 },
+            { variant: "Safari Adventure", price: 2099000 },
+            { variant: "Safari Adventure +", price: 2249000 },
+            { variant: "Safari Adventure + DK", price: 2304000 },
+            { variant: "Safari Adventure + A", price: 2349000 },
+            { variant: "Safari Accomplished DT", price: 2399000 },
+            { variant: "Safari Accomplished DK", price: 2434000 },
+            { variant: "Safari Accomplished + DT", price: 2549000 },
+            { variant: "Safari Accomplished + 6S DT", price: 2559000 },
+            { variant: "Safari Accomplished + DK", price: 2584000 },
+            { variant: "Safari Accomplished + 6S DK", price: 2594000 },
+          ],
+        },
+        {
+          variantTitle: "SAFARI AUTOMATIC",
+          variants: [
+            { variant: "Safari Pure + (AT)", price: 2069000 },
+            { variant: "Safari Pure + S (AT)", price: 2179000 },
+            { variant: "Safari Pure + S DK (AT)", price: 2209000 },
+            { variant: "Safari Adventure + (AT)", price: 2389000 },
+            { variant: "Safari Adventure + DK (AT)", price: 2444000 },
+            { variant: "Safari Adventure + A (AT)", price: 2489000 },
+            { variant: "Safari Accomplished DT (AT)", price: 2539000 },
+            { variant: "Safari Accomplished DK (AT)", price: 2574000 },
+            { variant: "Safari Accomplished + DT (AT)", price: 2689000 },
+            { variant: "Safari Accomplished+6S DT (AT)", price: 2699000 },
+            { variant: "Safari Accomplished + DK (AT)", price: 2724000 },
+            { variant: "Safari Accomplished+6S DK (AT)", price: 2734000 },
+          ],
+        },
+        {
+          variantTitle: "SAFARI - BSVI - OLD PRICE LIST	",
+          variants: [
+            { variant: "Safari XE", price: 1584900 },
+            { variant: "Safari XM", price: 1734900 },
+            { variant: "Safari XMS", price: 1866000 },
+            { variant: "Safari XT+", price: 1982900 },
+            { variant: "Safari XZ", price: 2067900 },
+            { variant: "Safari XZ+ 7S", price: 2236500 },
+            { variant: "Safari XZ+ 6S", price: 2246500 },
+            { variant: "Safari XZ+ 7S Adventure", price: 2261500 },
+            { variant: "Safari XZ+ 6S Adventure", price: 2271500 },
+            { variant: "Safari XZ+ 7S KZR", price: 2174900 },
+            { variant: "Safari XZ+ 6S KZR", price: 2184900 },
+            { variant: "Safari XZ+ JET", price: 2174900 },
+            { variant: "Safari XZ+ 6S JET", price: 2184900 },
+          ],
+        },
+        {
+          variantTitle: "SAFARI AUTOMATIC OLD VEH PRICE LIST	",
+          variants: [
+            { variant: "Safari XMA", price: 1844900 },
+            { variant: "Safari XMAS", price: 1996000 },
+            { variant: "Safari XZ+ Gold", price: 2260900 },
+            { variant: "Safari XTA+", price: 2112900 },
+            { variant: "Safari XZA", price: 2197900 },
+            { variant: "Safari XZA+ 7S", price: 2366500 },
+            { variant: "Safari XZA+ 6S", price: 2376500 },
+            { variant: "Safari XZA+ 7S Adventure", price: 2391500 },
+            { variant: "Safari XZA+ 6S Adventure", price: 2401500 },
+            { variant: "Safari XZA+ O 7S", price: 2466500 },
+            { variant: "Safari XZA+ O 6S", price: 2476500 },
+            { variant: "Safari XZA+ O 7S Adeven", price: 2491500 },
+            { variant: "Safari XZA+ O 6S Adeven", price: 2501500 },
+            { variant: "Safari XZA+ 6S KZR", price: 2314900 },
+            { variant: "Safari XZA+ JET", price: 2304900 },
+            { variant: "Safari XZA+ 6S JET", price: 2314900 },
+          ],
+        },
+        {
+          variantTitle: "SAFARI DARK EDITION MANUAL OLD PRICE LIST	",
+          variants: [
+            { variant: "Safari XT+ Dark", price: 2017900 },
+            { variant: "Safari XZ+ 7S Dark", price: 2271500 },
+            { variant: "Safari XZ+ 7S RDK", price: 2281500 },
+            { variant: "Safari XZ+ 6S Dark", price: 2281500 },
+            { variant: "Safari XZ+ 6S RDK", price: 2291500 },
+          ],
+        },
+        {
+          variantTitle: "SAFARI DARK EDITION AUTOMATIC OLD PRICE LIST											",
+          variants: [
+            { variant: "Safari XTA+ Dark", price: 2147900 },
+            { variant: "Safari XZA+7S Dark", price: 2401500 },
+            { variant: "Safari XZA+7S RDK", price: 2411500 },
+            { variant: "Safari XZA+ 6S Dark", price: 2411500 },
+            { variant: "Safari XZA+ 6S RDK", price: 2421500 },
+            { variant: "Safari XZA+ O DK", price: 2501500 },
+            { variant: "Safari XZA+ O RDK", price: 2511500 },
+            { variant: "Safari XZA+ O 6S DK", price: 2511500 },
+            { variant: "Safari XZA+ O 6S RDK", price: 2521500 },
+          ],
+        },
+      ],
       variants: [
         {
           variant: "XE",
@@ -6392,6 +7312,65 @@ export const model = [
 
 export const brands = [
   {
+    name: "Honda",
+    locations: [
+      {
+        name: "Honda Showroom - Toli Chowki",
+        address:
+          "8-1, 21/145, Tata Towers, Surya Nagar, Toli Chowki, Hyderabad, Telangana 500008",
+        map: "https://maps.app.goo.gl/F1HJSA1X4TSXdMeh8",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.24305452816!2d78.41117747505926!3d17.400119583489282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96e9e3fc13cf%3A0x728251f36c25f904!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003233494!5m2!1sen!2sin",
+        phone: "9160188880",
+        personName: "Mr. Mohd Roofi Jameel",
+        email: "orangehonda2wheelers@gmail.com",
+      },
+      {
+        name: "Honda Showroom - Masab Tank",
+        address:
+          "10-5-2/1/8/3, Mehdipatnam - Banjara Hills Rd, Opposite Paradise Hotel, Owaisi Pura, Masab Tank, Hyderabad, Telangana 500028",
+        map: "https://maps.app.goo.gl/eJXKeMwWTkvCXooC7",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.171548544171!2d78.44988557505934!3d17.403553083486457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9740066d76db%3A0xc65e5977ef927ceb!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003368659!5m2!1sen!2sin",
+        phone: "7799942940",
+        personName: "Mr. Mohd Aziz Khan",
+        email: "orangehondamasabtank2023@gmail.com",
+      },
+      {
+        name: "Honda Showroom - Manikonda",
+        address:
+          "Krishna Plaza 1-5/31, near Indian Oil Petrol Bunk, Manikonda, Telangana 500089",
+        map: "https://maps.app.goo.gl/uGjsLCS4XzDPxPcVA",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.1896330295485!2d78.37195907505925!3d17.402684783487118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb941995a23143%3A0x675f12362e6c26d6!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003582070!5m2!1sen!2sin",
+        phone: "9703518666",
+        personName: "Mr. Srinivas",
+        email: "orangehondamanikonda2015@gmail.com",
+      },
+      {
+        name: "Honda Showroom - Chevella",
+        address: "Main Rd, Chevella, Telangana 501503",
+        map: "https://maps.app.goo.gl/ccuhWxGn4nG9nkvQA",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.002314227614!2d78.13098757505725!3d17.315437483559553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbe82019db7a21%3A0x7d44011f29cb3307!2sorange%20honda%20showroom!5e0!3m2!1sen!2sin!4v1711003704174!5m2!1sen!2sin",
+        phone: "8886672175",
+        personName: "Mr. E Raju",
+        email: "orangechevelle1234@gmail.com",
+      },
+      {
+        name: "Honda Showroom - Moinabad",
+        address:
+          "DHYAN SHIVA COLONY KABIR COTTAGE, K-2, beside INDIAN PETROL BUNK, Moinabad, Telangana 501504",
+        map: "https://maps.app.goo.gl/87neYhi9gCv9ZfEb6",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.6959231331466!2d78.27358807505753!3d17.330214483547245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbebb55ee5883d%3A0xa6d4677dbf46db2d!2sOrange%20Honda%20Moinabad!5e0!3m2!1sen!2sin!4v1711003813602!5m2!1sen!2sin",
+        phone: "8886625097",
+        personName: "Mr. Balram",
+        email: "orangemoinabad@gmail.com",
+      },
+    ],
+  },
+  {
     name: "Tata",
     locations: [
       {
@@ -6437,50 +7416,6 @@ export const brands = [
     ],
   },
 
-  {
-    name: "Honda",
-    locations: [
-      {
-        name: "Honda Showroom - Toli Chowki",
-        address:
-          "8-1, 21/145, Tata Towers, Surya Nagar, Toli Chowki, Hyderabad, Telangana 500008",
-        map: "https://maps.app.goo.gl/F1HJSA1X4TSXdMeh8",
-        iframe:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.24305452816!2d78.41117747505926!3d17.400119583489282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96e9e3fc13cf%3A0x728251f36c25f904!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003233494!5m2!1sen!2sin",
-      },
-      {
-        name: "Honda Showroom - Masab Tank",
-        address:
-          "10-5-2/1/8/3, Mehdipatnam - Banjara Hills Rd, Opposite Paradise Hotel, Owaisi Pura, Masab Tank, Hyderabad, Telangana 500028",
-        map: "https://maps.app.goo.gl/eJXKeMwWTkvCXooC7",
-        iframe:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.171548544171!2d78.44988557505934!3d17.403553083486457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9740066d76db%3A0xc65e5977ef927ceb!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003368659!5m2!1sen!2sin",
-      },
-      {
-        name: "Honda Showroom - Manikonda",
-        address:
-          "Krishna Plaza 1-5/31, near Indian Oil Petrol Bunk, Manikonda, Telangana 500089",
-        map: "https://maps.app.goo.gl/uGjsLCS4XzDPxPcVA",
-        iframe:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.1896330295485!2d78.37195907505925!3d17.402684783487118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb941995a23143%3A0x675f12362e6c26d6!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003582070!5m2!1sen!2sin",
-      },
-      {
-        name: "Honda Showroom - Chevella",
-        address: "Main Rd, Chevella, Telangana 501503",
-        map: "https://maps.app.goo.gl/ccuhWxGn4nG9nkvQA",
-        iframe:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.002314227614!2d78.13098757505725!3d17.315437483559553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbe82019db7a21%3A0x7d44011f29cb3307!2sorange%20honda%20showroom!5e0!3m2!1sen!2sin!4v1711003704174!5m2!1sen!2sin",
-      },
-      {
-        name: "Honda Showroom - Moinabad",
-        address:
-          "DHYAN SHIVA COLONY KABIR COTTAGE, K-2, beside INDIAN PETROL BUNK, Moinabad, Telangana 501504",
-        map: "https://maps.app.goo.gl/87neYhi9gCv9ZfEb6",
-        iframe:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.6959231331466!2d78.27358807505753!3d17.330214483547245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbebb55ee5883d%3A0xa6d4677dbf46db2d!2sOrange%20Honda%20Moinabad!5e0!3m2!1sen!2sin!4v1711003813602!5m2!1sen!2sin",
-      },
-    ],
-  },
   {
     name: "Kawasaki",
     locations: [
@@ -6548,6 +7483,115 @@ export const brands = [
         map: "https://maps.app.goo.gl/iNpSsmtrk7CivyYd9",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3825.096559056891!2d80.67275837503911!3d16.5212221842257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHF!5e0!3m2!1sen!2sin!4v1711005381018!5m2!1sen!2sin",
+      },
+    ],
+  },
+];
+export const galleryImg = [
+  {
+    name: "Honda",
+    images: [
+      {
+        showroomName: "Head Tolichowki Show room Pictures",
+        img: [
+          require("../assets/gallery/Honda/Tolichowki/Picture1.jpg"),
+          require("../assets/gallery/Honda/Tolichowki/Picture2.jpg"),
+          require("../assets/gallery/Honda/Tolichowki/Picture3.jpg"),
+          require("../assets/gallery/Honda/Tolichowki/Picture4.jpg"),
+          require("../assets/gallery/Honda/Tolichowki/Picture5.jpg"),
+          require("../assets/gallery/Honda/Tolichowki/Picture6.jpg"),
+        ],
+      },
+      {
+        showroomName: "Masabtank Branch Show room Pictures",
+        img: [
+          require("../assets/gallery/Honda/Masabtank/Picture1.jpg"),
+          require("../assets/gallery/Honda/Masabtank/Picture2.jpg"),
+          require("../assets/gallery/Honda/Masabtank/Picture3.jpg"),
+          require("../assets/gallery/Honda/Masabtank/Picture4.jpg"),
+          require("../assets/gallery/Honda/Masabtank/Picture5.jpg"),
+          require("../assets/gallery/Honda/Masabtank/Picture6.jpg"),
+        ],
+      },
+      {
+        showroomName: "Manikonda Asc Pictures",
+        img: [
+          require("../assets/gallery/Honda/Manikonda/Picture1.jpg"),
+          require("../assets/gallery/Honda/Manikonda/Picture2.jpg"),
+          require("../assets/gallery/Honda/Manikonda/Picture3.jpg"),
+          require("../assets/gallery/Honda/Manikonda/Picture4.jpg"),
+          require("../assets/gallery/Honda/Manikonda/Picture5.jpg"),
+          require("../assets/gallery/Honda/Manikonda/Picture6.jpg"),
+        ],
+      },
+      {
+        showroomName: "Chevella Asc Show room Pictures",
+        img: [
+          require("../assets/gallery/Honda/Chevella/Picture1.jpg"),
+          require("../assets/gallery/Honda/Chevella/Picture2.jpg"),
+          require("../assets/gallery/Honda/Chevella/Picture3.jpg"),
+          require("../assets/gallery/Honda/Chevella/Picture4.jpg"),
+          require("../assets/gallery/Honda/Chevella/Picture5.jpg"),
+          require("../assets/gallery/Honda/Chevella/Picture6.jpg"),
+        ],
+      },
+      {
+        showroomName: "Moinabad",
+        img: [
+          require("../assets/gallery/Honda/Moinabad/Picture1.jpg"),
+          require("../assets/gallery/Honda/Moinabad/Picture2.jpg"),
+          require("../assets/gallery/Honda/Moinabad/Picture3.jpg"),
+          require("../assets/gallery/Honda/Moinabad/Picture4.jpg"),
+        ],
+      },
+    ],
+  },
+  {
+    name: "Tata",
+    images: [
+      {
+        showroomName: "No images",
+        img: [require("../assets/gallery/Honda/Masabtank/Picture1.jpg")],
+      },
+    ],
+  },
+
+  {
+    name: "Kawasaki",
+    images: [
+      {
+        showroomName: "Kawasaki",
+        img: [
+          require("../assets/gallery/Kawasaki/hyd ikm sales.jpeg"),
+          require("../assets/gallery/Kawasaki/hyd ikm service.jpeg"),
+          require("../assets/gallery/Kawasaki/vijayawada ikm showroom.jpeg"),
+          require("../assets/gallery/Kawasaki/vizag ikm showroom.jpeg"),
+          require("../assets/gallery/Kawasaki/vijayawada ikm service.jpeg"),
+        ],
+      },
+    ],
+  },
+  {
+    name: "Jeep",
+    images: [
+      {
+        showroomName: "Vizag Jeep",
+        img: [
+          require("../assets/gallery/Jeep/vizag jeep showroom.jpg"),
+          require("../assets/gallery/Jeep/vizag ikm service.jpeg"),
+        ],
+      },
+    ],
+  },
+  {
+    name: "Harely Davidson",
+    images: [
+      {
+        showroomName: "Harely Davidson",
+        img: [
+          require("../assets/gallery/Harely/harly vjy showroom.jpeg"),
+          require("../assets/gallery/Harely/harly vjy service.jpeg"),
+        ],
       },
     ],
   },

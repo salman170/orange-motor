@@ -32,10 +32,11 @@ const ModalSidePanel = ({ open, setOpen }) => {
   };
 
   const tabs = [
-    { name: "Home", path: "/" },
+    // { name: "Home", path: "/" },
     { name: "About Us", path: "/about-us" },
     { name: "Brands ", path: "/tata" },
     { name: "Locations", path: "/locations" },
+    { name: "Gallery", path: "/Gallery" },
     { name: "Contact Us", path: "/contact-us" },
   ];
 
@@ -85,24 +86,15 @@ const ModalSidePanel = ({ open, setOpen }) => {
             >
               {tabs[0].name}
             </Link>
-            <Link
-              to={tabs[1].path}
-              onClick={() => {
-                setOpen(false);
-                // setShowBrands(false);
-              }}
-              className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
-            >
-              {tabs[1].name}
-            </Link>
+           
             <div
-              to={tabs[2].path}
+              to={tabs[1].path}
               onClick={() => {
                 setShowBrands(!showBrands);
               }}
               className="flex items-center justify-between w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
             >
-              <div>{tabs[2].name}</div>{" "}
+              <div>{tabs[1].name}</div>{" "}
               <div className={`${showBrands ? "rotate-180" : ""}`}>
                 <RxCaretDown />
               </div>
@@ -123,7 +115,16 @@ const ModalSidePanel = ({ open, setOpen }) => {
                   </Link>
                 ))}
               </div>
-            )}
+            )} <Link
+              to={tabs[2].path}
+              onClick={() => {
+                setOpen(false);
+                // setShowBrands(false);
+              }}
+              className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
+            >
+              {tabs[2].name}
+            </Link>
             <Link
               to={tabs[3].path}
               onClick={() => {
@@ -144,6 +145,16 @@ const ModalSidePanel = ({ open, setOpen }) => {
             >
               {tabs[4].name}
             </Link>
+            {/* <Link
+              to={tabs[5].path}
+              onClick={() => {
+                setOpen(false);
+                // setShowBrands(false);
+              }}
+              className="w-full py-2 pl-6 border-b cursor-pointer hover:bg-secondary hover:text-white"
+            >
+              {tabs[5].name}
+            </Link> */}
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-4 px-4 py-1 text-sm text-white bg-secondary">

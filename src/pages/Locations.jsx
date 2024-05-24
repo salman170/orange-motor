@@ -42,21 +42,53 @@ const Locations = () => {
                 <div className="">
                   <h2 className="mb-2 text-xl font-semibold">
                     {location.name}
-                  </h2>
-                  <p className="text-gray-700 group-hover:text-white ">
+                  </h2>{" "}
+                  <div className="flex gap-2 pb-4 text-sm text-gray-700 group-hover:text-white">
                     {location.address}
-                  </p>
+                  </div>
+                  {location.personName && (
+                    <p className="text-sm text-gray-900 group-hover:text-white">
+                      <span className="mr-1 ">Manager:</span>{" "}
+                      {location.personName}
+                    </p>
+                  )}{" "}
+                  {location.phone && (
+                    <div className="flex pt-2 text-sm text-gray-900 group-hover:text-white ">
+                      <div className="mr-6 ">Phone:</div>{" "}
+                      <div className="">
+                        {location.phone} <br  /> 
+                        7799969679
+                      </div>
+                    </div>
+                  )}
+                  {/* {location.phone && ( */}
+                  <div className="flex pt-2 text-sm text-gray-900 group-hover:text-white ">
+                    <div className="mr-2 ">Timming:</div>{" "}
+                    <div className="">
+                      9:30 AM to 8 PM - MON to SAT <br /> 10.00 AM to 5 PM - SUN
+                    </div>
+                  </div>
+                  {/* )} */}
+                  {/* {location.email && (
+                    <p className="text-sm text-gray-700 group-hover:text-white">
+                       <span className="mr-7 text-secondary group-hover:text-black">
+                        email:
+                      </span>
+                      <span className="">{location.email}</span>
+                    </p>
+                  )} */}
                 </div>
-
-                <a
-                  href={location.map}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="flex items-center gap-2 pt-3 pb-2 group-hover:text-white"
-                >
-                  View in Google Map{" "}
-                  <FaMapMarkerAlt className="text-secondary group-hover:text-white" />
-                </a>
+                <div className="">
+                  <a
+                    href={location.map}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-2 pt-3 pb-2 text-sm group-hover:text-white"
+                  >
+                  <FaMapMarkerAlt className="text-secondary group-hover:text-white" />  View in Google Map{" "}
+                    
+                  </a>
+                </div>
               </div>
             ))}
           </div>
