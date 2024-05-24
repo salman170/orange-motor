@@ -208,8 +208,11 @@ const Detail = () => {
                   <div key={i} className="mt-5">
                     {car?.variantTitle && (
                       <div
-                        onClick={() => setSelected(i)}
-                        className="flex justify-between font-semibold cursor-pointer text-secondary"
+                        onClick={() => {
+                          if (i !== selected) setSelected(i);
+                          else setSelected(null);
+                        }}
+                        className="flex justify-between font-semibold cursor-pointer select-none text-secondary"
                       >
                         {car?.variantTitle}{" "}
                         <IoIosArrowDown
@@ -218,22 +221,26 @@ const Detail = () => {
                       </div>
                     )}
                     {i === selected && (
-                      <table className="w-full mt-2 ">
-                        <tbody>
-                          {car?.variants.map((item, index) => (
-                            <tr
-                              key={index}
-                              className="text-sm duration-200 border cursor-pointer group hover:border-secondary hover:bg-gray-50"
-                            >
-                              <td className="pl-2 text-sm ">{item?.variant}</td>
-                              <td className="p-0.5 text-gray-900/80   group-hover:text-secondary duration-200">
-                                {CurrencyFormatter.format(item?.price)}
-                                {/* <span className="text-red-600">*</span> */}
-                              </td>
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
+                      <div className="max-h-[50vh]  overflow-y-scroll p-2 bg-gray-50">
+                        <table className="w-full mt-2 ">
+                          <tbody>
+                            {car?.variants.map((item, index) => (
+                              <tr
+                                key={index}
+                                className="text-sm duration-200 border cursor-pointer group hover:border-secondary hover:bg-gray-50"
+                              >
+                                <td className="pl-2 text-sm ">
+                                  {item?.variant}
+                                </td>
+                                <td className="p-0.5 text-gray-900/80   group-hover:text-secondary duration-200">
+                                  {CurrencyFormatter.format(item?.price)}
+                                  {/* <span className="text-red-600">*</span> */}
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
                     )}
                   </div>
                 );

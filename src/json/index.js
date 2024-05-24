@@ -1871,7 +1871,7 @@ export const model = [
       category: "tata",
       name: "Safari",
       pic: require("../assets/others/safari.png"),
-      price: 1900000,
+      price: 1619000,
       fuel: "Diesel",
       transmission: "Manual / Automatic",
       cc: "1956",
