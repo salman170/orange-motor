@@ -20,6 +20,10 @@ const navigation = {
       href: "/jeep",
     },
     {
+      name: "Nissan",
+      href: "/nissan",
+    },
+    {
       name: "Honda",
       href: "/honda",
     },
@@ -105,12 +109,12 @@ export function Header() {
               {/* Logo */}
               <div className="flex ml-4 lg:ml-0">
                 <Link to="/">
-                  {/* <img
+                  <img
                     className="w-auto h-10"
                     src={require("../assets/others/logo.png")}
                     loading="lazy"
                     alt=""
-                  /> */}
+                  />
                 </Link>
               </div>
 

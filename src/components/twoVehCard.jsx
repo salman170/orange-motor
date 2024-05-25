@@ -91,8 +91,10 @@ const TwoVehCard = ({
             </h4>
           </div>
           <div className="flex flex-col items-end w-1/2">
-            <span className="text-secondary">Select Variant</span>
             {variants && variants.length > 0 ? (
+              <div>
+                
+            <span className="text-secondary">Select Variant</span>
               <select
                 className="py-1 text-sm text-right border rounded-lg cursor-pointer md:pr-1 textgray-800/80 focus:outline-none hover:border-secondary"
                 onChange={(e) => setSelectedVariant(e.target.value)}
@@ -103,6 +105,7 @@ const TwoVehCard = ({
                   </option>
                 ))}
               </select>
+              </div>
             ) : (
               <p className="text-sm ">From ₹ {calculateEMI()} / m</p>
             )}

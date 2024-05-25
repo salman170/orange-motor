@@ -26,7 +26,7 @@ const Gallery = () => {
               <button
                 key={index}
                 onClick={() => handleClick(index)}
-                className={`px-4 md:px-6 lg:px-8 py-2 rounded-lg focus:outline-none flex-grow bg-gray-50 ${
+                className={`px-2 md:px-6 lg:px-8 py-2 rounded-lg focus:outline-none flex-grow bg-gray-50 ${
                   selectedTab === index
                     ? "bg-secondary text-white shadow-lg"
                     : "bg-secondary-light border border-secondary"

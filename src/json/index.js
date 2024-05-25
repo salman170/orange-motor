@@ -10,6 +10,7 @@ export const model = [
       fuel: "Petrol",
       transmission: "Manual",
       cc: "1199",
+      brochurePdf: require("../assets/pdf/tiago-brochure-21-02-2024.pdf"),
       allVariants: [
         {
           variantTitle: "TIAGO | PETROL  BS-VI",
@@ -291,6 +292,7 @@ export const model = [
       fuel: "Petrol / Diesel",
       transmission: "Manual",
       cc: "1497",
+      brochurePdf: require("../assets/pdf/altroz-main-digital-april-2024.pdf"),
       allVariants: [
         {
           variantTitle: "ALTROZ | PETROL BS - VI ",
@@ -485,6 +487,7 @@ export const model = [
       fuel: "Petrol / Diesel",
       transmission: "Manual",
       cc: "1199",
+      brochurePdf: require("../assets/pdf/tigor-brochure-15-march-2024.pdf"),
       allVariants: [
         {
           variantTitle: "TIGOR | PETROL  BS-VI",
@@ -718,6 +721,7 @@ export const model = [
       fuel: "Petrol",
       transmission: "Manual / Automatic",
       cc: "1199",
+      brochurePdf: require("../assets/pdf/punch-brochure-may-2024-new.pdf"),
       allVariants: [
         {
           variantTitle: "PUNCH MT - BSVI",
@@ -1100,6 +1104,7 @@ export const model = [
       fuel: "Petrol / Diesel",
       transmission: "Manual / Automatic",
       cc: "1199",
+      brochurePdf: require("../assets/pdf/nexon-brochure-may2024.pdf"),
       allVariants: [
         {
           variantTitle: "NEXON | PETROL BS-VI",
@@ -1484,6 +1489,7 @@ export const model = [
       fuel: "Diesel",
       transmission: "Manual / Automatic",
       cc: "1956",
+      brochurePdf: require("../assets/pdf/harrier-main-brochure-16may-2024.pdf"),
       allVariants: [
         {
           variantTitle: "NEW HARRIER - PHASE LIFT",
@@ -1875,6 +1881,7 @@ export const model = [
       fuel: "Diesel",
       transmission: "Manual / Automatic",
       cc: "1956",
+      brochurePdf: require("../assets/pdf/safari-main-brochure-may-2024.pdf"),
       allVariants: [
         {
           variantTitle: "NEW SAFARI - PHASE LIFT",
@@ -7308,6 +7315,181 @@ export const model = [
       ],
     },
   ],
+  // Nissan - 12
+  [
+    {
+      id: "magnite",
+      category: "nissan",
+      name: "Magnite",
+      pic: require("../assets/others/magnite.png"),
+      price: 600000,
+      fuel: "Petrol",
+      transmission: "Manual",
+      cc: "999",
+      brochurePdf:
+        "https://www-asia.nissan-cdn.net/content/dam/Nissan/in/brochures/Magnite-Brochure_Feb-24.pdf",
+      allVariants: [
+        {
+          variantTitle: "MAGNITE | PETROL",
+          variants: [
+            {
+              variant: "Magnite XE",
+              price: 600000,
+            },
+            {
+              variant: "Magnite XL",
+              price: 700000,
+            },
+            {
+              variant: "Magnite XV",
+              price: 800000,
+            },
+            {
+              variant: "Magnite XV Premium",
+              price: 900000,
+            },
+            {
+              variant: "Magnite XV Premium (O) Turbo",
+              price: 1000000,
+            },
+          ],
+        },
+        {
+          variantTitle: "MAGNITE AUTOMATIC",
+          variants: [
+            {
+              variant: "Magnite XL Turbo CVT",
+              price: 850000,
+            },
+            {
+              variant: "Magnite XV Turbo CVT",
+              price: 950000,
+            },
+            {
+              variant: "Magnite XV Premium Turbo CVT",
+              price: 1050000,
+            },
+            {
+              variant: "Magnite XV Premium (O) Turbo CVT",
+              price: 1150000,
+            },
+          ],
+        },
+        {
+          variantTitle: "MAGNITE TURBO",
+          variants: [
+            {
+              variant: "Magnite Turbo XE",
+              price: 750000,
+            },
+            {
+              variant: "Magnite Turbo XL",
+              price: 850000,
+            },
+            {
+              variant: "Magnite Turbo XV",
+              price: 950000,
+            },
+            {
+              variant: "Magnite Turbo XV Premium",
+              price: 1050000,
+            },
+            {
+              variant: "Magnite Turbo XV Premium (O)",
+              price: 1150000,
+            },
+          ],
+        },
+      ],
+      variants: [
+        {
+          variant: "XE",
+          price: 600000,
+        },
+        {
+          variant: "XL",
+          price: 700000,
+        },
+        {
+          variant: "XV",
+          price: 800000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/others/magnite.png"),
+        },
+      ],
+
+      // Dimensions & Capacity
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 3994,
+        },
+        {
+          title: "Width (mm)",
+          value: 1758,
+        },
+        {
+          title: "Height (mm)",
+          value: 1572,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 40,
+        },
+        {
+          title: "Seating",
+          value: 5,
+        },
+        {
+          title: "Bootspace(L)",
+          value: 336,
+        },
+      ],
+
+      // Engine & Transmission
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 999,
+        },
+        {
+          title: "Max Power",
+          value: "72@6250",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Manual",
+        },
+      ],
+
+      // Weights & Brakes
+      weight: [
+        {
+          title: "Front",
+          value: "Ventilated Disc",
+        },
+        {
+          title: "Rear",
+          value: "Drum",
+        },
+        {
+          title: "Kerb",
+          value: "939-1039",
+        },
+        {
+          title: "Gross Weight",
+          value: 1280,
+        },
+      ],
+    },
+  ],
 ];
 
 export const brands = [
@@ -7486,6 +7668,19 @@ export const brands = [
       },
     ],
   },
+  {
+    name: "Nissan",
+    locations: [
+      {
+        name: "Orange Nissan",
+        address:
+          "D 23, near Birla Junction, Industrial Estate, Muralinagar, Kancharapalem, Visakhapatnam, Andhra Pradesh 530007",
+        map: "https://maps.app.goo.gl/EWJGPUg2W23EE18z7",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.0563026547134!2d83.25811771096019!3d17.7419860924226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3942ad5ab30597%3A0x91704a6eb3ba9efc!2sOrange%20Nissan!5e0!3m2!1sen!2sin!4v1716635256319!5m2!1sen!2sin",
+      },
+    ],
+  },
 ];
 export const galleryImg = [
   {
@@ -7587,11 +7782,20 @@ export const galleryImg = [
     name: "Harely Davidson",
     images: [
       {
-        showroomName: "Harely Davidson",
+        showroomName: "Ramavarappadu ( Vijayawada ) Showroom - ",
         img: [
           require("../assets/gallery/Harely/harly vjy showroom.jpeg"),
           require("../assets/gallery/Harely/harly vjy service.jpeg"),
         ],
+      },
+    ],
+  },
+  {
+    name: "Nissan",
+    images: [
+      {
+        showroomName: "Vizag Showroom",
+        img: [require("../assets/gallery/Nissan/vizag nissan showroom.jpeg")],
       },
     ],
   },

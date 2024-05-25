@@ -12,7 +12,9 @@ const Card2 = ({
   price,
   banner,
   dimensions,
+
 }) => {
+  console.log(brochure)
   const calculateEMI = () => {
     // Assuming interest rate of 8% per annum and tenure of 5 years (60 months)
     const interestRatePerMonth = 8 / (12 * 100);
@@ -82,7 +84,12 @@ const Card2 = ({
           <p className="text-sm ">From ₹ {calculateEMI()} / m</p>
         </div>
         <div className="flex items-center justify-between gap-4 py-3">
-          <a href={brochure} target="_blank" rel="noreferrer" className="w-1/2">
+          <a
+            href={brochure ? brochure : "#"}
+            target="_blank"
+            rel="noreferrer"
+            className="w-1/2"
+          >
             {" "}
             <div className="flex-grow px-2 py-2 text-sm text-center border rounded-lg cursor-pointer hover:shadow-lg md:px-4 lg:px-4 focus:outline-none text-secondary hover:border-secondary">
               {" "}

@@ -22,7 +22,7 @@ const Locations = () => {
               <button
                 key={index}
                 onClick={() => setSelectedTab(index)}
-                className={`px-4 md:px-6 lg:px-8 py-2 rounded-lg focus:outline-none flex-grow ${
+                className={`px-2 md:px-6 lg:px-8 py-2 rounded-lg focus:outline-none flex-grow ${
                   selectedTab === index
                     ? "bg-secondary text-white shadow-lg"
                     : "bg-secondary-light border border-secondary"

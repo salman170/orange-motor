@@ -6,18 +6,19 @@ import { GiMechanicGarage } from "react-icons/gi";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { BsShieldCheck } from "react-icons/bs";
 import LeaderSlider from "../components/LeaderSlider";
-import { brands } from "../json";
-import { FaMapMarkerAlt } from "react-icons/fa";
+// import { brands } from "../json";
+// import { FaMapMarkerAlt } from "react-icons/fa";
+import ReviewAndRecommendation from "../components/ReviewAndRecommendation";
 
 const Home = () => {
   useEffect(() => {
     // AOS.init();
     AOS.init({ once: true });
   }, []);
-  const [selectedTab, setSelectedTab] = useState(0);
+  // const [selectedTab, setSelectedTab] = useState(0);
 
   return (
     <div className="">
@@ -117,9 +118,8 @@ const Home = () => {
 
       <div className="px-5 mx-auto max-w-7xl">
         <h2 className="my-10 text-4xl font-semibold text-center">Our Brands</h2>
-        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5">
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
           <Link to="/tata">
-            {" "}
             <div
               data-aos="zoom-in"
               data-aos-delay="50"
@@ -129,7 +129,7 @@ const Home = () => {
             >
               <img
                 src={require("../assets/homepage/Tata Logo.png")}
-                className="w-full h-28"
+                className="w-full h-20"
                 alt=""
               />
               <p className="font-semibold text-center text-black/80">
@@ -139,7 +139,6 @@ const Home = () => {
           </Link>
 
           <Link to="/jeep">
-            {" "}
             <div
               data-aos="zoom-in"
               data-aos-delay="0"
@@ -149,7 +148,7 @@ const Home = () => {
             >
               <img
                 src={require("../assets/homepage/jeep Logo.png")}
-                className="w-full h-28"
+                className="w-full h-20"
                 alt=""
               />
               <p className="font-semibold text-center text-black/80">Jeep</p>
@@ -165,14 +164,13 @@ const Home = () => {
             >
               <img
                 src={require("../assets/homepage/Honda Logo.png")}
-                className="w-full h-28"
+                className="w-full h-20"
                 alt=""
               />
               <p className="font-semibold text-center text-black/80">Honda</p>
             </div>
           </Link>
           <Link to="/kawasaki">
-            {" "}
             <div
               data-aos="zoom-in"
               data-aos-delay="300"
@@ -182,7 +180,7 @@ const Home = () => {
             >
               <img
                 src={require("../assets/homepage/Kawasaki Logo.png")}
-                className="w-full h-28"
+                className="w-full h-20"
                 alt=""
               />
               <p className="font-semibold text-center text-black/80">
@@ -191,7 +189,6 @@ const Home = () => {
             </div>
           </Link>
           <Link to="/harley-davidson">
-            {" "}
             <div
               data-aos="zoom-in"
               data-aos-delay="400"
@@ -201,13 +198,30 @@ const Home = () => {
             >
               <img
                 src={require("../assets/homepage/Harley Logo.png")}
-                className="w-full h-28"
+                className="w-full h-20"
                 alt=""
               />
 
               <p className="font-semibold text-center text-black/80">
                 Harley Davidson
               </p>
+            </div>
+          </Link>
+          <Link to="/nissan">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              data-aos-duration="500"
+              data-aos-once="true" // Add data-aos-once="true" to trigger the animation once
+              className="p-2 rounded bg-slate-100"
+            >
+              <img
+                src={require("../assets/homepage/nissan-next-logo.svg").default}
+                className="w-full h-20"
+                alt=""
+              />
+
+              <p className="font-semibold text-center text-black/80">Nissan</p>
             </div>
           </Link>
         </div>
@@ -448,6 +462,38 @@ const Home = () => {
                 </p> */}
               </div>
             </div>
+            {/* Left timeline */}
+            <div
+              data-aos="fade-right"
+              data-aos-delay="250"
+              data-aos-duration="1000"
+              className="flex flex-row-reverse items-center justify-between w-full mb-8 left-timeline"
+            >
+              <div className="order-1 w-5/12"></div>
+              <div className="z-10 flex items-center order-1 w-[70px] h-[70px] rounded-full  bg-white text-[#555454]">
+                <h1 className="mx-auto text-4xl font-semibold ">2024</h1>
+              </div>
+              <div className="order-1 w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#faa6a6] ">
+                <img
+                  src={
+                    require("../assets/homepage/nissan-next-logo.svg").default
+                  }
+                  alt=""
+                  srcSet=""
+                  className="h-24 mx-auto mb-2"
+                />
+                <h3 className="mb-3 text-xl font-semibold uppercase ">
+                  Nissan Dealership
+                </h3>
+                {/* <p className="text-sm leading-snug tracking-wide text-opacity-100">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p> */}
+              </div>
+            </div>
           </div>
         </div>
         <div className="container relative w-full h-full mx-auto md:hidden">
@@ -640,6 +686,34 @@ const Home = () => {
                 />
                 <h3 className="mb-3 font-semibold uppercase md:text-xl ">
                   Harley Davidson Dealership
+                </h3>
+              </div>
+            </div>
+            {/* Left timeline */}
+
+            <div
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              className="flex flex-row-reverse items-center justify-between w-full gap-4 mb-8 left-timeline md:gap-0"
+            >
+              <div className="order-1 w-0 md:w-5/12"></div>
+              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#555454]">
+                <h1 className="mx-auto text-2xl font-semibold lg:text-4xl ">
+                  2024
+                </h1>
+              </div>
+              <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#d0cccd] w-full">
+                <img
+                  src={
+                    require("../assets/homepage/nissan-next-logo.svg").default
+                  }
+                  alt=""
+                  srcSet=""
+                  className="h-20 mx-auto mb-4 md:h-24"
+                />
+                <h3 className="font-semibold uppercase md:text-xl">
+                  Nissan Dealership
                 </h3>
               </div>
             </div>
@@ -840,120 +914,11 @@ const Home = () => {
         </div>
       </div>
 
-      {/* outlets */}
-      <div className="px-5 mx-auto my-20 max-w-7xl">
-        <h2 className="my-10 text-4xl font-semibold text-center select-none">
-          Our Outlets
-        </h2>
-        {/* <div className="bg-secondary w-full h-[1px]"></div> */}
-        <div className="flex flex-wrap gap-2 mb-5 md:mt-5 lg:mb-8">
-          {brands.map((brand, index) => (
-            <button
-              key={index}
-              onClick={() => setSelectedTab(index)}
-              className={`px-4 md:px-6 lg:px-8 py-2 rounded-lg focus:outline-none flex-grow ${
-                selectedTab === index
-                  ? "bg-secondary text-white shadow-lg"
-                  : "bg-secondary-light border border-secondary"
-              }`}
-            >
-              {brand.name}
-            </button>
-          ))}
-        </div>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {brands[selectedTab]?.locations.map((location, index) => (
-            <div
-              key={index}
-              className="flex flex-col justify-between p-4 duration-300 bg-white rounded-lg shadow-md cursor-default group hover:scale-95 hover:bg-secondary "
-            >
-              <div className="">
-                <h2 className="mb-2 text-xl font-semibold">{location.name}</h2>
-                <p className="text-gray-700 group-hover:text-white ">
-                  {location.address}
-                </p>
-              </div>
-
-              <a
-                href={location.map}
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2 pt-3 pb-2 group-hover:text-white "
-              >
-                View in Google Map
-                <FaMapMarkerAlt className="text-secondary group-hover:text-white" />
-              </a>
-            </div>
-          ))}
-        </div>
-        {/* <div className="grid gap-5 my-10 md:grid-cols-2 lg:grid-cols-3 ">
-          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
-            {" "}
-            <iframe
-              width="100%"
-              height="100%"
-              className="absolute inset-0 border-2 "
-              title="map"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0923591597375!2d78.43287946110777!3d17.455293000775555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90e3e3ef1e1b%3A0x1654f5dc889de472!2sShankaramma%20Towers%2C%20Sanjeeva%20Reddy%20Nagar%20Rd%2C%20D.%20Shankar%20Lal%20nagar%2C%20Vikaspuri%2C%20Erragadda%2C%20Hyderabad%2C%20Telangana%20500018!5e0!3m2!1sen!2sin!4v1709816055141!5m2!1sen!2sin"
-              // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
-            ></iframe>
-          </div>
-          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
-            {" "}
-            <iframe
-              width="100%"
-              height="100%"
-              className="absolute inset-0 border-2 "
-              title="map"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6609846165647!2d78.42658057494407!3d17.38003870301724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97b6285a7045%3A0x14ae9f27d3d2102!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%20Auto%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1709827097615!5m2!1sen!2sin"
-              // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
-            ></iframe>
-          </div>
-          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
-            {" "}
-            <iframe
-              width="100%"
-              height="100%"
-              className="absolute inset-0 border-2 "
-              title="map"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.025075126752!2d78.49571888885498!3d17.458513900000025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9175d94044f5%3A0x41f76244cf2c6a!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%20Auto%2C%20Kharkana!5e0!3m2!1sen!2sin!4v1709827244896!5m2!1sen!2sin"
-              // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
-            ></iframe>
-          </div>
-          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
-            {" "}
-            <iframe
-              width="100%"
-              height="100%"
-              className="absolute inset-0 border-2 "
-              title="map"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.0864729662253!2d78.48153188885499!3d17.646063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb87cdfb49c615%3A0xc60aa4cad87aa6cd!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%20Auto!5e0!3m2!1sen!2sin!4v1709827306418!5m2!1sen!2sin"
-              // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
-            ></iframe>
-          </div>
-          <div className="relative w-full col-span-1 overflow-hidden bg-gray-100 rounded-lg h-60">
-            {" "}
-            <iframe
-              width="100%"
-              height="100%"
-              className="absolute inset-0 border-2 "
-              title="map"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3793.8923666342307!2d78.26202007495714!3d18.030198083969765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc15cb5a7cf099%3A0x50a675f2f49fb200!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%2C%20Medak!5e0!3m2!1sen!2sin!4v1709827511499!5m2!1sen!2sin"
-              // style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
-            ></iframe>
-          </div>
-        </div> */}
-      </div>
+      {/* Testimonials */}
+      <h2 className="my-10 text-4xl font-semibold text-center select-none">
+        Testimonials
+      </h2>
+      <ReviewAndRecommendation />
     </div>
   );
 };

@@ -175,10 +175,20 @@ const Detail = () => {
                   setOpenEnq(true);
                   setModel(car?.name);
                 }}
-                className="flex items-center justify-center w-full py-3 font-medium text-white rounded-lg shadow cursor-pointer bg-secondary"
+                className="flex items-center justify-center w-full py-3 mb-2 font-medium text-white border rounded-lg shadow cursor-pointer bg-secondary"
               >
                 Book Now
               </div>
+              {car?.brochurePdf && (
+                <a
+                  href={car.brochurePdf}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-center w-full py-2.5 font-medium border rounded-lg shadow cursor-pointer hover:text-white hover:bg-secondary border-secondary"
+                >
+                  View Brochure
+                </a>
+              )}
             </div>
 
             <div className="p-8 bg-white border border-gray-200 rounded-lg">

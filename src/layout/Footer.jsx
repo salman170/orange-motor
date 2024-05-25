@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { FaPhone } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  // FaLinkedin,
+  FaPhone,
+} from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { FaXTwitter } from "react-icons/fa6";
+// import { MdOutlineLocalPhone } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -49,6 +56,58 @@ const Footer = () => {
               <IoMdMail className="text-white " />
               info@orangeauto.in
             </a>
+            <div>
+              {/* <div className="pb-2 text-lg font-semibold">Social Media </div> */}
+              <div className="flex gap-1 md:gap-2 lg:gap-4">
+                <a
+                  href="https://www.facebook.com/orangevizagfca"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                  className="duration-300 hover:text-base"
+                >
+                  <FaFacebookSquare className="text-lg md:text-xl" />
+                </a>
+                {/* <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Youtube"
+                  className="duration-300 hover:text-base"
+                >
+                  <IoLogoYoutube className="text-lg md:text-xl" />
+                </a> */}
+
+                <a
+                  href="https://www.instagram.com/orangefca/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  className="duration-300 hover:text-base"
+                >
+                  <FaInstagram className="text-lg md:text-xl" />
+                </a>
+                <a
+                  href="https://x.com/orange"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Twitter"
+                  className="duration-300 hover:text-base"
+                >
+                  <FaXTwitter className="text-lg md:text-xl" />
+                </a>
+
+                {/* <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                  className="duration-300 hover:text-base"
+                >
+                  <FaLinkedin className="text-lg md:text-xl" />
+                </a> */}
+              </div>
+            </div>
           </div>
         </div>
         <div className="container w-full px-5 mx-auto">
