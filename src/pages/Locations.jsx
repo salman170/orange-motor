@@ -15,7 +15,7 @@ const Locations = () => {
       />
       <Breadcrumb pageName="Locations" />
       <div className="py-10 bg-gray-50 ">
-        <div className="container px-1 py-6 mx-auto rounded-lg">
+        <div className="container px-1 py-6 mx-auto rounded-lg lg:max-w-7xl">
           <h1 className="mb-6 text-4xl font-semibold">Locations</h1>
           <div className="flex flex-wrap gap-2 mb-5 md:mt-5 lg:mb-8">
             {brands.map((brand, index) => (
@@ -43,7 +43,7 @@ const Locations = () => {
                   <h2 className="mb-2 text-xl font-semibold">
                     {location.name}
                   </h2>{" "}
-                  <div className="flex gap-2 pb-4 text-sm text-gray-700 group-hover:text-white">
+                  <div className="flex gap-2 pb-3 text-sm text-gray-700 group-hover:text-white">
                     {location.address}
                   </div>
                   {location.personName && (
@@ -51,23 +51,24 @@ const Locations = () => {
                       <span className="mr-1 ">Manager:</span>{" "}
                       {location.personName}
                     </p>
-                  )}{" "}
+                  )}
                   {location.phone && (
-                    <div className="flex pt-2 text-sm text-gray-900 group-hover:text-white ">
-                      <div className="mr-6 ">Phone:</div>{" "}
+                    <div className="flex pb-4 text-sm text-gray-900 group-hover:text-white ">
+                      <div className="mr-2 ">Phone:</div>{" "}
                       <div className="">
-                        {location.phone} <br  /> 
-                        7799969679
+                        {location.phone}
+                        {/* <br  /> 
+                        7799969679 */}
                       </div>
                     </div>
                   )}
                   {/* {location.phone && ( */}
-                  <div className="flex pt-2 text-sm text-gray-900 group-hover:text-white ">
+                  {/* <div className="flex pt-2 text-sm text-gray-900 group-hover:text-white ">
                     <div className="mr-2 ">Timming:</div>{" "}
                     <div className="">
                       9:30 AM to 8 PM - MON to SAT <br /> 10.00 AM to 5 PM - SUN
                     </div>
-                  </div>
+                  </div> */}
                   {/* )} */}
                   {/* {location.email && (
                     <p className="text-sm text-gray-700 group-hover:text-white">
@@ -78,15 +79,15 @@ const Locations = () => {
                     </p>
                   )} */}
                 </div>
-                <div className="">
+                <div className="mt-2 border rounded-lg ">
                   <a
                     href={location.map}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-2 pt-3 pb-2 text-sm group-hover:text-white"
+                    className="flex items-center justify-center gap-2 pt-3 pb-2 text-sm group-hover:text-white"
                   >
-                  <FaMapMarkerAlt className="text-secondary group-hover:text-white" />  View in Google Map{" "}
-                    
+                    <FaMapMarkerAlt className="text-secondary group-hover:text-white" />{" "}
+                    View in Google Map{" "}
                   </a>
                 </div>
               </div>

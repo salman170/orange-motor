@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
+import { IoLogoYoutube } from "react-icons/io5";
 // import { MdOutlineLocalPhone } from "react-icons/md";
 
 const Footer = () => {
@@ -16,7 +17,7 @@ const Footer = () => {
     <div>
       {" "}
       <div className="py-20 text-white bg-secondary">
-        <div className="container grid px-5 mx-auto lg:grid-cols-5">
+        <div className="container grid px-5 mx-auto lg:grid-cols-5 ">
           <div className="col-span-4">
             <p className="mb-5 text-5xl font-semibold">
               Quality means doing it right <br />
@@ -44,10 +45,10 @@ const Footer = () => {
 
             <a
               href="tel:9985412345"
-              className="flex items-center gap-3 pb-4 text-[#fff] text-opacity-70 hover:text-opacity-100 whitespace-nowrap"
+              className="flex items-center gap-3 pb-3 text-[#fff] text-opacity-70 hover:text-opacity-100 whitespace-nowrap"
             >
               <FaPhone className="text-white " />
-              99854 12345
+              90521 06666
             </a>
             <a
               href="mailto:info@orangeauto.in"
@@ -58,15 +59,15 @@ const Footer = () => {
             </a>
             <div>
               {/* <div className="pb-2 text-lg font-semibold">Social Media </div> */}
-              <div className="flex gap-1 md:gap-2 lg:gap-4">
+              <div className="flex gap-2 md:gap-3 lg:gap-4">
                 <a
-                  href="https://www.facebook.com/orangevizagfca"
+                  href="https://www.facebook.com/orangegroup24"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Facebook"
                   className="duration-300 hover:text-base"
                 >
-                  <FaFacebookSquare className="text-lg md:text-xl" />
+                  <FaFacebookSquare className="text-xl md:text-2xl" />
                 </a>
                 {/* <a
                   href="#"
@@ -79,22 +80,31 @@ const Footer = () => {
                 </a> */}
 
                 <a
-                  href="https://www.instagram.com/orangefca/"
+                  href="https://www.instagram.com/oaplgroup/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram"
                   className="duration-300 hover:text-base"
                 >
-                  <FaInstagram className="text-lg md:text-xl" />
+                  <FaInstagram className="text-xl md:text-2xl" />
                 </a>
                 <a
-                  href="https://x.com/orange"
+                  href="https://x.com/orangegroup20"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Twitter"
                   className="duration-300 hover:text-base"
                 >
-                  <FaXTwitter className="text-lg md:text-xl" />
+                  <FaXTwitter className="text-xl md:text-2xl" />
+                </a>
+                <a
+                  href="https://www.youtube.com/@ORANGEAUTOPVTLTD"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Twitter"
+                  className="duration-300 hover:text-base"
+                >
+                  <IoLogoYoutube className="text-xl md:text-2xl" />
                 </a>
 
                 {/* <a
@@ -132,7 +142,7 @@ const Footer = () => {
       <div className="flex justify-between text-white bg-black ">
         <div className="container flex flex-col justify-between gap-2 px-1 py-3 mx-auto text-xs md:flex-row">
           <div>© Copyright ORANGE AUTO PVT LTD. All Rights Reserved</div>
-          <div>Designed & Developed by SRCG</div>
+          {/* <div>Designed & Developed by SRCG</div> */}
         </div>
       </div>
     </div>

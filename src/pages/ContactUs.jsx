@@ -13,8 +13,8 @@ const ContactUs = () => {
         alt=""
       />
       <Breadcrumb pageName="Contact Us" />
-      <div className="container px-1 py-10 mx-auto lg:py-24">
-        <h1 className="mb-4 text-4xl font-semibold">Contact Us</h1>
+      <div className="container px-1 py-10 mx-auto lg:pb-24 lg:pt-16 lg:max-w-7xl">
+        <h1 className="mb-4 text-4xl font-semibold">Corporate Office</h1>
         <div className="flex flex-col gap-10 md:gap-4 md:flex-row lg:gap-10">
           <div className="md:w-1/2">
             <ContactUsForm />
@@ -25,7 +25,7 @@ const ContactUs = () => {
               /> */}
           </div>
           <div className="py-4 mt-4 space-y-4 md:w-1/2">
-          {/* <p className="mb-5 text-xl font-semibold tracking-wide ">
+            {/* <p className="mb-5 text-xl font-semibold tracking-wide ">
         Contact Us Form
       </p> */}
             <p className="flex items-center gap-5">
@@ -40,8 +40,7 @@ const ContactUs = () => {
             </p>
             <div className="flex w-full gap-4">
               <div>
-                
-              <FaLocationDot className="text-xl text-secondary" />
+                <FaLocationDot className="text-xl text-secondary" />
               </div>
               <p>
                 No 8, Shankaramma Towers, 3/164/2, opposite Bharat Petrol Pump,

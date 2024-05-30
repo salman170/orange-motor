@@ -5,6 +5,7 @@ import { model } from "../json";
 import TwoVehCard from "../components/TwoVehCard";
 
 const HarleyDavidson = () => {
+   const final = model[9].map((item) => item.name);
   return (
     <div>
       <img
@@ -73,10 +74,10 @@ const HarleyDavidson = () => {
           </p>
         </div>
         <div className="col-span-2 p-2 lg:col-span-1">
-          <BookForm />
+          <BookForm final={final} />
         </div>
       </div>
-      
+
       <div className="grid gap-5 py-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
         {model[9].map((item) => (
           <TwoVehCard

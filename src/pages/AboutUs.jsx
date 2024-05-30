@@ -67,7 +67,8 @@ const AboutUs = () => {
         alt=""
       />
       <Breadcrumb pageName="About Us" />
-      <div className="container px-1 py-10 mx-auto lg:py-24">
+
+      <div className="container px-1 py-10 mx-auto lg:py-24 lg:max-w-7xl">
         <h1 className="mb-4 text-4xl font-semibold">Our Company</h1>
         <div className="h-0.5 w-20 bg-secondary lg:w-40 "></div>
         <p className="pb-6 mt-4 text-base text-gray-500">
@@ -90,7 +91,7 @@ const AboutUs = () => {
         ))}
       </div>
       <div className="bg-gray-100">
-        <div className="container px-1 py-10 mx-auto lg:py-24">
+        <div className="container px-1 py-10 mx-auto lg:py-24 lg:max-w-7xl">
           <h1 className="mb-4 text-4xl font-semibold">About Us</h1>
           <div className="h-0.5 w-20 bg-secondary lg:w-40 "></div>
           <p className="pb-6 mt-4 text-base text-gray-500">
@@ -161,13 +162,15 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="container px-1 py-10 mx-auto lg:py-24">
-      <h1 className="mb-4 text-4xl font-semibold">SWOT</h1>
-          <div className="h-0.5 w-20 bg-secondary lg:w-40 mb-6"></div>
+      <div className="container px-1 py-10 mx-auto lg:py-24 lg:max-w-7xl">
+        <h1 className="mb-4 text-4xl font-semibold">SWOT</h1>
+        <div className="h-0.5 w-20 bg-secondary lg:w-40 mb-6"></div>
         <div className="container grid gap-4 mx-auto md:grid-cols-2">
           {swot.map((item, index) => (
             <div key={index} className="mb-4">
-              <h2 className="mb-4 text-2xl font-semibold text-secondary">{item.title}</h2>
+              <h2 className="mb-4 text-2xl font-semibold text-secondary">
+                {item.title}
+              </h2>
               <ul className="pl-4 list-disc">
                 {item.points.map((point, index) => (
                   <li key={index}>{point}</li>

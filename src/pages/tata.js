@@ -1,9 +1,11 @@
+
 import BookForm from "../components/book-form";
 import Breadcrumb from "../components/breadcrumb";
 import Card from "../components/card";
 import { model } from "../json";
 
 const Tata = () => {
+ const final = model[0].map((item) => item.name);
   return (
     <>
       <img
@@ -12,7 +14,7 @@ const Tata = () => {
         alt=""
       />
       <Breadcrumb pageName="Tata Motors" />
-      <div className="grid gap-10 px-1 mx-auto my-10 md:grid-cols-3 max-w-7xl">
+      <div className="container grid gap-10 px-1 mx-auto my-10 md:grid-cols-3 lg:max-w-7xl">
         <div className="col-span-2">
           <p className="text-2xl font-semibold">Tata Motors</p>
           <p className="mt-5 text-black/80">
@@ -45,7 +47,7 @@ const Tata = () => {
           </p>
         </div>
         <div className="col-span-2 p-2 lg:col-span-1">
-          <BookForm />
+          <BookForm final={final} />
         </div>
       </div>
 

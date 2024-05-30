@@ -3,9 +3,10 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { CgSpinner } from "react-icons/cg";
 
-import { Toaster, toast } from 'react-hot-toast';
+import { Toaster, toast } from "react-hot-toast";
 
-const BookForm = () => {
+const BookForm = ({ final }) => {
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -26,12 +27,12 @@ const BookForm = () => {
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       try {
         // Simulate form submission delay
-        await new Promise(resolve => setTimeout(resolve, 400));
-        
+        await new Promise((resolve) => setTimeout(resolve, 400));
+
         // Your actual form submission logic goes here
         // For demonstration purposes, let's display a success message using toast
-        toast.success('Form submitted successfully');
-        
+        toast.success("Form submitted successfully");
+
         // Reset form values after successful submission
         resetForm({
           name: "",
@@ -43,7 +44,7 @@ const BookForm = () => {
       } catch (error) {
         // Handle form submission errors here
         console.error("Form submission error:", error);
-        toast.error('Form submission failed');
+        toast.error("Form submission failed");
       } finally {
         // Always set submitting state to false after form submission
         setSubmitting(false);
@@ -105,23 +106,39 @@ const BookForm = () => {
           <label htmlFor="model">
             Model <span className="text-red-600">*</span>
           </label>
-          <select
-            name="model" // Add the name attribute to match the field name in Formik
-            onChange={formik.handleChange} // Call handleChange to update Formik state
-            onBlur={formik.handleBlur} // Optionally handle onBlur event
-            className="block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none sm:text-sm"
-          >
-            <option value="">Select Model</option>
-            <optgroup label="Tata">
-              <option value="Tiago">Tiago</option>
-              <option value="Altroz">Altroz</option>
-              <option value="Tigor">Tigor</option>
-              <option value="Punch">Punch</option>
-              <option value="Nexon">Nexon</option>
-              <option value="Harrier">Harrier</option>
-              <option value="Safari">Safari</option>
-            </optgroup>
-          </select>
+          {final ? (
+            <select
+              name="model" // Add the name attribute to match the field name in Formik
+              onChange={formik.handleChange} // Call handleChange to update Formik state
+              onBlur={formik.handleBlur} // Optionally handle onBlur event
+              className="block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none sm:text-sm"
+            >
+              <option value="">Select Model</option>
+              {final.map((option, index) => (
+                <option key={index} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <select
+              name="model" // Add the name attribute to match the field name in Formik
+              onChange={formik.handleChange} // Call handleChange to update Formik state
+              onBlur={formik.handleBlur} // Optionally handle onBlur event
+              className="block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none sm:text-sm"
+            >
+              <option value="">Select Model</option>
+              {/* <optgroup label="Tata"> */}
+                <option value="Other">Other</option>
+                {/* <option value="Altroz">Altroz</option>
+                <option value="Tigor">Tigor</option>
+                <option value="Punch">Punch</option>
+                <option value="Nexon">Nexon</option>
+                <option value="Harrier">Harrier</option>
+                <option value="Safari">Safari</option> */}
+              {/* </optgroup> */}
+            </select>
+          )}
 
           {formik.touched.model && formik.errors.model ? (
             <div className="text-red-500">{formik.errors.model}</div>
@@ -141,7 +158,7 @@ const BookForm = () => {
             type="checkbox"
             checked={formik.values.disclaimer} // Use checked instead of value
             onChange={formik.handleChange} // Handle onChange to update formik state
-             required
+            required
             {...formik.getFieldProps("disclaimer")}
           />
           <div className="ml-2 text-sm ">

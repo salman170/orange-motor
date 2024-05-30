@@ -22,9 +22,9 @@ const Home = () => {
 
   return (
     <div className="">
-      <div className="relative ">
-        <Slider />
-        <div
+      {/* <div className="relative "> */}
+      <Slider />
+      {/* <div
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-duration="500"
@@ -34,8 +34,8 @@ const Home = () => {
             Welcome to <br />
             <span className="text-5xl lg:text-6xl">Orange Group</span>
           </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
       <div className="grid gap-8 px-5 mx-auto my-10 md:grid-cols-3 max-w-7xl">
         <div className="col-span-1 space-y-2 ">
@@ -471,9 +471,9 @@ const Home = () => {
             >
               <div className="order-1 w-5/12"></div>
               <div className="z-10 flex items-center order-1 w-[70px] h-[70px] rounded-full  bg-white text-[#555454]">
-                <h1 className="mx-auto text-4xl font-semibold ">2024</h1>
+                <h1 className="mx-auto text-4xl font-semibold ">2022</h1>
               </div>
-              <div className="order-1 w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#faa6a6] ">
+              <div className="order-1 w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#a85f5f] ">
                 <img
                   src={
                     require("../assets/homepage/nissan-next-logo.svg").default
@@ -698,9 +698,9 @@ const Home = () => {
               className="flex flex-row-reverse items-center justify-between w-full gap-4 mb-8 left-timeline md:gap-0"
             >
               <div className="order-1 w-0 md:w-5/12"></div>
-              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#555454]">
+              <div className="z-10 flex items-center order-1 md:w-[70px] md:h-[70px] rounded-full  bg-white text-[#a85f5f]">
                 <h1 className="mx-auto text-2xl font-semibold lg:text-4xl ">
-                  2024
+                  2022
                 </h1>
               </div>
               <div className="order-1 md:w-5/12 px-6 py-4 text-center text-white rounded-lg shadow-xl bg-[#d0cccd] w-full">
@@ -795,9 +795,9 @@ const Home = () => {
           </div>
           <div className="w-full col-span-1 ">
             <div className="grid grid-cols-3 gap-4">
-              <div className="flex items-center justify-center bg-secondary">
+              <div className="flex items-center justify-center bg-primary">
                 <img
-                  src={require("../assets/homepage/assessories.png")}
+                  src={require("../assets/homepage/assessories2.png")}
                   alt=""
                   srcSet=""
                   className="h-20"

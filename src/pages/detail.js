@@ -192,7 +192,7 @@ const Detail = () => {
             </div>
 
             <div className="p-8 bg-white border border-gray-200 rounded-lg">
-              <BookForm />
+              <BookForm final={[car?.name]} />
             </div>
 
             <div className="p-8 bg-white border border-gray-200 rounded-lg">

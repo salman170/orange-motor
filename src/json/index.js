@@ -7508,7 +7508,18 @@ export const brands = [
         email: "orangehonda2wheelers@gmail.com",
       },
       {
-        name: "Honda Showroom - Masab Tank",
+        name: "Honda Service - Toli Chowki",
+        address:
+          "Old Mumbai Hwy, Rahul Colony, Aziz Bagh Colony, Toli Chowki, Hyderabad,Telangana 500008",
+        map: "https://maps.app.goo.gl/ZGA9u4tc6yZvj1kW9",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.173533444041!2d78.40631007597905!3d17.403457783486434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96c0f133d3bb%3A0xbf781bacc118db32!2sOld%20Mumbai%20Highway%20%26%20Rahul%20Colony%2C%20Rahul%20Colony%2C%20Aravind%20Nagar%20Colony%2C%20Toli%20Chowki%2C%20Hyderabad%2C%20Telangana%20500008!5e0!3m2!1sen!2sin!4v1716988239290!5m2!1sen!2sin",
+        phone: "9160188880",
+        personName: "Mr. Mohd Roofi Jameel",
+        email: "orangehonda2wheelers@gmail.com",
+      },
+      {
+        name: "Honda Showroom & Service - Masab Tank",
         address:
           "10-5-2/1/8/3, Mehdipatnam - Banjara Hills Rd, Opposite Paradise Hotel, Owaisi Pura, Masab Tank, Hyderabad, Telangana 500028",
         map: "https://maps.app.goo.gl/eJXKeMwWTkvCXooC7",
@@ -7519,7 +7530,7 @@ export const brands = [
         email: "orangehondamasabtank2023@gmail.com",
       },
       {
-        name: "Honda Showroom - Manikonda",
+        name: "Honda Showroom & Service - Manikonda",
         address:
           "Krishna Plaza 1-5/31, near Indian Oil Petrol Bunk, Manikonda, Telangana 500089",
         map: "https://maps.app.goo.gl/uGjsLCS4XzDPxPcVA",
@@ -7530,7 +7541,7 @@ export const brands = [
         email: "orangehondamanikonda2015@gmail.com",
       },
       {
-        name: "Honda Showroom - Chevella",
+        name: "Honda Showroom & Service - Chevella",
         address: "Main Rd, Chevella, Telangana 501503",
         map: "https://maps.app.goo.gl/ccuhWxGn4nG9nkvQA",
         iframe:
@@ -7540,7 +7551,7 @@ export const brands = [
         email: "orangechevelle1234@gmail.com",
       },
       {
-        name: "Honda Showroom - Moinabad",
+        name: "Honda Showroom & Service - Moinabad",
         address:
           "DHYAN SHIVA COLONY KABIR COTTAGE, K-2, beside INDIAN PETROL BUNK, Moinabad, Telangana 501504",
         map: "https://maps.app.goo.gl/87neYhi9gCv9ZfEb6",
@@ -7562,6 +7573,7 @@ export const brands = [
         map: "https://maps.app.goo.gl/Ue9EtrpC1gsz29WU8",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.0923591597375!2d78.43287946110777!3d17.455293000775555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90e3e3ef1e1b%3A0x1654f5dc889de472!2sShankaramma%20Towers%2C%20Sanjeeva%20Reddy%20Nagar%20Rd%2C%20D.%20Shankar%20Lal%20nagar%2C%20Vikaspuri%2C%20Erragadda%2C%20Hyderabad%2C%20Telangana%20500018!5e0!3m2!1sen!2sin!4v1709816055141!5m2!1sen!2sin",
+        phone: "9052106666",
       },
       {
         name: "Tata Cars Showroom - Attapur",
@@ -7570,6 +7582,7 @@ export const brands = [
         map: "https://maps.app.goo.gl/TsXjHY3UALVSevXL6",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.6609846165647!2d78.42658057494407!3d17.38003870301724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97b6285a7045%3A0x14ae9f27d3d2102!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%20Auto%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1709827097615!5m2!1sen!2sin",
+        phone: "9052106666",
       },
       {
         name: "Tata Cars Showroom - Kharkana",
@@ -7578,22 +7591,42 @@ export const brands = [
         map: "https://maps.app.goo.gl/fto6h1Yx1321CCkV9",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.025075126752!2d78.49571888885498!3d17.458513900000025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9175d94044f5%3A0x41f76244cf2c6a!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%20Auto%2C%20Kharkana!5e0!3m2!1sen!2sin!4v1709827244896!5m2!1sen!2sin",
+        phone: "9052106666",
       },
       {
-        name: "Tata Cars Showroom - Secunderabad",
+        name: "Tata Cars Showroom & Service - Medchal",
         address:
           "Srini Developers, opposite ST. CLARET HIGH SCHOOL, Malkajgiri, Secunderabad, Telangana 501401",
         map: "https://maps.app.goo.gl/ZVaJda41QHPYhnGJ6",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.0864729662253!2d78.48153188885499!3d17.646063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb87cdfb49c615%3A0xc60aa4cad87aa6cd!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%20Auto!5e0!3m2!1sen!2sin!4v1709827306418!5m2!1sen!2sin",
+        phone: "9052106666",
       },
       {
-        name: "Tata Cars Showroom - Medak",
+        name: "Tata Cars Showroom & Service - Medak",
         address:
           "1321/A, Medak - Chegunta Rd, beside Sri Sai Balaji Garden, near Rush Hospital, Baba Colony, Gangineni, Medak, Telangana 502110",
         map: "https://maps.app.goo.gl/t8boRfNqdh34WrKp6",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3793.8923666342307!2d78.26202007495714!3d18.030198083969765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcc15cb5a7cf099%3A0x50a675f2f49fb200!2sTata%20Motors%20Cars%20Showroom%20-%20Orange%2C%20Medak!5e0!3m2!1sen!2sin!4v1709827511499!5m2!1sen!2sin",
+        phone: "9052106666",
+      },
+      {
+        name: "Tata Cars Service - Hafeezpet ",
+        address: "#16ABC, Mini Industrial estate, Hafeezpet, Telangana 500049",
+        map: "https://maps.app.goo.gl/oEqtCLdWqWP86b3i7",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.3616234852216!2d78.35203127598064!3d17.490242683414557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9334c9822c27%3A0xaf04e45bfd1830d!2sOrange%20Tata%20Motors%20Service!5e0!3m2!1sen!2sin!4v1716989297146!5m2!1sen!2sin",
+        phone: "9052106666",
+      },
+      {
+        name: "Tata Cars Service - Sanath Nagar",
+        address:
+          "FC5X+CC2, Allauddin Basthi, Sanath Nagar, Hyderabad, Telangana 500018",
+        map: "https://maps.app.goo.gl/6roER6nWE676zfih9",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.021404783865!2d78.44603552598007!3d17.458689583440787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9198cbc8d86d%3A0xa8db7e78303c83a5!2sOrange%20Tata%20Motors%20Service%20Center%20Sanathnagar!5e0!3m2!1sen!2sin!4v1716989453176!5m2!1sen!2sin",
+        phone: "9052106666",
       },
     ],
   },
@@ -7602,35 +7635,39 @@ export const brands = [
     name: "Kawasaki",
     locations: [
       {
-        name: "Kawasaki Showroom - Banjara Hills",
+        name: "Kawasaki Showroom & Service - Banjara Hills",
         address:
           "H No 8, Roxana Fortune, 8, Road No. 12, beside Audi Showroom, NBT Nagar, Banjara Hills, Hyderabad, Telangana 500034",
         map: "https://maps.app.goo.gl/T5exefKnDfu4sYNM7",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0191380276997!2d78.43493037505952!3d17.410869183480298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9725b2420223%3A0x60391cfc879c8f82!2sKAWASAKI%20HYDERABAD!5e0!3m2!1sen!2sin!4v1711004336779!5m2!1sen!2sin",
+        phone: "9052106666",
       },
       {
-        name: "Kawasaki Showroom - Karkhana",
+        name: "Kawasaki Showroom & Service - Karkhana",
         address:
           " 54, Wellington Rd, R & D Colony, Karkhana, Secunderabad, Telangana 500015",
         map: "https://maps.app.goo.gl/LDRBSdFJ35L3Tgj49",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.02275021979!2d78.49767927506065!3d17.45862518344072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b005ef8cf7f%3A0xf04373ad4fb0e7d2!2sKAWASAKI%20SECUNDERABAD!5e0!3m2!1sen!2sin!4v1711004694233!5m2!1sen!2sin",
+        phone: "9052106666",
       },
       {
-        name: "Kawasaki Showroom - Benz Circle ( Vijayawada )",
+        name: "Kawasaki Showroom & Service - Benz Circle (Vijayawada)",
         address: "NTR Circle, Patamatalanka, Vijayawada, Andhra Pradesh 520010",
         map: "https://maps.app.goo.gl/y8Tm74zEmhunR5G49",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.5848727986!2d80.65430717503862!3d16.496544784246552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fac72f54cd05%3A0x4af9a9e02d2e301f!2sOrange%20travels!5e0!3m2!1sen!2sin!4v1711004570427!5m2!1sen!2sin",
+        phone: "9052106666",
       },
       {
-        name: "Kawasaki Showroom - Narsimha Nagar ( VIZAG )",
+        name: "Kawasaki Showroom & Service - VIZAG",
         address:
-          "GROUND FLOOR, RR HOUSE,NH-5, NARASIMHANAGAR, Visakhapatnam, Andhra Pradesh 530024",
-        map: "https://maps.app.goo.gl/Q4g6qC6VEnncu3uFA",
+          "P8JP+C9F, Karakachettu Rd, Near Laxmi Ganapathi Temple, Lawsons Bay Colony, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017",
+        map: "https://maps.app.goo.gl/kpNMmVzcV425Ae949",
         iframe:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.081303558239!2d83.29560567506729!3d17.7408078832079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39432ca2fffff5%3A0x86296849f6b28ba9!2sVIZAG%20KAWASAKI!5e0!3m2!1sen!2sin!4v1711004504046!5m2!1sen!2sin",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d950.0720544361868!2d83.33529366962645!3d17.731053798950978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39435879400001%3A0x58b89399fc26915e!2sJD%20Paper%20Rolls%2C%20G.K.Mansion!5e0!3m2!1sen!2sin!4v1716990578584!5m2!1sen!2sin",
+        phone: "9052106666",
       },
     ],
   },
@@ -7638,20 +7675,22 @@ export const brands = [
     name: "Jeep",
     locations: [
       {
-        name: "Jeep Cars Showroom - Visakhapatnam",
+        name: "Jeep Cars Showroom  - Visakhapatnam",
         address:
           "Ground Floor, R R House, N H 5, Narasimhanagar, Kailasapuram, Visakhapatnam, Andhra Pradesh 530024",
         map: "https://maps.app.goo.gl/RzbD8Uak5czKUyCM8",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.08200165374!2d83.29539667506732!3d17.74077498320801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943b961b512a3%3A0x83aaafb3168c1abd!2sOrange%20Jeep%20Visakhapatnam!5e0!3m2!1sen!2sin!4v1711004877002!5m2!1sen!2sin",
+        phone: "9052106666",
       },
       {
-        name: "Jeep Cars Showroom - Rajamahendravaram",
+        name: "Jeep Cars Service - Visakhapatnam",
         address:
-          "NH -16, Lolugu Nagar, Service Rd, opp. BEST PRICE, Rajamahendravaram, Andhra Pradesh 533103",
-        map: "https://maps.app.goo.gl/m62jpTsaW9nTaM619",
+          "D 23, near Birla Junction, Industrial Estate, Muralinagar, Kancharapalem, Visakhapatnam, Andhra Pradesh 530007",
+        map: "https://maps.app.goo.gl/EWJGPUg2W23EE18z7",
         iframe:
-          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.339279522049!2d81.80717647505013!3d17.007020183816756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a36d161e1c93%3A0xb59cec2175c411a9!2sJEEP%20(%20FIAT%20)%20RAJAHMUNDRY!5e0!3m2!1sen!2sin!4v1711004974009!5m2!1sen!2sin",
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.0563026547134!2d83.25811771096019!3d17.7419860924226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3942ad5ab30597%3A0x91704a6eb3ba9efc!2sOrange%20Nissan!5e0!3m2!1sen!2sin!4v1716635256319!5m2!1sen!2sin",
+        phone: "9052106666",
       },
     ],
   },
@@ -7659,12 +7698,13 @@ export const brands = [
     name: "Harely Davidson",
     locations: [
       {
-        name: "Harely Davidson Showroom - Ramavarappadu ( Vijayawada )",
+        name: "Harely Davidson Showroom & Service - Ramavarappadu ( Vijayawada )",
         address:
           "Door No 48-10/20/A, Service Road, Ring Road, Vijayawada - 520008 (Survey 341/1A, Near NTR Health University)",
         map: "https://maps.app.goo.gl/iNpSsmtrk7CivyYd9",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3825.096559056891!2d80.67275837503911!3d16.5212221842257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHF!5e0!3m2!1sen!2sin!4v1711005381018!5m2!1sen!2sin",
+        phone: "9052106666",
       },
     ],
   },
@@ -7672,12 +7712,22 @@ export const brands = [
     name: "Nissan",
     locations: [
       {
-        name: "Orange Nissan",
+        name: "Orange Nissan Showroom  - Visakhapatnam",
+        address:
+          "P7QW+37H, Narasimha Nagar, Akkayyapalem, Visakhapatnam, Andhra Pradesh 530016",
+        map: "https://maps.app.goo.gl/NMe7C2zB5gtntTup9",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.50932985998566!2d83.29567805859195!3d17.737604102829835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943001927000d%3A0x5937aff796d5e04b!2sNarasimhanagar%20Rythu%20Bazar!5e0!3m2!1sen!2sin!4v1716991051421!5m2!1sen!2sin",
+        phone: "9052106666",
+      },
+      {
+        name: "Orange Nissan Service - Visakhapatnam",
         address:
           "D 23, near Birla Junction, Industrial Estate, Muralinagar, Kancharapalem, Visakhapatnam, Andhra Pradesh 530007",
         map: "https://maps.app.goo.gl/EWJGPUg2W23EE18z7",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.0563026547134!2d83.25811771096019!3d17.7419860924226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3942ad5ab30597%3A0x91704a6eb3ba9efc!2sOrange%20Nissan!5e0!3m2!1sen!2sin!4v1716635256319!5m2!1sen!2sin",
+        phone: "9052106666",
       },
     ],
   },
@@ -7687,7 +7737,7 @@ export const galleryImg = [
     name: "Honda",
     images: [
       {
-        showroomName: "Head Tolichowki Show room Pictures",
+        showroomName: "Head Tolichowki Showroom Pictures",
         img: [
           require("../assets/gallery/Honda/Tolichowki/Picture1.jpg"),
           require("../assets/gallery/Honda/Tolichowki/Picture2.jpg"),
@@ -7698,7 +7748,7 @@ export const galleryImg = [
         ],
       },
       {
-        showroomName: "Masabtank Branch Show room Pictures",
+        showroomName: "Masabtank Branch Showroom Pictures",
         img: [
           require("../assets/gallery/Honda/Masabtank/Picture1.jpg"),
           require("../assets/gallery/Honda/Masabtank/Picture2.jpg"),
@@ -7720,7 +7770,7 @@ export const galleryImg = [
         ],
       },
       {
-        showroomName: "Chevella Asc Show room Pictures",
+        showroomName: "Chevella Asc Showroom Pictures",
         img: [
           require("../assets/gallery/Honda/Chevella/Picture1.jpg"),
           require("../assets/gallery/Honda/Chevella/Picture2.jpg"),
@@ -7774,6 +7824,9 @@ export const galleryImg = [
         img: [
           require("../assets/gallery/Jeep/vizag jeep showroom.jpg"),
           require("../assets/gallery/Jeep/vizag ikm service.jpeg"),
+          require("../assets/gallery/Jeep/Jeep Service.jpg"),
+          require("../assets/gallery/Jeep/Jeep Service 1.jpg"),
+          require("../assets/gallery/Jeep/Jeep RJY.jpg"),
         ],
       },
     ],
@@ -7795,7 +7848,10 @@ export const galleryImg = [
     images: [
       {
         showroomName: "Vizag Showroom",
-        img: [require("../assets/gallery/Nissan/vizag nissan showroom.jpeg")],
+        img: [
+          require("../assets/gallery/Nissan/vizag nissan showroom.jpeg"),
+          require("../assets/gallery/Nissan/Nissan Service without car.jpg"),
+        ],
       },
     ],
   },

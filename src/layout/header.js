@@ -8,7 +8,7 @@ const navigation = {
   pages: [
     { name: "Locations", href: "/locations" },
     { name: "Gallery", href: "/gallery" },
-    { name: "Contact Us", href: "/contact-us" },
+    { name: "Contact us", href: "/contact-us" },
   ],
   brands: [
     {

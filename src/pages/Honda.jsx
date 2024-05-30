@@ -5,6 +5,11 @@ import { model } from "../json";
 import TwoVehCard from "../components/TwoVehCard";
 
 const Honda = () => {
+const final = model
+  .slice(10, 12)
+  .flatMap((array) => array.map((item) => item.name));
+
+   
   return (
     <div>
       <img
@@ -49,7 +54,7 @@ const Honda = () => {
           </p>
         </div>
         <div className="col-span-2 p-2 lg:col-span-1">
-          <BookForm />
+          <BookForm final={final} />
         </div>
       </div>
 

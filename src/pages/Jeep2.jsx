@@ -6,7 +6,7 @@ import {   model } from "../json";
 import Card2 from "../components/card2";
 
 const Jeep2 = () => {
- 
+  const final = model[1].map((item) => item.name);
   return (
     <div>
       <img
@@ -32,31 +32,7 @@ const Jeep2 = () => {
             on a journey of discovery with Jeep – where every journey is
             extraordinary.
           </p>
-          {/* <p className="mt-5 text-black/80">
-             Jeep, an iconic name synonymous with adventure and rugged
-            performance, stands as a beacon of exploration in the automotive
-            world. With a rich heritage deeply rooted in the annals of American
-            history, Jeep has carved its path as a trailblazer in off-road
-            capabilities and timeless design. As the proud creators of legendary
-            vehicles like the Jeep Wrangler and Jeep Grand Cherokee, the brand
-            exemplifies the spirit of freedom and boundless exploration. From
-            conquering challenging terrains to navigating urban landscapes with
-            ease, Jeep vehicles embody versatility and reliability like no
-            other. With a commitment to innovation and excellence, Jeep
-            continues to redefine the boundaries of adventure, offering drivers
-            an unparalleled experience both on and off the road. Whether
-            embarking on a cross-country journey or navigating through the
-            bustling streets of the city, Jeep vehicles inspire confidence and
-            excitement at every turn. At the heart of Jeep lies a legacy of
-            resilience and determination, reflecting the indomitable spirit of
-            those who dare to chase their dreams and explore the unknown. As we
-            celebrate the enduring legacy of Jeep, we invite you to join us on a
-            journey of discovery and adventure, where the possibilities are as
-            limitless as the horizon itself. Discover the thrill of the open
-            road and the joy of exploration with Jeep – where every journey is
-            an invitation to embrace the extraordinary. 
-           
-          </p>*/}
+          
 
           <p className="mt-10 mb-2 text-2xl font-semibold">Orange Auto Group</p>
           <p className="text-black/80">
@@ -74,7 +50,7 @@ const Jeep2 = () => {
           </p>
         </div>
         <div className="col-span-2 p-2 lg:col-span-1">
-          <BookForm />
+          <BookForm final={final} />
         </div>
       </div>
       <div className="grid gap-5 py-10 mx-auto lg:grid-cols-3 max-w-7xl md:grid-cols-2 ">
@@ -91,11 +67,9 @@ const Jeep2 = () => {
             engine={item?.cc}
             brochure={item?.brochure}
             dimensions={item?.dimensions}
-           
           />
         ))}
       </div>
-  
     </div>
   );
 };

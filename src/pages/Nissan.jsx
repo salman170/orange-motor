@@ -1,11 +1,10 @@
-
-
 import BookForm from "../components/book-form";
 import Breadcrumb from "../components/breadcrumb";
 import Card2 from "../components/card2";
 import { model } from "../json";
 
 const Nissan = () => {
+   const final = model[13].map((item) => item.name);
   return (
     <>
       <img
@@ -50,7 +49,7 @@ const Nissan = () => {
           </p>
         </div>
         <div className="col-span-2 p-2 lg:col-span-1">
-          <BookForm />
+          <BookForm final={final} />
         </div>
       </div>
 

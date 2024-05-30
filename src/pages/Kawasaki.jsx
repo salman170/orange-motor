@@ -5,6 +5,10 @@ import { model } from "../json";
 import TwoVehCard from "../components/TwoVehCard";
 
 const Kawasaki = () => {
+const final = model
+  .slice(2, 9)
+  .flatMap((array) => array.map((item) => item.name));
+
   return (
     <div>
       <img
@@ -50,12 +54,12 @@ const Kawasaki = () => {
           </p>
         </div>
         <div className="col-span-2 p-2 lg:col-span-1">
-          <BookForm />
+          <BookForm final={final} />
         </div>
       </div>
-       <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
+      <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
         Ninja
-      </div> 
+      </div>
       <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
         {model[2].map((item) => (
           <TwoVehCard
@@ -74,7 +78,7 @@ const Kawasaki = () => {
           />
         ))}
       </div>
-       <div className="container pb-4 mx-auto text-2xl max-w-7xl text-secondary">
+      <div className="container pb-4 mx-auto text-2xl max-w-7xl text-secondary">
         z
       </div>
       <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">

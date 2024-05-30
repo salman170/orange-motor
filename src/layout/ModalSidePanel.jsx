@@ -1,10 +1,11 @@
-import { IoClose, IoLogoInstagram } from "react-icons/io5";
+import { IoClose, IoLogoInstagram, IoLogoYoutube } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { FaFacebookSquare, FaWhatsapp } from "react-icons/fa";
-import { IoIosCall, IoLogoYoutube, IoMdMail } from "react-icons/io";
+
+import { IoIosCall } from "react-icons/io";
 import { useEffect, useState } from "react";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
 import { RxCaretDown } from "react-icons/rx";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const ModalSidePanel = ({ open, setOpen }) => {
   const [showBrands, setShowBrands] = useState(true);
@@ -37,7 +38,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
     { name: "Brands ", path: "/tata" },
     { name: "Locations", path: "/locations" },
     { name: "Gallery", path: "/Gallery" },
-    { name: "Contact Us", path: "/contact-us" },
+    { name: "Contact us", path: "/contact-us" },
   ];
 
   const brands = [
@@ -86,7 +87,6 @@ const ModalSidePanel = ({ open, setOpen }) => {
             >
               {tabs[0].name}
             </Link>
-           
             <div
               to={tabs[1].path}
               onClick={() => {
@@ -115,7 +115,8 @@ const ModalSidePanel = ({ open, setOpen }) => {
                   </Link>
                 ))}
               </div>
-            )} <Link
+            )}{" "}
+            <Link
               to={tabs[2].path}
               onClick={() => {
                 setOpen(false);
@@ -160,7 +161,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
             <div className="flex items-center gap-4 px-4 py-1 text-sm text-white bg-secondary">
               <div className="flex items-center gap-2">
                 <IoIosCall className="" />
-                <a href="tel:9985412345">99854 12345</a>
+                <a href="tel: 9052106666">90521 06666</a>
               </div>
               <div className="flex items-center gap-2 ">
                 <FaLocationDot /> Hyderabad
@@ -168,7 +169,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
             </div>
             <div className="flex gap-4 pt-4 text-2xl text-secondary justify-evenly">
               <a
-                href="https://www.instagram.com/nuform__/"
+                href="https://www.instagram.com/oaplgroup/"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-secondary"
@@ -176,7 +177,7 @@ const ModalSidePanel = ({ open, setOpen }) => {
                 <IoLogoInstagram />
               </a>
               <a
-                href="https://www.facebook.com/your-facebook-page"
+                href="  https://www.facebook.com/orangegroup24"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-secondary"
@@ -184,28 +185,28 @@ const ModalSidePanel = ({ open, setOpen }) => {
                 <FaFacebookSquare />
               </a>
               <a
-                href="https://www.youtube.com/your-channel"
+                href=" https://www.youtube.com/@ORANGEAUTOPVTLTD"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-secondary"
               >
                 <IoLogoYoutube />
               </a>
-              <a
+              {/* <a
                 href="https://wa.me/your-whatsapp-number"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-secondary"
               >
                 <FaWhatsapp />
-              </a>
+              </a> */}
               <a
-                href="mailto:your-email@example.com"
+                href="https://x.com/orangegroup20"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-secondary"
               >
-                <IoMdMail />
+                <FaXTwitter />
               </a>
             </div>
             {/* <div className="flex justify-center">
