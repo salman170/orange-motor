@@ -4,6 +4,7 @@ import BookForm from "../components/book-form";
 import {   model } from "../json";
 // import Card from "../components/card";
 import Card2 from "../components/card2";
+import TwoVehCard from "../components/TwoVehCard";
 
 const Jeep2 = () => {
   const final = model[1].map((item) => item.name);
@@ -32,7 +33,6 @@ const Jeep2 = () => {
             on a journey of discovery with Jeep – where every journey is
             extraordinary.
           </p>
-          
 
           <p className="mt-10 mb-2 text-2xl font-semibold">Orange Auto Group</p>
           <p className="text-black/80">
@@ -55,7 +55,7 @@ const Jeep2 = () => {
       </div>
       <div className="grid gap-5 py-10 mx-auto lg:grid-cols-3 max-w-7xl md:grid-cols-2 ">
         {model[1].map((item) => (
-          <Card2
+          <TwoVehCard
             key={item.id}
             id={item?.id}
             position="1"
@@ -65,8 +65,10 @@ const Jeep2 = () => {
             fuel={item?.fuel}
             transmission={item?.transmission}
             engine={item?.cc}
+            category={item?.variants[0]}
             brochure={item?.brochure}
-            dimensions={item?.dimensions}
+            weight={item?.weight}
+            variants={item?.variants}
           />
         ))}
       </div>

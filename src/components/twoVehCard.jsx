@@ -16,6 +16,18 @@ const TwoVehCard = ({
   brochure,
   variants,
 }) => {
+  console.log(
+    price,
+    category,
+    title,
+    engine,
+    fuel,
+    transmission,
+    weight,
+    variants,
+    brochure,
+    banner
+  );
   const { setOpenEnq, setModel } = useModelContext();
   const [selectedVariant, setSelectedVariant] = useState(category.price);
   const calculateEMI = () => {
@@ -83,14 +95,22 @@ const TwoVehCard = ({
         </div>
 
         <div className="w-full h-px bg-gray-200/80"></div>
-        <div className="flex items-center justify-between w-full py-2">
-          <div className="w-1/2">
-            <span className=" text-secondary">price</span>
-            <h4 className="font-semibold text-gray-600 md:text-lg">
-              {CurrencyFormatter.format(variants ? selectedVariant : price)}
-            </h4>
-          </div>
-          <div className="flex flex-col items-end w-1/2 ">
+        <div className="w-full py-2 ">
+          <p className=" text-secondary">price</p>{" "}
+          <h4 className="pb-2 font-semibold text-gray-600 md:text-lg lg:text-xl">
+            {CurrencyFormatter.format(variants ? selectedVariant : price)}
+          </h4>
+         {variants?.length>1 && <select
+            className="w-full py-1 text-xs border rounded-lg cursor-pointer bg-gray-50 md:pr-1 textgray-800/80 focus:outline-none hover:border-secondary"
+            onChange={(e) => setSelectedVariant(e.target.value)}
+          >
+            {variants.map((x, i) => (
+              <option key={i} value={x.price} className="text-black bg-white">
+                {x.variant}
+              </option>
+            ))}
+          </select>}
+          {/* <div className="flex flex-col items-end w-1/2 ">
             {variants && variants.length > 0 ? (
               <div className="">
                 <p className="text-right ">Select Variant</p>
@@ -108,11 +128,11 @@ const TwoVehCard = ({
             ) : (
               <p className="text-sm ">From ₹ {calculateEMI()} / m</p>
             )}
-          </div>
+          </div> */}
         </div>
 
         <div className="flex items-center justify-between gap-2 py-3">
-          <a
+         {brochure && <a
             href={brochure ? brochure : "#"}
             target="_blank"
             rel="noreferrer"
@@ -121,7 +141,7 @@ const TwoVehCard = ({
             <div className="flex-grow py-2 text-sm text-center border rounded-lg cursor-pointer hover:shadow-lg focus:outline-none text-secondary hover:border-secondary">
               View Brochure
             </div>
-          </a>
+          </a>}
           <div
             onClick={() => {
               setOpenEnq(true);

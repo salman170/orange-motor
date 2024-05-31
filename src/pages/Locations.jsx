@@ -53,7 +53,7 @@ const Locations = () => {
                     </p>
                   )}
                   {location.phone && (
-                    <div className="flex pb-4 text-sm text-gray-900 group-hover:text-white ">
+                    <div className="flex text-sm text-gray-900 group-hover:text-white ">
                       <div className="mr-2 ">Phone:</div>{" "}
                       <div className="">
                         {location.phone}
@@ -70,14 +70,11 @@ const Locations = () => {
                     </div>
                   </div> */}
                   {/* )} */}
-                  {/* {location.email && (
-                    <p className="text-sm text-gray-700 group-hover:text-white">
-                       <span className="mr-7 text-secondary group-hover:text-black">
-                        email:
-                      </span>
-                      <span className="">{location.email}</span>
+                  {location.email && (
+                    <p className="pb-4 text-sm text-gray-700 group-hover:text-white">
+                      <span className="mr-2 ">Email:</span> {location.email}
                     </p>
-                  )} */}
+                  )}
                 </div>
                 <div className="mt-2 border rounded-lg ">
                   <a

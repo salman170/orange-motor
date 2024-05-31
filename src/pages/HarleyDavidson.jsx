@@ -91,8 +91,9 @@ const HarleyDavidson = () => {
             transmission={item?.transmission}
             engine={item?.cc}
             category={item?.variants[0]}
-            // brochure={item?.brochure}
+            brochure={item?.brochure}
             weight={item?.weight}
+            variants={item?.variants}
           />
         ))}
       </div>

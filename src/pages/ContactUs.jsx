@@ -30,7 +30,7 @@ const ContactUs = () => {
       </p> */}
             <p className="flex items-center gap-5">
               <FaPhoneAlt className="text-xl text-secondary" />
-              <a href="tel:+919985412345">+91 9985412345</a>
+              <a href="tel:+91 9052106666">+91 90521 06666</a>
             </p>
             <p className="flex items-center gap-5">
               <FaEnvelope className="text-xl text-secondary" />

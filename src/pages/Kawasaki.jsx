@@ -60,8 +60,8 @@ const final = model
       <div className="container pb-4 mx-auto text-xl max-w-7xl text-secondary">
         Ninja
       </div>
-      <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
-        {model[2].map((item) => (
+      {/* <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
+        {model[14].map((item) => (
           <TwoVehCard
             key={item.id}
             id={item?.id}
@@ -77,8 +77,27 @@ const final = model
             weight={item?.weight}
           />
         ))}
+      </div> */}
+     <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
+        {model[2].map((item) => (
+          <TwoVehCard
+            key={item.id}
+            id={item?.id}
+            position="2"
+            banner={item?.pic}
+            title={item?.name}
+            price={item?.price}
+            fuel={item?.fuel}
+            transmission={item?.transmission}
+            engine={item?.cc}
+            category={item?.variants[0]}
+            // brochure={item?.brochure}
+            weight={item?.weight}
+            variants={item?.variants}
+          />
+        ))}
       </div>
-      <div className="container pb-4 mx-auto text-2xl max-w-7xl text-secondary">
+       <div className="container pb-4 mx-auto text-2xl max-w-7xl text-secondary">
         z
       </div>
       <div className="grid gap-5 pb-10 mx-auto lg:grid-cols-3 md:grid-cols-2 max-w-7xl xl:grid-cols-4">
@@ -96,6 +115,7 @@ const final = model
             category={item?.variants[0]}
             // brochure={item?.brochure}
             weight={item?.weight}
+            variants={item?.variants}
           />
         ))}
       </div>
@@ -117,6 +137,7 @@ const final = model
             category={item?.variants[0]}
             // brochure={item?.brochure}
             weight={item?.weight}
+            variants={item?.variants}
           />
         ))}
       </div>
@@ -138,6 +159,7 @@ const final = model
             category={item?.variants[0]}
             // brochure={item?.brochure}
             weight={item?.weight}
+            variants={item?.variants}
           />
         ))}
       </div>
@@ -159,6 +181,7 @@ const final = model
             category={item?.variants[0]}
             // brochure={item?.brochure}
             weight={item?.weight}
+            variants={item?.variants}
           />
         ))}
       </div>
@@ -180,6 +203,7 @@ const final = model
             category={item?.variants[0]}
             // brochure={item?.brochure}
             weight={item?.weight}
+            variants={item?.variants}
           />
         ))}
       </div>
@@ -201,9 +225,10 @@ const final = model
             category={item?.variants[0]}
             // brochure={item?.brochure}
             weight={item?.weight}
+            variants={item?.variants}
           />
         ))}
-      </div>
+      </div> 
     </div>
   );
 };

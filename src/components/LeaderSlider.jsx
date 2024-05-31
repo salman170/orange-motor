@@ -17,7 +17,6 @@ const LeaderSlider = () => {
 
   return (
     <div>
-      {" "}
       <Swiper
         pagination={{
           dynamicBullets: true,
@@ -74,7 +73,7 @@ const LeaderSlider = () => {
             <BsArrowLeft className="text-2xl duration-500 rotate-180 -translate-x-4 group-hover:translate-x-0 text-[#FF8041] xl:text-3xl group-hover:text-white" />
           </div>
         </div> */}
-         <div
+        <div
           ref={navigationPrevRef}
           className="absolute z-10 p-1 rounded-full cursor-pointer left-3 sm:left-10 top-1/2 sm:top-1/2 bg-white/60 hover:bg-[#F17D28] sm:p-3 shadow-xl"
         >
@@ -85,7 +84,6 @@ const LeaderSlider = () => {
           className="absolute z-10 p-1 rounded-full cursor-pointer right-3 sm:right-10 top-1/2 sm:top-1/2 bg-white/60 hover:bg-[#F17D28] sm:p-3 shadow-xl"
         >
           <GrFormNext />
-          
         </div>
         <SwiperSlide>
           <div className="grid p-5 bg-gray-100 md:p-10 md:grid-cols-3 group">
@@ -122,13 +120,13 @@ const LeaderSlider = () => {
           <div className="grid p-5 bg-gray-100 md:p-10 md:grid-cols-3 group">
             <div className="relative flex-col justify-end hidden md:flex">
               <img
-                src={require("../assets/homepage/Ramakoteswara.png")}
-                alt="MR. Y. RAMAKOTESWARA RAO"
+                src={require("../assets/homepage/Leader3.jpg")}
+                alt="MRS. Y. RAMA - DIRECTOR"
                 srcSet=""
-                className="absolute bottom-0 left-0 object-cover w-full h-full p-6 rounded-3xl "
+                className="absolute bottom-0 object-cover h-full p-6 mx-auto -translate-x-1/2 left-1/2 rounded-3xl"
               />
-              <div className="w-full h-[200px] bg-secondary"></div>
-            </div>{" "}
+              <div className="w-full h-[200px] bg-secondary "></div>
+            </div>
             <div className="col-span-2 p-4 my-auto space-y-3 text-left lg:px-6 lg:py-24">
               <div className="mb-3 text-2xl font-semibold uppercase lg:text-3xl">
                 MRS. Y. RAMA - DIRECTOR
@@ -153,8 +151,8 @@ const LeaderSlider = () => {
           <div className="grid p-5 bg-gray-100 md:p-10 md:grid-cols-3 group">
             <div className="relative flex-col justify-end hidden md:flex">
               <img
-                src={require("../assets/homepage/Ramakoteswara.png")}
-                alt="MR. Y. RAMAKOTESWARA RAO"
+                src={require("../assets/homepage/Leader2.jpg")}
+                alt="MR. RAHUL YALAMANCHILI"
                 srcSet=""
                 className="absolute bottom-0 left-0 object-cover w-full h-full p-6 rounded-3xl "
               />

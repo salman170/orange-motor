@@ -1,6 +1,7 @@
+import TwoVehCard from "../components/TwoVehCard";
 import BookForm from "../components/book-form";
 import Breadcrumb from "../components/breadcrumb";
-import Card2 from "../components/card2";
+// import Card2 from "../components/card2";
 import { model } from "../json";
 
 const Nissan = () => {
@@ -55,7 +56,7 @@ const Nissan = () => {
 
       <div className="grid gap-5 py-10 mx-auto lg:grid-cols-3 max-w-7xl md:grid-cols-2 ">
         {model[13].map((item) => (
-          <Card2
+          <TwoVehCard
             key={item.id}
             id={item?.id}
             position="1"
@@ -65,9 +66,25 @@ const Nissan = () => {
             fuel={item?.fuel}
             transmission={item?.transmission}
             engine={item?.cc}
-            brochure={item?.brochurePdf}
-            dimensions={item?.dimensions}
+            category={item?.variants[0]}
+            brochure={item?.brochure}
+            weight={item?.weight}
+            variants={item?.variants}
           />
+          // <Card2
+          //   key={item.id}
+          //   id={item?.id}
+          //   position="1"
+          //   banner={item?.pic}
+          //   title={item?.name}
+          //   price={item?.price}
+          //   fuel={item?.fuel}
+          //   transmission={item?.transmission}
+          //   engine={item?.cc}
+          //   brochure={item?.brochurePdf}
+          //   dimensions={item?.dimensions}
+          //   variants={item?.variants}
+          // />
         ))}
       </div>
     </>

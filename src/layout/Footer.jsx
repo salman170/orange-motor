@@ -19,6 +19,13 @@ const Footer = () => {
       <div className="py-20 text-white bg-secondary">
         <div className="container grid px-5 mx-auto lg:grid-cols-5 ">
           <div className="col-span-4">
+            {/* <Link to="/" className="bg-black w-min"> */}
+              <img
+                src={require("../assets/others/white_logo.png")}
+                className="h-16 mb-6 lg:mb-10"
+                alt=""
+              />
+            {/* </Link> */}
             <p className="mb-5 text-5xl font-semibold">
               Quality means doing it right <br />
               When no one is looking
@@ -36,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-            <p className="mb-5 text-2xl font-semibold">Contact Us</p>
+            <p className="mb-5 text-2xl font-semibold">Corporate Office</p>
             <p className="text-[#fff] text-opacity-70 hover:text-opacity-100   cursor-pointer pb-6">
               No 8, Shankaramma Towers, 3/164/2, opposite Bharat Petrol Pump,
               Shankar Lal Nagar, Sultan Nagar, Erragadda, Hyderabad, Telangana
@@ -117,24 +124,6 @@ const Footer = () => {
                   <FaLinkedin className="text-lg md:text-xl" />
                 </a> */}
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="container w-full px-5 mx-auto">
-          <div className="flex flex-col items-center justify-between mt-24 md:flex-row">
-            <Link to="/">
-              <img
-                src={require("../assets/others/white_logo.png")}
-                className="h-16"
-                alt=""
-              />
-            </Link>
-
-            <div className="flex flex-col items-center w-full mt-4 md:space-x-10 md:flex-row md:justify-end">
-              <Link to="/">Dealership</Link>
-              <Link to="/">Support</Link>
-              <Link to="/">Service </Link>
-              <Link to="/">Experinced</Link>
             </div>
           </div>
         </div>
