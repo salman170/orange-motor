@@ -3,7 +3,7 @@ import Breadcrumb from "../components/breadcrumb";
 import BookForm from "../components/book-form";
 import {   model } from "../json";
 // import Card from "../components/card";
-import Card2 from "../components/card2";
+// import Card2 from "../components/card2";
 import TwoVehCard from "../components/TwoVehCard";
 
 const Jeep2 = () => {

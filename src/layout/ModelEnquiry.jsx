@@ -8,6 +8,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 
 // Inside your component
 import { object, string } from "yup";
+import { useNavigate } from "react-router-dom";
+import { Toaster, toast } from "react-hot-toast";
+import axios from "axios";
 // import { useNavigate } from "react-router-dom";
 
 const phoneRegExp = /^[6-9]\d{9}$/;
@@ -27,8 +30,7 @@ const proposelSchema = object().shape({
 
 function ModelEnquiry({ open, setOpen, title, model }) {
   const [loading, setLoading] = useState(false);
-
-  //   let history = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -82,12 +84,47 @@ function ModelEnquiry({ open, setOpen, title, model }) {
                     model: model,
                   }}
                   validationSchema={proposelSchema}
-                  onSubmit={async (values, { setSubmitting }) => {
-                    setLoading(true);
-                    setSubmitting(true);
-                    alert("Form submitted successfully");
-                    setLoading(false);
-                    setOpen(false);
+                  onSubmit={async (values, { setSubmitting, resetForm }) => {
+                    try {
+                      setLoading(true);
+                      setSubmitting(true);
+
+                      const res = await axios.post(
+                        "https://kasturba-backend.onrender.com/general",
+                        // "http://localhost:5001/general",
+                        {
+                          name: values.name,
+                          email: values.email,
+                          phone: values.phone,
+                          model: values.model,
+
+                          leadFrom: "Enquiry Form",
+                        }
+                      );
+                      if (res.data.status) {
+                        // toast.success("Form submitted successfully");
+                        // Reset form values after successful submission
+                        resetForm({
+                          name: "",
+                          email: "",
+                          phone: "",
+                          model: "",
+                          disclaimer: false,
+                        });
+                        navigate("/thank-you");
+                      } else {
+                        toast.error("Form submission failed");
+                      }
+
+                      setLoading(false);
+                      setSubmitting(false);
+                      setOpen(false);
+                    } catch (error) {
+                      console.error("Form submission error:", error);
+                      toast.error("Form submission failed");
+                      setLoading(false);
+                      setSubmitting(false);
+                    }
                   }}
                 >
                   {({ isSubmitting }) => (
@@ -189,8 +226,8 @@ function ModelEnquiry({ open, setOpen, title, model }) {
                           )}
                           <button
                             type="submit"
-                            className={` px-6 py-2  border hover:border-secondary duration-200   rounded-lg
-                               hover:scale-95  bg-secondary text-white w-1/2 text-base`}
+                            disabled={isSubmitting}
+                            className="w-1/2 px-6 py-2 mx-auto text-base text-white duration-200 border rounded-lg hover:border-secondary hover:scale-95 bg-secondary"
                           >
                             {loading ? "Submitting" : "Submit"}
                           </button>
@@ -201,12 +238,14 @@ function ModelEnquiry({ open, setOpen, title, model }) {
                         clicking 'Submit', You have agreed to our Terms &
                         Conditions.
                       </div>
+                    
                     </Form>
                   )}
                 </Formik>
               </div>
             </div>
           </Transition.Child>
+          <Toaster />
         </div>
       </Dialog>
     </Transition.Root>

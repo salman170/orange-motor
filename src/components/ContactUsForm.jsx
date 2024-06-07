@@ -2,9 +2,12 @@ import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { CgSpinner } from "react-icons/cg";
-import { Toaster, toast } from 'react-hot-toast';
+import { Toaster, toast } from "react-hot-toast";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const ContactUsForm = () => {
+  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -19,30 +22,45 @@ const ContactUsForm = () => {
       phone: Yup.string()
         .matches(/^[6-9][0-9]{6,9}$/, "Invalid phone number")
         .required("Phone is required"),
-      message: Yup.string().required("Message is required").max(300, "Message must be at most 300 characters"),
+      message: Yup.string()
+        .required("Message is required")
+        .max(300, "Message must be at most 300 characters"),
       disclaimer: Yup.boolean().oneOf([true], "Must accept disclaimer"),
     }),
     onSubmit: async (values, { setSubmitting, resetForm }) => {
       try {
         // Simulate form submission delay
-        await new Promise(resolve => setTimeout(resolve, 400));
-        
-        // Your actual form submission logic goes here
-        // For demonstration purposes, let's display a success message using toast
-        toast.success('Form submitted successfully');
-        
-        // Reset form values after successful submission
-        resetForm({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-          disclaimer: false,
-        });
+        const res = await axios.post(
+          "https://orange-backend-8wfp.onrender.com/general",
+          // "http://localhost:5001/general",
+          {
+            name: values.name,
+            email: values.email,
+            phone: values.phone,
+            message: values.message,
+            leadFrom: "Contact Us",
+          }
+        );
+        if (res.data.status) {
+          // toast.success("Form submitted successfully");
+          // Reset form values after successful submission
+          resetForm({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+
+            disclaimer: false,
+          });
+          navigate("/thank-you");
+        } else {
+          toast.error("Form submission failed");
+        }
+       
       } catch (error) {
         // Handle form submission errors here
         console.error("Form submission error:", error);
-        toast.error('Form submission failed');
+        toast.error("Form submission failed");
       } finally {
         // Always set submitting state to false after form submission
         setSubmitting(false);
@@ -52,7 +70,6 @@ const ContactUsForm = () => {
 
   return (
     <div className="">
-     
       <form onSubmit={formik.handleSubmit}>
         <div className="mt-3">
           <label htmlFor="name">
@@ -126,7 +143,6 @@ const ContactUsForm = () => {
             type="checkbox"
             checked={formik.values.disclaimer} // Use checked instead of value
             onChange={formik.handleChange} // Handle onChange to update formik state
-            
             required
             {...formik.getFieldProps("disclaimer")}
           />

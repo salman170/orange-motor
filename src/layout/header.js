@@ -168,7 +168,7 @@ export function Header() {
                       </>
                     )}
                   </Popover>
-                 
+
                   <Link
                     to="/about-us"
                     className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"

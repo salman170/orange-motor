@@ -2293,206 +2293,206 @@ export const model = [
         },
       ],
     },
-    // // Jeep Wrangler
-    // {
-    //   id: "wrangler",
-    //   category: "jeep",
-    //   name: "Wrangler",
-    //   pic: require("../assets/jeep/thumbnail-wrangler.jpg.img.600.jpg"),
-    //   price: 3500000,
-    //   fuel: "Petrol",
-    //   transmission: "Automatic",
-    //   cc: "1998",
-    //   brochure:
-    //     "https://www.jeep-india.com/content/dam/cross-regional/apac/jeep/en_in/All-New-Wrangler-Brochure.pdf",
-    //   variants: [
-    //     {
-    //       variant: "Rubicon",
-    //       price: 3500000,
-    //     },
-    //     {
-    //       variant: "Sahara",
-    //       price: 3800000,
-    //     },
-    //     {
-    //       variant: "Sport",
-    //       price: 3200000,
-    //     },
-    //   ],
-    //   banners: [
-    //     {
-    //       img: require("../assets/jeep/wrangler.jpg"),
-    //     },
-    //   ],
+    // Jeep Wrangler
+    {
+      id: "wrangler",
+      category: "jeep",
+      name: "Wrangler",
+      pic: require("../assets/jeep/thumbnail-wrangler.jpg.img.600.jpg"),
+      price: 3500000,
+      fuel: "Petrol",
+      transmission: "Automatic",
+      cc: "1998",
+      brochure:
+        "https://www.jeep-india.com/content/dam/cross-regional/apac/jeep/en_in/All-New-Wrangler-Brochure.pdf",
+      variants: [
+        {
+          variant: "Rubicon",
+          price: 3500000,
+        },
+        {
+          variant: "Sahara",
+          price: 3800000,
+        },
+        {
+          variant: "Sport",
+          price: 3200000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/jeep/wrangler.jpg"),
+        },
+      ],
 
-    //   // Dimensions & Capacity
-    //   dimensions: [
-    //     {
-    //       title: "Length (mm)",
-    //       value: 4882,
-    //     },
-    //     {
-    //       title: "Width (mm)",
-    //       value: 1894,
-    //     },
-    //     {
-    //       title: "Height (mm)",
-    //       value: 1875,
-    //     },
-    //     {
-    //       title: "Fuel Tank(L)",
-    //       value: 81,
-    //     },
-    //     {
-    //       title: "Seating",
-    //       value: 5,
-    //     },
-    //     {
-    //       title: "Bootspace(L)",
-    //       value: 533,
-    //     },
-    //   ],
+      // Dimensions & Capacity
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 4882,
+        },
+        {
+          title: "Width (mm)",
+          value: 1894,
+        },
+        {
+          title: "Height (mm)",
+          value: 1875,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 81,
+        },
+        {
+          title: "Seating",
+          value: 5,
+        },
+        {
+          title: "Bootspace(L)",
+          value: 533,
+        },
+      ],
 
-    //   // Engine & Transmission
-    //   engine: [
-    //     {
-    //       title: "Capacity(cc)",
-    //       value: 1998,
-    //     },
-    //     {
-    //       title: "Max Power",
-    //       value: "268@5250",
-    //     },
-    //     {
-    //       title: "Fuel Type",
-    //       value: "Petrol",
-    //     },
-    //     {
-    //       title: "Transmission",
-    //       value: "Automatic",
-    //     },
-    //   ],
+      // Engine & Transmission
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 1998,
+        },
+        {
+          title: "Max Power",
+          value: "268@5250",
+        },
+        {
+          title: "Fuel Type",
+          value: "Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Automatic",
+        },
+      ],
 
-    //   // Weights & Brakes
-    //   weight: [
-    //     {
-    //       title: "Front",
-    //       value: "Disc",
-    //     },
-    //     {
-    //       title: "Rear",
-    //       value: "Disc",
-    //     },
-    //     {
-    //       title: "Kerb",
-    //       value: "1885",
-    //     },
-    //     {
-    //       title: "Gross Weight",
-    //       value: 2495,
-    //     },
-    //   ],
-    // },
-    // // Jeep Grand Cherokee
-    // {
-    //   id: "grand_cherokee",
-    //   category: "jeep",
-    //   name: "Grand Cherokee",
-    //   pic: require("../assets/jeep/thumbnail-gc-12may23.jpg.img.600.jpg"),
-    //   price: 4500000,
-    //   fuel: "Diesel / Petrol",
-    //   transmission: "Automatic",
-    //   cc: "2998",
-    //   brochure:
-    //     "https://www.jeep-india.com/content/dam/cross-regional/apac/jeep/en_in/app-icon/GC-Brochure.pdf",
-    //   variants: [
-    //     {
-    //       variant: "Limited",
-    //       price: 4500000,
-    //     },
-    //     {
-    //       variant: "Trailhawk",
-    //       price: 4900000,
-    //     },
-    //     {
-    //       variant: "Overland",
-    //       price: 5300000,
-    //     },
-    //   ],
-    //   banners: [
-    //     {
-    //       img: require("../assets/jeep/grand.png"),
-    //     },
-    //   ],
+      // Weights & Brakes
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "1885",
+        },
+        {
+          title: "Gross Weight",
+          value: 2495,
+        },
+      ],
+    },
+    // Jeep Grand Cherokee
+    {
+      id: "grand_cherokee",
+      category: "jeep",
+      name: "Grand Cherokee",
+      pic: require("../assets/jeep/thumbnail-gc-12may23.jpg.img.600.jpg"),
+      price: 4500000,
+      fuel: "Diesel / Petrol",
+      transmission: "Automatic",
+      cc: "2998",
+      brochure:
+        "https://www.jeep-india.com/content/dam/cross-regional/apac/jeep/en_in/app-icon/GC-Brochure.pdf",
+      variants: [
+        {
+          variant: "Limited",
+          price: 4500000,
+        },
+        {
+          variant: "Trailhawk",
+          price: 4900000,
+        },
+        {
+          variant: "Overland",
+          price: 5300000,
+        },
+      ],
+      banners: [
+        {
+          img: require("../assets/jeep/grand.png"),
+        },
+      ],
 
-    //   // Dimensions & Capacity
-    //   dimensions: [
-    //     {
-    //       title: "Length (mm)",
-    //       value: 4875,
-    //     },
-    //     {
-    //       title: "Width (mm)",
-    //       value: 2154,
-    //     },
-    //     {
-    //       title: "Height (mm)",
-    //       value: 1802,
-    //     },
-    //     {
-    //       title: "Fuel Tank(L)",
-    //       value: 93,
-    //     },
-    //     {
-    //       title: "Seating",
-    //       value: 5,
-    //     },
-    //     {
-    //       title: "Bootspace(L)",
-    //       value: 1025,
-    //     },
-    //   ],
+      // Dimensions & Capacity
+      dimensions: [
+        {
+          title: "Length (mm)",
+          value: 4875,
+        },
+        {
+          title: "Width (mm)",
+          value: 2154,
+        },
+        {
+          title: "Height (mm)",
+          value: 1802,
+        },
+        {
+          title: "Fuel Tank(L)",
+          value: 93,
+        },
+        {
+          title: "Seating",
+          value: 5,
+        },
+        {
+          title: "Bootspace(L)",
+          value: 1025,
+        },
+      ],
 
-    //   // Engine & Transmission
-    //   engine: [
-    //     {
-    //       title: "Capacity(cc)",
-    //       value: 2998,
-    //     },
-    //     {
-    //       title: "Max Power",
-    //       value: "258@3600",
-    //     },
-    //     {
-    //       title: "Fuel Type",
-    //       value: "Diesel / Petrol",
-    //     },
-    //     {
-    //       title: "Transmission",
-    //       value: "Automatic",
-    //     },
-    //   ],
+      // Engine & Transmission
+      engine: [
+        {
+          title: "Capacity(cc)",
+          value: 2998,
+        },
+        {
+          title: "Max Power",
+          value: "258@3600",
+        },
+        {
+          title: "Fuel Type",
+          value: "Diesel / Petrol",
+        },
+        {
+          title: "Transmission",
+          value: "Automatic",
+        },
+      ],
 
-    //   // Weights & Brakes
-    //   weight: [
-    //     {
-    //       title: "Front",
-    //       value: "Disc",
-    //     },
-    //     {
-    //       title: "Rear",
-    //       value: "Disc",
-    //     },
-    //     {
-    //       title: "Kerb",
-    //       value: "2220-2390",
-    //     },
-    //     {
-    //       title: "Gross Weight",
-    //       value: 2945,
-    //     },
-    //   ],
-    // },
+      // Weights & Brakes
+      weight: [
+        {
+          title: "Front",
+          value: "Disc",
+        },
+        {
+          title: "Rear",
+          value: "Disc",
+        },
+        {
+          title: "Kerb",
+          value: "2220-2390",
+        },
+        {
+          title: "Gross Weight",
+          value: 2945,
+        },
+      ],
+    },
   ],
   // Kawasaki Ninja - 2
   [
@@ -6635,7 +6635,7 @@ export const model = [
     {
       id: "cd_110_dream",
       category: "honda",
-      name: "CD 110 Dream",
+      name: "CD 110",
       pic: require("../assets/honda/cd_110_dream.jpg"),
       price: 73400,
       fuel: "Petrol",
@@ -6645,7 +6645,7 @@ export const model = [
         "https://www.honda2wheelersindia.com/assets/pdf/CD110_Brochure.pdf",
       variants: [
         {
-          variant: "CD 110 Dream",
+          variant: "CD 110",
           price: 73400,
         },
       ],
@@ -6718,7 +6718,7 @@ export const model = [
       id: "cb200x",
       category: "honda",
       name: "CB200X",
-      pic: require("../assets/honda/cb300f.png"),
+      pic: require("../assets/honda/cb200x.png"),
       price: 146999,
       fuel: "Petrol",
       transmission: "Manual",
@@ -6733,7 +6733,7 @@ export const model = [
       ],
       banners: [
         {
-          img: require("../assets/honda/cb300f.png"),
+          img: require("../assets/honda/cb200x.png"),
         },
       ],
       dimensions: [
@@ -9829,7 +9829,7 @@ export const brands = [
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.24305452816!2d78.41117747505926!3d17.400119583489282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96e9e3fc13cf%3A0x728251f36c25f904!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003233494!5m2!1sen!2sin",
         phone: "9160188880",
         personName: "Mr. Mohd Roofi Jameel",
-        email: "orangehonda2wheelers@gmail.com",
+        // email: "orangehonda2wheelers@gmail.com",
       },
       {
         name: "Honda Service - Toli Chowki",
@@ -9838,9 +9838,9 @@ export const brands = [
         map: "https://maps.app.goo.gl/ZGA9u4tc6yZvj1kW9",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.173533444041!2d78.40631007597905!3d17.403457783486434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb96c0f133d3bb%3A0xbf781bacc118db32!2sOld%20Mumbai%20Highway%20%26%20Rahul%20Colony%2C%20Rahul%20Colony%2C%20Aravind%20Nagar%20Colony%2C%20Toli%20Chowki%2C%20Hyderabad%2C%20Telangana%20500008!5e0!3m2!1sen!2sin!4v1716988239290!5m2!1sen!2sin",
-        phone: "7799981094",
-        personName: "Mr. Narsing Raj",
-        email: "orangehonda2wheelers@gmail.com",
+        phone: "7032097111",
+        personName: "Mr. Bhartha",
+        // email: "orangehonda2wheelers@gmail.com",
       },
       {
         name: "Honda Showroom - Masab Tank",
@@ -9851,7 +9851,7 @@ export const brands = [
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.171548544171!2d78.44988557505934!3d17.403553083486457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9740066d76db%3A0xc65e5977ef927ceb!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003368659!5m2!1sen!2sin",
         phone: "7799942940",
         personName: "Mr. Mohd Aziz Khan",
-        email: "orangehondamasabtank2023@gmail.com",
+        // email: "orangehondamasabtank2023@gmail.com",
       },
       {
         name: "Honda Service - Masab Tank",
@@ -9862,7 +9862,7 @@ export const brands = [
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.171548544171!2d78.44988557505934!3d17.403553083486457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9740066d76db%3A0xc65e5977ef927ceb!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003368659!5m2!1sen!2sin",
         phone: "9052382345",
         personName: "Mr. Shaam sudhakar",
-        email: "servicemasabtankorangehonda@gmail.com",
+        // email: "servicemasabtankorangehonda@gmail.com",
       },
       {
         name: "Honda Showroom  - Manikonda",
@@ -9873,7 +9873,7 @@ export const brands = [
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.1896330295485!2d78.37195907505925!3d17.402684783487118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb941995a23143%3A0x675f12362e6c26d6!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003582070!5m2!1sen!2sin",
         phone: "9703518666",
         personName: "Mr. Srinivas",
-        email: "orangehondamanikonda2015@gmail.com",
+        // email: "orangehondamanikonda2015@gmail.com",
       },
       {
         name: "Honda  Service - Manikonda",
@@ -9884,7 +9884,7 @@ export const brands = [
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.1896330295485!2d78.37195907505925!3d17.402684783487118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb941995a23143%3A0x675f12362e6c26d6!2sOrange%20Honda!5e0!3m2!1sen!2sin!4v1711003582070!5m2!1sen!2sin",
         phone: "8886672154",
         personName: "Mr. Mohd Salman",
-        email: "orangehondamanikonda2015@gmail.com",
+        // email: "orangehondamanikonda2015@gmail.com",
       },
       {
         name: "Honda Showroom  - Chevella",
@@ -9894,7 +9894,7 @@ export const brands = [
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.002314227614!2d78.13098757505725!3d17.315437483559553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbe82019db7a21%3A0x7d44011f29cb3307!2sorange%20honda%20showroom!5e0!3m2!1sen!2sin!4v1711003704174!5m2!1sen!2sin",
         phone: "8886672175",
         personName: "Mr. E Raju",
-        email: "orangechevelle1234@gmail.com",
+        // email: "orangechevelle1234@gmail.com",
       },
       {
         name: "Honda  Service - Chevella",
@@ -9904,7 +9904,7 @@ export const brands = [
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3809.002314227614!2d78.13098757505725!3d17.315437483559553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbe82019db7a21%3A0x7d44011f29cb3307!2sorange%20honda%20showroom!5e0!3m2!1sen!2sin!4v1711003704174!5m2!1sen!2sin",
         phone: "9949768623",
         personName: "Mr. Amar",
-        email: "orangechevelle1234@gmail.com",
+        // email: "orangechevelle1234@gmail.com",
       },
       {
         name: "Honda Showroom  - Moinabad",
@@ -9915,7 +9915,7 @@ export const brands = [
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.6959231331466!2d78.27358807505753!3d17.330214483547245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbebb55ee5883d%3A0xa6d4677dbf46db2d!2sOrange%20Honda%20Moinabad!5e0!3m2!1sen!2sin!4v1711003813602!5m2!1sen!2sin",
         phone: "8886625097",
         personName: "Mr. Balram",
-        email: "orangemoinabad@gmail.com",
+        // email: "orangemoinabad@gmail.com",
       },
       {
         name: "Honda  Service - Moinabad",
@@ -9926,7 +9926,7 @@ export const brands = [
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.6959231331466!2d78.27358807505753!3d17.330214483547245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbebb55ee5883d%3A0xa6d4677dbf46db2d!2sOrange%20Honda%20Moinabad!5e0!3m2!1sen!2sin!4v1711003813602!5m2!1sen!2sin",
         phone: "7981229979",
         personName: "Mr. Akheel",
-        email: "orangemoinabad@gmail.com",
+        // email: "orangemoinabad@gmail.com",
       },
     ],
   },
@@ -9984,7 +9984,7 @@ export const brands = [
         map: "https://maps.app.goo.gl/oEqtCLdWqWP86b3i7",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.3616234852216!2d78.35203127598064!3d17.490242683414557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9334c9822c27%3A0xaf04e45bfd1830d!2sOrange%20Tata%20Motors%20Service!5e0!3m2!1sen!2sin!4v1716989297146!5m2!1sen!2sin",
-        phone: "9052106666",
+        phone: "7799916906",
       },
       {
         name: "Tata Cars Service - Sanath Nagar",
@@ -9993,7 +9993,7 @@ export const brands = [
         map: "https://maps.app.goo.gl/6roER6nWE676zfih9",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.021404783865!2d78.44603552598007!3d17.458689583440787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9198cbc8d86d%3A0xa8db7e78303c83a5!2sOrange%20Tata%20Motors%20Service%20Center%20Sanathnagar!5e0!3m2!1sen!2sin!4v1716989453176!5m2!1sen!2sin",
-        phone: "9052106666",
+        phone: "8142718666",
       },
     ],
   },
@@ -10022,13 +10022,22 @@ export const brands = [
         email: "ORANGESERVICE@KAWASAKI-HYDERABAD.IN",
       },
       {
-        name: "Kawasaki Showroom & Service - Karkhana",
+        name: "Kawasaki Showroom - Secunderabad",
         address:
           " 54, Wellington Rd, R & D Colony, Karkhana, Secunderabad, Telangana 500015",
         map: "https://maps.app.goo.gl/LDRBSdFJ35L3Tgj49",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.02275021979!2d78.49767927506065!3d17.45862518344072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b005ef8cf7f%3A0xf04373ad4fb0e7d2!2sKAWASAKI%20SECUNDERABAD!5e0!3m2!1sen!2sin!4v1711004694233!5m2!1sen!2sin",
-        phone: "9052106666",
+        phone: "9885501234",
+      },
+      {
+        name: "Kawasaki Service - Secunderabad",
+        address:
+          " 54, Wellington Rd, R & D Colony, Karkhana, Secunderabad, Telangana 500015",
+        map: "https://maps.app.goo.gl/LDRBSdFJ35L3Tgj49",
+        iframe:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.02275021979!2d78.49767927506065!3d17.45862518344072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b005ef8cf7f%3A0xf04373ad4fb0e7d2!2sKAWASAKI%20SECUNDERABAD!5e0!3m2!1sen!2sin!4v1711004694233!5m2!1sen!2sin",
+        phone: "7799970022",
       },
       {
         name: "Kawasaki Showroom - Vijayawada",
@@ -10092,7 +10101,7 @@ export const brands = [
         map: "https://maps.app.goo.gl/EWJGPUg2W23EE18z7",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.0563026547134!2d83.25811771096019!3d17.7419860924226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3942ad5ab30597%3A0x91704a6eb3ba9efc!2sOrange%20Nissan!5e0!3m2!1sen!2sin!4v1716635256319!5m2!1sen!2sin",
-        phone: "9052106666",
+        phone: "8886680424",
         email: "VIZAGEDP@ORANGEAUTO.IN",
       },
     ],
@@ -10142,7 +10151,7 @@ export const brands = [
         map: "https://maps.app.goo.gl/EWJGPUg2W23EE18z7",
         iframe:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.0563026547134!2d83.25811771096019!3d17.7419860924226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3942ad5ab30597%3A0x91704a6eb3ba9efc!2sOrange%20Nissan!5e0!3m2!1sen!2sin!4v1716635256319!5m2!1sen!2sin",
-        phone: "9052106666",
+        phone: "8886642042",
         email: "CRMSALES.NISSAN@ORANGEAUTO.IN",
       },
     ],
@@ -10256,7 +10265,7 @@ export const galleryImg = [
     name: "Harely Davidson",
     images: [
       {
-        showroomName: "Ramavarappadu ( Vijayawada ) Showroom - ",
+        showroomName: "Harely Davidson",
         img: [
           require("../assets/gallery/Harely/harly vjy showroom.jpeg"),
           require("../assets/gallery/Harely/harly vjy service.jpeg"),

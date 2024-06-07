@@ -4,8 +4,11 @@ import * as Yup from "yup";
 import { CgSpinner } from "react-icons/cg";
 
 import { Toaster, toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const BookForm = ({ final }) => {
+  const navigate = useNavigate();
 
   const formik = useFormik({
     initialValues: {
@@ -31,19 +34,36 @@ const BookForm = ({ final }) => {
 
         // Your actual form submission logic goes here
         // For demonstration purposes, let's display a success message using toast
-        toast.success("Form submitted successfully");
 
-        // Reset form values after successful submission
-        resetForm({
-          name: "",
-          email: "",
-          phone: "",
-          model: "",
-          disclaimer: false,
-        });
+        const res = await axios.post(
+          "https://orange-backend-8wfp.onrender.com/general",
+          // "http://localhost:5001/general",
+          {
+            name: values.name,
+            email: values.email,
+            phone: values.phone,
+            model: values.model,
+            leadFrom: "Enquiry Form",
+          }
+        );
+        if (res.data.status) {
+          // toast.success("Form submitted successfully");
+          // Reset form values after successful submission
+          resetForm({
+            name: "",
+            email: "",
+            phone: "",
+            model: "",
+            disclaimer: false,
+          });
+          navigate("/thank-you");
+        } else {
+          toast.error("Form submission failed");
+        }
       } catch (error) {
         // Handle form submission errors here
         console.error("Form submission error:", error);
+
         toast.error("Form submission failed");
       } finally {
         // Always set submitting state to false after form submission
@@ -129,8 +149,8 @@ const BookForm = ({ final }) => {
             >
               <option value="">Select Model</option>
               {/* <optgroup label="Tata"> */}
-                <option value="Other">Other</option>
-                {/* <option value="Altroz">Altroz</option>
+              <option value="Other">Other</option>
+              {/* <option value="Altroz">Altroz</option>
                 <option value="Tigor">Tigor</option>
                 <option value="Punch">Punch</option>
                 <option value="Nexon">Nexon</option>

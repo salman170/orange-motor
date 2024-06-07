@@ -30,22 +30,22 @@ const TwoVehCard = ({
   );
   const { setOpenEnq, setModel } = useModelContext();
   const [selectedVariant, setSelectedVariant] = useState(category.price);
-  const calculateEMI = () => {
-    // Assuming interest rate of 8% per annum and tenure of 5 years (60 months)
-    const interestRatePerMonth = 8 / (12 * 100);
-    const tenureInMonths = 12; // 5 years
-    const principal = price; // Assuming carData.price is in lakhs
+  // const calculateEMI = () => {
+  //   // Assuming interest rate of 8% per annum and tenure of 5 years (60 months)
+  //   const interestRatePerMonth = 8 / (12 * 100);
+  //   const tenureInMonths = 12; // 5 years
+  //   const principal = price; // Assuming carData.price is in lakhs
 
-    // Calculating EMI using the formula
-    const emi =
-      (principal *
-        interestRatePerMonth *
-        Math.pow(1 + interestRatePerMonth, tenureInMonths)) /
-      (Math.pow(1 + interestRatePerMonth, tenureInMonths) - 1);
-    // console.log(category);
-    // Rounding off to 2 decimal places and converting to string
-    return emi.toFixed(0);
-  };
+  //   // Calculating EMI using the formula
+  //   const emi =
+  //     (principal *
+  //       interestRatePerMonth *
+  //       Math.pow(1 + interestRatePerMonth, tenureInMonths)) /
+  //     (Math.pow(1 + interestRatePerMonth, tenureInMonths) - 1);
+  //   // console.log(category);
+  //   // Rounding off to 2 decimal places and converting to string
+  //   return emi.toFixed(0);
+  // };
 
   return (
     <div className="flex flex-col justify-between overflow-hidden border rounded-lg group border-gray-200/70 ">
