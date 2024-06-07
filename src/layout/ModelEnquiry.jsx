@@ -90,7 +90,7 @@ function ModelEnquiry({ open, setOpen, title, model }) {
                       setSubmitting(true);
 
                       const res = await axios.post(
-                        "https://kasturba-backend.onrender.com/general",
+                        "https://orange-backend-8wfp.onrender.com/general",
                         // "http://localhost:5001/general",
                         {
                           name: values.name,
